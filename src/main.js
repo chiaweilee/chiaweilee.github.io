@@ -1,13 +1,13 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from './vue'
+import routerBuilder from './router'
 import store from './store'
+import App from './App'
 import './registerServiceWorker'
 
-Vue.config.productionTip = false
+require('fastclick').attach(document.body)
 
 new Vue({
-  router,
+  router: routerBuilder(store),
   store,
   render: h => h(App)
 }).$mount('#app')

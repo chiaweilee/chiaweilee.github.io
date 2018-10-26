@@ -1,0 +1,61 @@
+#app {
+  opacity: 0;
+  animation: fade-in 1s infinite;
+  animation-delay: 0.5s;
+  &::after {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    content: " ";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $color-primary;
+    transform: translateX(-50%) translateY(-50%);
+    animation: loading 2s infinite;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0%,
+  25%,
+  50%,
+  75%,
+  to {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+
+  0%,
+  to {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotateY(180deg) rotateX(0deg);
+    transform: rotateY(180deg) rotateX(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotateY(180deg) rotateX(180deg);
+    transform: rotateY(180deg) rotateX(180deg);
+  }
+
+  75% {
+    -webkit-transform: rotateY(0deg) rotateX(180deg);
+    transform: rotateY(0deg) rotateX(180deg);
+  }
+}

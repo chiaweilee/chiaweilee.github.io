@@ -1,25 +1,88 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import reg from '@/config/reg'
 
 Vue.use(Router)
 
-export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+const title = require('./config/title')
+
+const routerBuilder = store => {
+  const router = new Router({
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes: [
+      {
+        path: '/',
+        name: 'home',
+        meta: {},
+        components: {
+          default: r => require.ensure([], () => r(require('@/components/home.vue')), 'home')
+        }
+      },
+      {
+        path: '/@:at(' + reg.at.string + ')',
+        name: '@',
+        meta: {
+          transition: false
+        },
+        components: {
+          default: r => require.ensure([], () => r(require('@/components/social/@.vue')), '@')
+        }
+      },
+      {
+        path: '*',
+        name: '404',
+        meta: {},
+        components: {
+          default: r => require.ensure([], () => r(require('@/components/error/404.vue')), 'error')
+        }
+      }
+    ]
+  })
+
+  router.beforeEach(function (to, from, next) {
+    if (!store.getters.coldStart) {
+      // @warmStart
+      // go history
+      const history = store.getters.history
+      const target = history.length - 2
+      if (to.name === history[target] && history[target].name) {
+        // history back
+        store.commit('_historyPop')
+        // slide left
+        store.commit('_slideLeft')
+      } else {
+        // progress start
+        store._vm.$Progress.start()
+        // history go new
+        store.commit('_historyPush', { name: to.name, query: to.query, params: to.params })
+        // slide right
+        if (to.meta.transition === false) {
+          store.commit('_noTransition')
+        } else {
+          store.commit('_slideRight')
+        }
+      }
+    } else {
+      // @coldStart
+      // new history
+      store.commit('_historyPush', { name: from.name, query: from.query, params: from.params })
+      store.commit('_historyPush', { name: to.name, query: to.query, params: to.params })
     }
-  ]
-})
+    // go next route
+    next()
+  })
+
+  router.afterEach(function (to, from) {
+    // warm start
+    if (store.getters.coldStart) store.commit('_warmStart')
+    // progress finish
+    store._vm.$Progress.finish()
+    // set title
+    document.title = (!!to.meta && to.meta.title && (typeof to.meta.title === 'function' ? (to.meta.title.call(to, store) || title || '') : to.meta.title)) || title || ''
+  })
+
+  return router
+}
+
+export default routerBuilder
