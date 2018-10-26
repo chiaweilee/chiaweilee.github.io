@@ -1,6 +1,8 @@
 const resolve = require('path').resolve
 const title = require('./src/config/title')
 const SassVariables = require('sass-variables-webpack-plugin')
+// const argv = process.argv.slice(3)
+// console.log(argv)
 
 // vue.config.js
 module.exports = {
