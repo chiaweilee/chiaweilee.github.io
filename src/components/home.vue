@@ -21,3 +21,9 @@
     </app-content>
   </app-page>
 </template>
+
+<script>
+export default {
+  name: 'Home'
+}
+</script>

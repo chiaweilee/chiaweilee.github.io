@@ -1,36 +1,9 @@
-# app
+### Dear red:
 
-## Project setup
-```
-npm install
-```
+If you're reading this, you've gotten out.
+And if you've come this far, maybe you're willing to come a little further.
+You remember the name of the town, don't you?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Remember, Red. `Hope` is a good thing, maybe the best of things, and no good thing ever dies.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
+Your friend.
