@@ -45,7 +45,7 @@ app.post('/', function (request, response) {
 
 app.get('*', function (request, response) {
   const url = request.originalUrl !== '/' ? request.originalUrl : `/${defaultPage}`
-  const ext = (() => /\.([a-zA-Z0-9]+)$/gi.exec(url.split('?')[0]) || [])()[1]
+  const [, name, ext] = (() => /\/([^/]+)\.([a-zA-Z0-9]+)$/gi.exec(url.split('?')[0]) || [])()
   const redirect = function (url, rewrite = false) {
     fs.readFile(path.resolve(url), function (err, data) {
       if (err) {
@@ -66,10 +66,10 @@ app.get('*', function (request, response) {
         return
       }
       response.writeHead(200, {
-        'Cache-Control': (mimeType[ext] && mimeType[ext][2]) || 'no-cache',
-        'content-type': (mimeType[ext] && mimeType[ext][0]) || 'text/plain'
+        'Cache-Control': (!(name === 'service-worker' && ext === 'js') && mimeType[ext][2]) || 'no-cache',
+        'content-type': mimeType[ext][0] || 'text/plain'
       })
-      response.write(data, (mimeType[ext] && mimeType[ext][1]) || 'utf8')
+      response.write(data, mimeType[ext][1])
       response.end()
     })
   }
