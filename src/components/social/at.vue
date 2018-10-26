@@ -5,6 +5,7 @@
 <script>
 const isEqual = a => b => a === b
 export default {
+  name: 'AtLink',
   computed: {
     at () {
       return this['@']

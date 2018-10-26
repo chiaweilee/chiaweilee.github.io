@@ -10,7 +10,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "dist": "rundist",
+    "server": "supervisor -w ./script script/dist-server.js"
   },
   "dependencies": {
     "app.vue": "^0.1.10",
@@ -35,6 +37,7 @@
     "chai": "^4.1.2",
     "lint-staged": "^7.2.2",
     "node-sass": "^4.9.0",
+    "rundist": "^0.0.3-ILoveNana",
     "sass-loader": "^7.0.1",
     "sass-variables-webpack-plugin": "^0.0.4",
     "vue-template-compiler": "^2.5.17"

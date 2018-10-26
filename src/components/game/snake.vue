@@ -12,6 +12,7 @@
 // const random = (a, b) => Math.min(a, b) + Math.round(Math.abs(a - b) * Math.random())
 
 export default {
+  name: 'SnakeGame',
   data () {
     return {
       mg: 0.8,
