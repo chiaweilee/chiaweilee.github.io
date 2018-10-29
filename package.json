@@ -8,11 +8,11 @@
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:report": "npm run build -- --report",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "dist": "rundist",
-    "server-install": "cnpm i supervisor compression github-webhook-handler node-cmd",
     "server": "supervisor -w ./scripts scripts/dist-server.js"
   },
   "dependencies": {
