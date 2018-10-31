@@ -11,6 +11,8 @@
 <script>
 const PF = require('pathfinding')
 
+const random = (start, end) => parseInt(start + Math.random() * end)
+
 class Matrix {
   constructor (x = 0, y) {
     const _this = this
@@ -33,7 +35,7 @@ class Matrix {
   }
 
   revolution (_) {
-    _.forEach(([x, y]) => {
+    _.forEach(([y, x]) => { // in matrix: x => y, y => x
       if (typeof this.one[x] === 'undefined' || typeof this.one[x][y] === 'undefined' || this.one[x][y] === 1) {
         this.err = true
       } else {
@@ -56,6 +58,8 @@ export default {
   name: 'SnakeGame',
   data () {
     return {
+      gameover: false,
+      score: 0,
       mg: 0.8,
       food: [8, 8],
       snake: [[1, 4], [1, 3], [1, 2], [1, 1]]
@@ -81,14 +85,32 @@ export default {
     }
   },
   mounted () {
-    this.autogame()
+    this.start()
   },
   methods: {
+    start () {
+      this.feed()
+      this.autogame()
+    },
     autogame () {
+      if (this.gameover) return
       setTimeout(() => {
         this.run()
         this.autogame()
-      }, 500)
+      }, 100)
+    },
+    feed () {
+      const food = [random(0, this.w), random(0, this.h)]
+      const matrix = new Matrix(this.w, this.h)
+        .revolution(this.snake)
+        .revolution([food])
+      if (matrix.err) {
+        // food should not on snake body
+        // re-feed
+        this.feed()
+        return
+      }
+      this.food = food
     },
     walk ([x, y]) {
       this.snake.unshift([x, y])
@@ -97,26 +119,28 @@ export default {
         this.snake.pop()
       } else {
         // eat
-        this.food = [1, 1]
+        this.score += 1 // add score
+        this.feed() // re-feed food
       }
     },
     run () {
       const matrix = new Matrix(this.w, this.h)
         .revolution(this.snake)
-      if (!matrix) {
-        console.log('game over')
-        return
+      if (matrix.err) {
+        // hit hurt
+        this.gameover = true
       } else {
         const path = matrix.path(this.snake[0], this.food)
         if (!path[1]) {
-          console.log('game over')
-          return
+          // no path to food
+          // TODO try keep alive
+          this.gameover = true
         } else {
+          // go best path
           const next = path[1]
           this.walk(next)
         }
       }
-      matrix.reload()
     }
   }
 }
