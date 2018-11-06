@@ -2,7 +2,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" :height="h * pix" :width="w * pix">
     <rect x="0" y="0" :height="h * pix" :width="w * pix" :style="{ stroke: '', fill: bg }"/>
     <template v-if="snake" v-for="(s, i) in snake">
-      <rect :key="i" :x="s[0] * pix + pix * (1 - mg) / 2" :y="s[1] * pix + pix * (1 - mg) / 2" :height="pix * mg" :width="pix * mg" :style="{ fill: '#3c3' }"/>
+      <rect :key="i" :x="s[0] * pix + pix * (1 - mg) / 2" :y="s[1] * pix + pix * (1 - mg) / 2" :height="pix * mg" :width="pix * mg" :style="{ fill: !i ? '333' : '#3c3' }"/>
     </template>
     <rect v-if="food" :x="food[0] * pix + pix * (1 - mg) / 2" :y="food[1] * pix + pix * (1 - mg) / 2" :height="pix * mg" :width="pix * mg" :style="{ fill: '#dc3' }"/>
   </svg>
@@ -133,8 +133,18 @@ export default {
         const path = matrix.path(this.snake[0], this.food)
         if (!path[1]) {
           // no path to food
-          // TODO try keep alive
-          this.gameover = true
+          // try keep alive
+          // okay, try go toward tail!
+          const takeALeapOfFaith = matrix.path(this.snake[0], this.snake[this.snake.length - 1])
+          if (!takeALeapOfFaith[1]) {
+            console.log(takeALeapOfFaith)
+            // die alone
+            this.gameover = true
+          } else {
+            // go best path
+            const next = takeALeapOfFaith[1]
+            this.walk(next)
+          }
         } else {
           // go best path
           const next = path[1]
