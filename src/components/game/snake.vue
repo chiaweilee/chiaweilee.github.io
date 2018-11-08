@@ -123,6 +123,26 @@ export default {
         this.feed() // re-feed food
       }
     },
+    faith (matrix, leap) {
+      // take a leap of faith
+      const takeALeapOfFaith = matrix.path(this.snake[0], this.snake[leap])
+      if (!takeALeapOfFaith[1]) {
+        // still no way?
+        if (!leap) {
+          // don't give up
+          // take another leap of faith
+          this.faith(matrix, leap - 1)
+        } else {
+          // okay, give up?
+          // no!
+          // TODO try any possible way to go
+          this.gameover = true
+        }
+      } else {
+        const next = takeALeapOfFaith[1]
+        this.walk(next)
+      }
+    },
     run () {
       const matrix = new Matrix(this.w, this.h)
         .revolution(this.snake)
@@ -135,16 +155,8 @@ export default {
           // no path to food
           // try keep alive
           // okay, try go toward tail!
-          const takeALeapOfFaith = matrix.path(this.snake[0], this.snake[this.snake.length - 1])
-          if (!takeALeapOfFaith[1]) {
-            console.log(takeALeapOfFaith)
-            // die alone
-            this.gameover = true
-          } else {
-            // go best path
-            const next = takeALeapOfFaith[1]
-            this.walk(next)
-          }
+          this.faith(matrix, this.snake.length - 1)
+          // else loop
         } else {
           // go best path
           const next = path[1]
