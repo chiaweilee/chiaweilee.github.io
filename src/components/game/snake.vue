@@ -128,14 +128,12 @@ export default {
       const takeALeapOfFaith = matrix.path(this.snake[0], this.snake[leap])
       if (!takeALeapOfFaith[1]) {
         // still no way?
-        if (!leap) {
+        if (leap) {
           // don't give up
           // take another leap of faith
           this.faith(matrix, leap - 1)
         } else {
           // okay, give up?
-          // no!
-          // TODO try any possible way to go
           this.gameover = true
         }
       } else {
