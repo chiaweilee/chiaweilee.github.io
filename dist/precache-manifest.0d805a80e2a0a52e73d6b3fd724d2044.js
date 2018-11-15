@@ -1,6 +1,6 @@
 self.__precacheManifest = [
   {
-    "revision": "c48b577e741d6f3c57de",
+    "revision": "5f8f1a176c2c586fb2a4",
     "url": "/css/index.c5e8b177.css"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "c48b577e741d6f3c57de",
-    "url": "/js/index.263a767c.js"
+    "revision": "5f8f1a176c2c586fb2a4",
+    "url": "/js/index.811e8301.js"
   },
   {
     "revision": "72afd45a324abc97456a",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/js/error.ef4f1acc.js"
   },
   {
-    "revision": "136da78307b56829d2d4",
-    "url": "/js/game-snake.7005f324.js"
+    "revision": "5b09f60820406e4f5ae6",
+    "url": "/js/game-snake.2bb86e8d.js"
   },
   {
     "revision": "5657516522924615fba5",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/js/root.7464c36b.js"
   },
   {
-    "revision": "fbd377b0271d827b3199dd0ab114293a",
+    "revision": "83714e151ef83a00f10ebd83671c30c6",
     "url": "/index.html"
   },
   {
