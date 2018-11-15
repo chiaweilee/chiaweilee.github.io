@@ -9,50 +9,8 @@
 </template>
 
 <script>
-const PF = require('pathfinding')
-
-const random = (start, end) => parseInt(start + Math.random() * end)
-
-class Matrix {
-  constructor (x = 0, y) {
-    const _this = this
-    const t = Array.from({ length: x }, () => 0)
-    const neo = Array.from({ length: y || x }, () => t)
-    this.reload = () => {
-      _this.one = _this.clone(neo)
-      _this.err = false
-      return _this
-    }
-    this.reload()
-  }
-
-  clone (_) {
-    const cloned = _.constructor()
-    for (let key in _) {
-      cloned[key] = this.clone(_[key])
-    }
-    return cloned
-  }
-
-  revolution (_) {
-    _.forEach(([y, x]) => { // in matrix: x => y, y => x
-      if (typeof this.one[x] === 'undefined' || typeof this.one[x][y] === 'undefined' || this.one[x][y] === 1) {
-        this.err = true
-      } else {
-        this.one[x][y] = 1
-      }
-    })
-    return this
-  }
-
-  path ([x, y], [X, Y]) {
-    const grid = new PF.Grid(this.one)
-    const finder = new PF.BiBestFirstFinder({
-      allowDiagonal: false
-    })
-    return finder.findPath(x, y, X, Y, grid)
-  }
-}
+import Matrix from './matrix'
+import random from './random'
 
 export default {
   name: 'SnakeGame',
@@ -82,6 +40,15 @@ export default {
       type: String,
       default: '#ddd',
       validator: t => /^#[0-9a-f]{3}([0-9a-f]{3})?$/i.test(t)
+    }
+  },
+  watch: {
+    gameover (t) {
+      if (t) {
+        this.snake = []
+        this.food = null
+        this.score = 0
+      }
     }
   },
   mounted () {
@@ -135,6 +102,7 @@ export default {
         } else {
           // okay, give up?
           this.gameover = true
+          matrix = null
         }
       } else {
         const next = takeALeapOfFaith[1]
