@@ -1,6 +1,5 @@
 module.exports = {
   presets: [
-    '@vue/app',
-    'flow'
+    '@vue/app'
   ]
 }
