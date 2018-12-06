@@ -4,11 +4,14 @@ module.exports = {
     node: true
   },
   'extends': [
+    'plugin:flowtype/recommended',
     'plugin:vue/strongly-recommended',
     '@vue/standard'
   ],
+  'plugins': [
+    'flowtype'
+  ],
   rules: {
-    'vue/max-attributes-per-line': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },

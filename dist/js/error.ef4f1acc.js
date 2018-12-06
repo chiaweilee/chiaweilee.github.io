@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["error"],{f5de:function(n,e,o){"use strict";o.r(e);var t=function(){var n=this,e=n.$createElement,o=n._self._c||e;return o("div",[n._v("404 not found")])},u=[],r={name:"404NotFound"},l=r,i=o("048f"),s=Object(i["a"])(l,t,u,!1,null,null,null);s.options.__file="404.vue";e["default"]=s.exports}}]);
