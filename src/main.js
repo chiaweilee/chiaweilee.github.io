@@ -1,12 +1,12 @@
 import Vue from './vue'
-import routerBuilder from './router'
+import r from './router'
 import store from './store'
 import './registerServiceWorker'
 
 require('fastclick').attach(document.body)
 
 new Vue({
-  router: routerBuilder(store),
+  router: r(store),
   store,
   render: h => h({
     name: 'App',
