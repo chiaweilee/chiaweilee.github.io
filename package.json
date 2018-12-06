@@ -12,7 +12,8 @@
     "test:unit": "vue-cli-service test:unit",
     "dist": "rundist --port 8080 --extend scripts/git-guard.js",
     "server": "npm run dist",
-    "server:install": "npm install compression express github-webhook-handler node-cmd"
+    "server:install": "npm install compression express github-webhook-handler node-cmd",
+    "commit": "npx git-cz"
   },
   "dependencies": {
     "app.vue": "^0.1.10",
@@ -36,10 +37,12 @@
     "@vue/eslint-config-standard": "^3.0.5",
     "@vue/test-utils": "^1.0.0-beta.20",
     "chai": "^4.1.2",
+    "eslint-plugin-flowtype": "^3.2.0",
     "github-webhook-handler": "^0.7.1",
     "lint-staged": "^7.2.2",
     "node-cmd": "^3.0.0",
     "node-sass": "^4.9.0",
+    "remove-flow-types-loader": "^1.1.0",
     "rundist": "^0.1.5",
     "sass-loader": "^7.0.1",
     "sass-variables-webpack-plugin": "^0.0.4",
@@ -51,11 +54,11 @@
   },
   "lint-staged": {
     "*.js": [
-      "vue-cli-service lint",
+      "npm run lint",
       "git add"
     ],
     "*.vue": [
-      "vue-cli-service lint",
+      "npm run lint",
       "git add"
     ]
   }
