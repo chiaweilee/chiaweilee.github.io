@@ -10,9 +10,9 @@
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "dist": "rundist --port 8080 --extend scripts/git-guard.js",
+    "dist": "rundist --port 80 --extend scripts/git-guard.js",
     "server": "npm run dist",
-    "server:install": "npm install compression express github-webhook-handler node-cmd",
+    "server:install": "npm install compression express github-webhook-handler node-cmd rundist",
     "commit": "npx git-cz"
   },
   "dependencies": {
