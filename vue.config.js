@@ -3,7 +3,7 @@ module.exports = {
   pages: {
     index: {
       entry: 'src/main.js',
-      title: require('./src/config/title')
+      title: 'Dear.red'
     }
   },
   configureWebpack: {

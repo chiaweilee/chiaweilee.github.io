@@ -4,8 +4,6 @@ import reg from '@/config/reg'
 
 Vue.use(Router)
 
-const title = require('./config/title')
-
 const routerBuilder = store => {
   const router = new Router({
     mode: 'history',
@@ -78,8 +76,6 @@ const routerBuilder = store => {
     if (store.getters.coldStart) store.commit('_warmStart')
     // progress finish
     store._vm.$Progress.finish()
-    // set title
-    document.title = (!!to.meta && to.meta.title && (typeof to.meta.title === 'function' ? (to.meta.title.call(to, store) || title || '') : to.meta.title)) || title || ''
   })
 
   return router
