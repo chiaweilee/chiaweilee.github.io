@@ -1,10 +1,33 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" :height="h * pix" :width="w * pix">
-    <rect x="0" y="0" :height="h * pix" :width="w * pix" :style="{ stroke: '', fill: bg }"/>
-    <template v-if="snake" v-for="(s, i) in snake">
-      <rect :key="i" :x="s[0] * pix + pix * (1 - mg) / 2" :y="s[1] * pix + pix * (1 - mg) / 2" :height="pix * mg" :width="pix * mg" :style="{ fill: !i ? '333' : '#3c3' }"/>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    :height="h * pix"
+    :width="w * pix">
+    <rect
+      x="0"
+      y="0"
+      :height="h * pix"
+      :width="w * pix"
+      :style="{ stroke: '', fill: bg }"/>
+    <template
+      v-if="snake"
+      v-for="(s, i) in snake">
+      <rect
+        :key="i"
+        :x="s[0] * pix + pix * (1 - mg) / 2"
+        :y="s[1] * pix + pix * (1 - mg) / 2"
+        :height="pix * mg"
+        :width="pix * mg"
+        :style="{ fill: !i ? '333' : '#3c3' }"/>
     </template>
-    <rect v-if="food" :x="food[0] * pix + pix * (1 - mg) / 2" :y="food[1] * pix + pix * (1 - mg) / 2" :height="pix * mg" :width="pix * mg" :style="{ fill: '#dc3' }"/>
+    <rect
+      v-if="food"
+      :x="food[0] * pix + pix * (1 - mg) / 2"
+      :y="food[1] * pix + pix * (1 - mg) / 2"
+      :height="pix * mg"
+      :width="pix * mg"
+      :style="{ fill: '#dc3' }"/>
   </svg>
 </template>
 

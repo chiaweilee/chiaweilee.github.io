@@ -4,10 +4,14 @@
   </div>
   <div v-else>
     <ul>
-      <li v-for="route in Object.keys(tickers)" :key="route">
+      <li
+        v-for="route in Object.keys(tickers)"
+        :key="route">
         <dl>
           <dt>{{ route }} {{ getPrice(route) }}</dt>
-          <dd v-for="(price, date) in tickers[route]" :key="date">
+          <dd
+            v-for="(price, date) in tickers[route]"
+            :key="date">
             {{ date }}
           </dd>
         </dl>

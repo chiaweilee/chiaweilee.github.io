@@ -1,7 +1,11 @@
 <template>
   <app-page>
-    <app-topbar :theme="theme || 'dark-blue'" transition>
-      <app-button left history-back>
+    <app-topbar
+      :theme="theme || 'dark-blue'"
+      transition>
+      <app-button
+        left
+        history-back>
         <span>back</span>
       </app-button>
       <app-title>
@@ -9,7 +13,10 @@
       </app-title>
     </app-topbar>
     <app-content>
-      <component v-if="!!compo" :is="compo" @theme="setTheme"/>
+      <component
+        v-if="!!compo"
+        :is="compo"
+        @theme="setTheme"/>
     </app-content>
   </app-page>
 </template>

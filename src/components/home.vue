@@ -4,7 +4,9 @@
       <app-button left>
         <span>.</span>
       </app-button>
-      <app-button right disabled>
+      <app-button
+        right
+        disabled>
         <span>.</span>
       </app-button>
       <app-title>

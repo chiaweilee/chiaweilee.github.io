@@ -2,11 +2,17 @@
   <div class="opening">
     <div class="scene">
       <div>
-        <span ref="left" v-text="'Dear'"/>
+        <span
+          ref="left"
+          v-text="'Dear'"/>
       </div>
       <div>
-        <span ref="right" v-text="'red'"/>
-        <span class="dot" ref="dot"/>
+        <span
+          ref="right"
+          v-text="'red'"/>
+        <span
+          class="dot"
+          ref="dot"/>
       </div>
     </div>
   </div>
