@@ -10,8 +10,6 @@ module.exports = {
     plugins: require('./vue.config.plugins')
   },
   chainWebpack: config => {
-    config.plugins.delete('preload')
-    config.plugins.delete('prefetch')
     config.module
       .rule('js')
       .test(/\.js?$/)
