@@ -6,7 +6,7 @@
     "inspect": "vue inspect",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:report": "npm run build -- --report",
+    "build:report": "npm run build --report",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",

@@ -13,7 +13,7 @@ const plugins = [
   SassVariables(path.resolve(__dirname, './src/assets/scss/_variables.scss'))
 ]
 
-if (process.env.NODE_ENV === 'production' && process.argv.slice(3).indexOf('--report') > -1) {
+if (process.env.npm_config_report) {
   // report
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   plugins.push(new BundleAnalyzerPlugin())
