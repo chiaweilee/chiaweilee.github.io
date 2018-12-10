@@ -1,6 +1,6 @@
 <template>
   <div v-if="loading < 1">
-    loading {{ loading | percent }}
+    loading {{ loading | percentage }}
   </div>
   <div v-else>
     <ul>

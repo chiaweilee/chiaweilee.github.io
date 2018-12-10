@@ -16,6 +16,7 @@
     "commit": "npx git-cz"
   },
   "dependencies": {
+    "@chiaweilee/filters": "^0.0.1",
     "app.vue": "^0.1.10",
     "fastclick": "^1.0.6",
     "gsap": "^2.0.2",
