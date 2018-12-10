@@ -1,6 +1,5 @@
-const path = require('path')
-const SassVariables = require('sass-variables-webpack-plugin')
 const { BannerPlugin } = require('webpack')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const plugins = [
   // bannner
@@ -10,12 +9,11 @@ const plugins = [
       'Released under the MIT License.'
   }),
   // sass variables
-  SassVariables(path.resolve(__dirname, './src/assets/scss/_variables.scss'))
+  require('sass-variables-webpack-plugin')('src/assets/scss/_variables.scss')
 ]
 
 if (process.env.npm_config_report) {
   // report
-  const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   plugins.push(new BundleAnalyzerPlugin())
 }
 
