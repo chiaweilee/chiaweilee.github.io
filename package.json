@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue,.json src --fix",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "dist": "rundist --port 80 --extend scripts/git-guard.js",
+    "dist": "rundist --port 443 --https --sslkey cert/1604818_dear.red.key --sslcert cert/1604818_dear.red.pem --extend scripts/git-guard.js",
     "server": "npm run dist",
     "server:install": "npm install compression express github-webhook-handler node-cmd rundist",
     "commit": "npx git-cz"
@@ -49,7 +49,7 @@
     "node-cmd": "^3.0.0",
     "node-sass": "^4.9.0",
     "remove-flow-types-loader": "^1.1.0",
-    "rundist": "^0.1.5",
+    "rundist": "^0.2.0",
     "sass-loader": "^7.0.1",
     "sass-variables-webpack-plugin": "^0.0.5",
     "vue-template-compiler": "^2.5.19"
