@@ -6,6 +6,7 @@ module.exports = {
       title: 'Dear.red'
     }
   },
+  outputDir: 'docs',
   configureWebpack: {
     plugins: require('./vue.config.plugins')
   },
