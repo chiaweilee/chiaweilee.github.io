@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue,.json src --fix",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "dist": "rundist --port 80 --dirname docs --extend scripts/git-guard.js",
+    "dist": "rundist --port 80 --extend scripts/git-guard.js",
     "server": "npm run dist",
     "server:install": "npm install compression express github-webhook-handler node-cmd rundist",
     "commit": "npx git-cz"
