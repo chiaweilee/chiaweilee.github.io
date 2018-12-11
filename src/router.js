@@ -50,8 +50,6 @@ const routerBuilder = store => {
         // slide left
         store.commit('_slideLeft')
       } else {
-        // progress start
-        store._vm.$Progress.start()
         // history go new
         store.commit('_historyPush', { name: to.name, query: to.query, params: to.params })
         // slide right
@@ -74,8 +72,6 @@ const routerBuilder = store => {
   router.afterEach(function (to, from) {
     // warm start
     if (store.getters.coldStart) store.commit('_warmStart')
-    // progress finish
-    store._vm.$Progress.finish()
   })
 
   return router
