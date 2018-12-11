@@ -49,7 +49,7 @@
     "node-cmd": "^3.0.0",
     "node-sass": "^4.9.0",
     "remove-flow-types-loader": "^1.1.0",
-    "rundist": "^0.2.0",
+    "rundist": "^0.2.1",
     "sass-loader": "^7.0.1",
     "sass-variables-webpack-plugin": "^0.0.5",
     "vue-template-compiler": "^2.5.19"
