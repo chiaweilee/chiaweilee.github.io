@@ -1,6 +1,6 @@
 {
   "name": "Dear.red",
-  "short_name": "Dearred",
+  "short_name": "Dear.red",
   "description": "",
   "icons": [
     {
@@ -14,14 +14,9 @@
       "type": "image/png"
     }
   ],
-  "chrome": {
-    "navigation": false
-  },
-  "default_locale": "en",
   "start_url": "/",
-  "display": "standalone",
-  "background_color": "#000000",
+  "display": "fullscreen",
+  "background_color": "#000",
   "theme_color": "#4DBA87",
-  "fullscreen": "true",
-  "orientation": ["portrait"]
+  "orientation": "portrait"
 }
