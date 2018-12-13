@@ -1,9 +1,10 @@
-const { BannerPlugin } = require('webpack')
+const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const plugins = [
   // bannner
-  new BannerPlugin({
+  new webpack.BannerPlugin({
+    entryOnly: true,
     banner: `${process.env.npm_package_name} v${process.env.npm_package_version}\n` +
       '(c) 2018 +v\n' +
       'Released under the MIT License.'
