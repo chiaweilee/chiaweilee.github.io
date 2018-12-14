@@ -4,9 +4,7 @@ const BannerJSPlugin = require('banner-js-webpack-plugin')
 
 const plugins = [
   new BannerJSPlugin(function () {
-    var random = Math.random()
-    random += 1
-    return random
+    // run before webpack entry
   }),
   // bannner
   new webpack.BannerPlugin({
