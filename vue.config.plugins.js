@@ -1,7 +1,13 @@
 const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const BannerJSPlugin = require('banner-js-webpack-plugin')
 
 const plugins = [
+  new BannerJSPlugin(function () {
+    var random = Math.random()
+    random += 1
+    return random
+  }),
   // bannner
   new webpack.BannerPlugin({
     entryOnly: true,
