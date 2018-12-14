@@ -6,7 +6,7 @@ const plugins = [
   new BannerJSPlugin(function () {
     // run before webpack entry
   }),
-  // bannner
+  // banner
   new webpack.BannerPlugin({
     entryOnly: true,
     banner: `${process.env.npm_package_name} v${process.env.npm_package_version}\n` +
