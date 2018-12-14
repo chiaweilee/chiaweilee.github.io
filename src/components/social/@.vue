@@ -51,8 +51,7 @@ export default {
   methods: {
     setTheme (to) {
       this.theme = to
-      // eslint-disable-next-line
-      const color = sassVars[`$${to}`]
+      const color = process.env.SASS_VAR[`$${to}`]
       if (color && color.hex) {
         const meta = document.getElementsByTagName('meta')
         // check and remove old

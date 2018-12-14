@@ -1,8 +1,10 @@
 const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const BannerJSPlugin = require('banner-js-webpack-plugin')
+const SassVariablesPlugin = require('sass-variables-webpack-plugin')
 
 const plugins = [
+  // banner-js
   new BannerJSPlugin(function () {
     // run before webpack entry
   }),
@@ -14,7 +16,7 @@ const plugins = [
       'Released under the MIT License.'
   }),
   // sass variables
-  require('sass-variables-webpack-plugin')('src/assets/scss/_variables.scss')
+  new SassVariablesPlugin('src/assets/scss/_variables.scss')
 ]
 
 if (process.env.npm_config_report) {
