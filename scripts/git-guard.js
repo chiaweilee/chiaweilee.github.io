@@ -7,6 +7,7 @@ handler.on('error', function (err) {
 })
 
 handler.on('push', function () {
+  process.stdout.write('git push event detected.\n')
   cmd.run('git clean -f')
   cmd.run('git pull')
 })
