@@ -5,9 +5,7 @@ const SassVariablesPlugin = require('sass-variables-webpack-plugin')
 
 const plugins = [
   // banner-js
-  new BannerJSPlugin(function () {
-    // run before webpack entry
-  }),
+  new BannerJSPlugin(require('./src/banner')),
   // banner
   new webpack.BannerPlugin({
     entryOnly: true,
