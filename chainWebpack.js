@@ -1,14 +1,10 @@
-
-module.exports = function (config, { webpack }) {
+module.exports = function(config, { webpack }) {
   config.merge({
-    uglifyOptions: {},
     plugin: {
       'banner-js': {
         plugin: require('banner-js-webpack-plugin'),
-        args: [
-          require('./scripts/banner')
-        ]
+        args: [require('./scripts/banner')],
       },
-    }
+    },
   });
-}
+};
