@@ -5,6 +5,7 @@ export default {
   hash: true,
   treeShaking: true,
   chainWebpack,
+  extraBabelPlugins: [ "transform-react-jsx-filter" ],
   plugins: [
     [
       'umi-plugin-react',
