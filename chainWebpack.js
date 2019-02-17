@@ -3,7 +3,7 @@ module.exports = function(config, { webpack }) {
     plugin: {
       'banner-js': {
         plugin: require('banner-js-webpack-plugin'),
-        args: [require('./scripts/banner')],
+        args: [require('./src/banner')],
       },
     },
   });
