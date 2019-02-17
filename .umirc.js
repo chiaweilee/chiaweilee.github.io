@@ -4,6 +4,7 @@ const pwa = require('./pwa');
 export default {
   hash: true,
   treeShaking: true,
+  fastClick: true,
   chainWebpack,
   extraBabelPlugins: [ "transform-react-jsx-filter" ],
   plugins: [
