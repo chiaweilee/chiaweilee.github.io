@@ -1,0 +1,83 @@
+@import "variable";
+
+@android: 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans Hans CDN DemiLight', @base-font-family;
+@android-demi-light: 'Noto Sans CJK SC DemiLight', 'Source Han Sans CN DemiLight', 'Noto Sans Hans CDN DemiLight', @base-font-family;
+@android-extra-light: 'Noto Sans CJK SC Light', 'Source Han Sans CN Light', 'Noto Sans Hans ExtraLight CDN', @base-font-family;
+@android-blod: 'Noto Sans CJK SC Blod', 'Source Han Sans CN Blod', 'Noto Sans Hans CDN Blod', @base-font-family;
+@android-black: 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans Hans CDN Black', @base-font-family;
+@android-medium: 'Noto Sans CJK SC Medium', 'Source Han Sans CN Medium', 'Noto Sans Hans CDN Medium', @base-font-family;
+@android-thin: 'Noto Sans CJK SC Thin', 'Source Han Sans CN Thin', 'Noto Sans Hans CDN Thin', @base-font-family;
+
+// .android font-family
+
+.android {
+
+  body {
+    font-family: @android;
+  }
+
+  .android-font-family(@name) {
+    @font-family: 'android-@{name}';
+    .@{name} {
+      font-family: @@font-family;
+    }
+  }
+
+  @android-font-family-list: demi-light, extra-light, blod, black, medium, thin;
+  .loop(@i) when (@i < (length(@android-font-family-list) + 1)) {
+  .android-font-family(extract(@android-font-family-list, @i));
+  .loop(@i+1);
+}
+  .loop(1);
+
+}
+
+// android CDN font-face
+
+@font-face {font-family: 'Noto Sans Hans CDN Medium';
+  src: url('//at.alicdn.com/t/webfont_gu215p53447.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_gu215p53447.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_gu215p53447.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_gu215p53447.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_gu215p53447.svg#思源黑体-普通') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: 'Noto Sans Hans CDN Thin';
+  src: url('//at.alicdn.com/t/webfont_cw02gvumwmr.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_cw02gvumwmr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_cw02gvumwmr.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_cw02gvumwmr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_cw02gvumwmr.svg#思源黑体-细') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: 'Noto Sans Hans CDN DemiLight';
+  src: url('//at.alicdn.com/t/webfont_47zyifyle75.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_47zyifyle75.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_47zyifyle75.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_47zyifyle75.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_47zyifyle75.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: 'Noto Sans Hans CDN ExtraLight';
+  src: url('//at.alicdn.com/t/webfont_t8jtldrelxg.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_t8jtldrelxg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_t8jtldrelxg.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_t8jtldrelxg.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_t8jtldrelxg.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: 'Noto Sans Hans CDN Blod';
+  src: url('//at.alicdn.com/t/webfont_ud21qxcixj.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_ud21qxcixj.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_ud21qxcixj.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_ud21qxcixj.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_ud21qxcixj.svg#思源黑体-粗') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: 'Noto Sans Hans CDN Black';
+  src: url('//at.alicdn.com/t/webfont_6k2zufc1qak.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_6k2zufc1qak.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_6k2zufc1qak.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_6k2zufc1qak.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_6k2zufc1qak.svg#NotoSansHans-Black') format('svg'); /* iOS 4.1- */
+}

@@ -1,20 +1,18 @@
 import React from 'react';
-import styles from './index.css';
 
-const test = value => value + 1;
+const fonts = ['thin', 'extra-light', 'demi-light', '', 'medium', 'blod', 'black'];
+const preview = '还没来得及去沾花惹草，就被人拔光了。';
+
+function renderText(text, className) {
+  return <div className={className}>{text}</div>
+}
 
 export default function() {
   return (
-      <div className={styles.normal}>
-        <div className={styles.welcome} />
-        <ul className={styles.list}>
-          <li>
-            To get started { 1 | test }, edit <code>src/pages/index.js</code> and save to reload.
-          </li>
-          <li>
-            <a href="https://umijs.org/guide/getting-started.html">Getting Started</a>
-          </li>
-        </ul>
+      <div style={{fontSize: '26px'}}>
+        {fonts.map(font => <div key={font}>
+          {font || 'regular'}:{preview | renderText(font)}
+        </div>)}
       </div>
   );
 }
