@@ -6,7 +6,7 @@ export default {
   treeShaking: true,
   fastClick: true,
   chainWebpack,
-  extraBabelPlugins: [ "transform-react-jsx-filter" ],
+  extraBabelPlugins: ['transform-react-jsx-filter'],
   plugins: [
     [
       'umi-plugin-react',

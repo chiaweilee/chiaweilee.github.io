@@ -1,3 +1,7 @@
 {
-  "extends": ["umi", "react-jsx-filter"]
+  "extends": ["ali/react", "plugin:prettier/recommended", "react-jsx-filter"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }

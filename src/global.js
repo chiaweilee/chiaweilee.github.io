@@ -1,5 +1,5 @@
 import device from 'current-device';
 
-device.onChangeOrientation((orientation) => {
+device.onChangeOrientation(orientation => {
   //
 });

@@ -1,30 +1,27 @@
 this.version = 1.0;
-var cacheNames = {
-  static: 'static' + this.version,
-  core: 'core' + this.version,
+const cacheNames = {
+  static: `static${this.version}`,
+  core: `core${this.version}`,
 };
 
-var staticAsset = [];
+const staticAsset = [];
 
 // Install process
 this.oninstalled = function(event) {
-  caches.set(
-    cacheNames['static'],
-    new Cache(staticAsset)
-  );
+  caches.set(cacheNames.static, new Cache(staticAsset));
 
   // core cache entried should be check on each controller update
-  caches.set(cacheNames['core'], new Cache(['/']));
+  caches.set(cacheNames.core, new Cache(['/']));
 
   event
     .waitUntil(
       Promise.all(
-        caches.values().map(function(x) {
+        caches.values().map(x => {
           return x.ready();
         })
       )
     )
-    .then(function() {
+    .then(() => {
       if (event.previousVersion) {
         event.reloadAll();
       } else {
@@ -35,24 +32,24 @@ this.oninstalled = function(event) {
 };
 
 this.onactivate = function(event) {
-  var expectedCaches = Object.keys(cacheNames).map(function(key) {
+  const expectedCaches = Object.keys(cacheNames).map(key => {
     return cacheNames[key];
   });
 
   // remove caches that shouldn't be there
-  typeof caches.keys
-  .filter === 'function' && caches.keys
-    .filter(function(cacheName) {
-      return expectedCaches.indexOf(cacheName) === -1;
-    })
-    .forEach(caches.delete.bind(caches));
+  typeof caches.keys.filter === 'function' &&
+    caches.keys
+      .filter(cacheName => {
+        return expectedCaches.indexOf(cacheName) === -1;
+      })
+      .forEach(caches.delete.bind(caches));
 };
 
 // Request handling
 this.addEventListener('fetch', function(event) {
-  if (!new RegExp('://' + this.location.host + '/', 'i').test(event.request.url)) {
+  if (!new RegExp(`://${this.location.host}/`, 'i').test(event.request.url)) {
     event.respondWith(
-      caches.match(cacheNames['static'], event.request.url).catch(function() {
+      caches.match(cacheNames.static, event.request.url).catch(() => {
         return fetch(event.request);
       })
     );
@@ -61,7 +58,7 @@ this.addEventListener('fetch', function(event) {
   }
 
   event.respondWith(
-    caches.match(cacheNames['core'], event.request.url).catch(function() {
+    caches.match(cacheNames.core, event.request.url).catch(() => {
       return fetch(event.request);
     })
   );

@@ -8,11 +8,7 @@ export interface BasicLayoutProps extends React.Props<any> {
 }
 
 const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = props => {
-  return (
-    <div>
-      {props.children}
-    </div>
-  );
+  return <div>{props.children}</div>;
 };
 
 export default BasicLayout;
