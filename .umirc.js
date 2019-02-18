@@ -4,7 +4,6 @@ const pwa = require('./pwa');
 export default {
   hash: true,
   treeShaking: true,
-  fastClick: true,
   chainWebpack,
   extraBabelPlugins: ['transform-react-jsx-filter'],
   plugins: [
@@ -17,6 +16,7 @@ export default {
         dynamicImport: { webpackChunkName: true },
         title: 'dear.red',
         dll: true,
+        fastClick: true,
         routes: {
           exclude: [
             /models\//,
