@@ -21,4 +21,15 @@ module.exports = function(app) {
       response.end('no such location');
     });
   });
+
+  app.get('/api/timestamp', function(request, response) {
+    response.writeHead(200, { 'content-type': 'application/json' });
+    response.write(
+      JSON.stringify({
+        t: new Date().valueOf(),
+      }),
+      'utf8'
+    );
+    response.end();
+  });
 };
