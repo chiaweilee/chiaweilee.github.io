@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import { connect } from 'dva';
+import withRouter from 'umi/withRouter';
 
 export type BasicLayoutComponent<P> = React.SFC<P>;
 
@@ -7,8 +9,20 @@ export interface BasicLayoutProps extends React.Props<any> {
   location?: Location;
 }
 
-const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = props => {
-  return <div>{props.children}</div>;
-};
+class BasicLayout extends PureComponent {
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch({ type: 'syncTimeDiff/fetch' });
+  }
 
-export default BasicLayout;
+  render() {
+    const { children, syncTimeDiff } = this.props;
+    return <div>{children}{JSON.stringify(syncTimeDiff)}</div>;
+  }
+}
+
+export default withRouter(
+  connect(({ syncTimeDiff }) => ({
+    syncTimeDiff,
+  }))(BasicLayout)
+);
