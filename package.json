@@ -7,7 +7,7 @@
     "build": "umi build",
     "test": "umi test",
     "lint": "npm run lint:es && npm run lint:ts",
-    "lint:es": "eslint --ext .js src mock tests",
+    "lint:es": "eslint --ext .js .",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "dist": "rundist --extend scripts/dist-extend.js",
     "server": "rundist --port 443 --https --sslkey cert/1604818_dear.red.key --sslcert cert/1604818_dear.red.pem --extend scripts/dist-extend.js",
@@ -18,6 +18,7 @@
     "antd": "^3.13.5",
     "current-device": "^0.8.0",
     "dva": "^2.5.0-beta.2",
+    "graphql": "^14.1.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2"
   },

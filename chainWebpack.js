@@ -1,4 +1,4 @@
-module.exports = function(config, { webpack }) {
+module.exports = function(config /* , { webpack } */) {
   config.merge({
     plugin: {
       'banner-js': {
