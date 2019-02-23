@@ -1,4 +1,4 @@
-const GET_TIME_STAMP = 'api/timestamp';
+import fetchql from '../utils/fetchql';
 
 export default {
   namespace: 'syncTimeDiff',
@@ -17,7 +17,7 @@ export default {
   },
   effects: {
     *fetch(action, { put }) {
-      const { t } = yield (yield fetch(GET_TIME_STAMP)).json();
+      const { t } = yield fetchql('q', '{t}');
       yield put({ type: 'set', t: new Date() - t });
     },
   },

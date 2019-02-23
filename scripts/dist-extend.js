@@ -1,5 +1,7 @@
 const cmd = require('node-cmd');
 const createHandler = require('github-webhook-handler');
+const gql = require('./gql-response');
+const type = require('./type.graphql');
 
 const handler = createHandler({ path: '/', secret: '7d38cdd689735b008b3c702edd92eea23791c5f6' });
 
@@ -22,14 +24,5 @@ module.exports = function(app) {
     });
   });
 
-  app.get('/api/timestamp', function(request, response) {
-    response.writeHead(200, { 'content-type': 'application/json' });
-    response.write(
-      JSON.stringify({
-        t: new Date().valueOf(),
-      }),
-      'utf8'
-    );
-    response.end();
-  });
+  app.get('/q', gql(type));
 };
