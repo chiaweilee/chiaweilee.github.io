@@ -1,5 +1,5 @@
-const gql = require('../scripts/gql-response')
-const type = require('../scripts/type.graphql');
+const gql = require('../server/gql-response')
+const type = require('../server/type.graphql');
 
 export default {
   'GET /q': gql(type),
