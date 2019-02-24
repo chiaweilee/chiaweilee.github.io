@@ -9,6 +9,6 @@ describe('Page: index', () => {
     expect(wrapper.root.children.length).toBe(1);
     const outerLayer = wrapper.root.children[0] as ReactTestInstance;
     expect(outerLayer.type).toBe('div');
-    expect(outerLayer.children.length).toBe(2);
+    expect(outerLayer.children.length).toBe(1);
   });
 });

@@ -1,13 +1,14 @@
 import fetchql from '../utils/fetchql';
 
 export default {
-  namespace: 'syncTimeDiff',
+  namespace: 'store',
   state: {},
   subscriptions: {
+    init({ dispatch }) {
+      dispatch({ type: 'fetch' });
+    },
     interval({ dispatch }) {
-      setInterval(() => {
-        dispatch({ type: 'fetch' });
-      }, 2000);
+      setInterval(dispatch.bind(null, { type: 'fetch' }), 1000);
     },
   },
   reducers: {
