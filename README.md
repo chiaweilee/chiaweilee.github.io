@@ -1,4 +1,4 @@
-## Dear red:
+## Dear red
 
 If you're reading this, you've gotten out.
 And if you've come this far, maybe you're willing to come a little further.
