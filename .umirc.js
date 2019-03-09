@@ -6,6 +6,12 @@ export default {
   treeShaking: true,
   ignoreMomentLocale: true,
   chainWebpack,
+  copy: [
+    {
+      from: 'src/assets',
+      to: 'static'
+    }
+  ],
   extraBabelPlugins: ['transform-react-jsx-filter'],
   plugins: [
     // TODO https://github.com/umijs/umi/issues/1330
