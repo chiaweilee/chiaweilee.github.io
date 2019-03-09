@@ -48,7 +48,7 @@
     "node-cmd": "^3.0.0",
     "prettier": "^1.16.4",
     "react-test-renderer": "^16.8.2",
-    "rundist": "^0.2.3",
+    "rundist": "^0.2.5",
     "stylelint": "^9.10.1",
     "stylelint-config-ali": "^0.1.1",
     "tslint": "^5.12.1",
