@@ -57,7 +57,8 @@
     "umi": "^2.5.4",
     "umi-plugin-react": "^1.5.2",
     "umi-plugin-ssr": "^0.1.4",
-    "webpack-bundle-analyzer": "^3.1.0"
+    "webpack-bundle-analyzer": "^3.1.0",
+    "why-did-you-update": "^1.0.6"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
