@@ -1,4 +1,4 @@
-import fetchql from '../utils/fetchql';
+import fetchql from '@/utils/fetchql';
 
 export default {
   namespace: 'store',

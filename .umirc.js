@@ -6,6 +6,9 @@ export default {
   treeShaking: true,
   ignoreMomentLocale: true,
   chainWebpack,
+  alias: {
+    '@': 'src'
+  },
   copy: [
     {
       from: 'src/assets',
