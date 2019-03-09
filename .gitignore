@@ -28,4 +28,3 @@ cert/*.key
 cert/*.pem
 
 .umi
-dist
