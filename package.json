@@ -55,7 +55,8 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
     "umi": "^2.5.4",
-    "umi-plugin-react": "^1.5.2"
+    "umi-plugin-react": "^1.5.2",
+    "umi-plugin-ssr": "^0.1.4"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",

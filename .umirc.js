@@ -8,6 +8,10 @@ export default {
   chainWebpack,
   extraBabelPlugins: ['transform-react-jsx-filter'],
   plugins: [
+    // TODO https://github.com/umijs/umi/issues/1330
+    // [
+    //   'umi-plugin-ssr'
+    // ],
     [
       'umi-plugin-react',
       {
