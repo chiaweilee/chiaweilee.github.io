@@ -11,7 +11,7 @@
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "dist": "cross-env NODE_ENV=server rundist --extend server/server-extend.js",
     "server": "cross-env NODE_ENV=server rundist --port 443 --https --sslkey cert/1604818_dear.red.key --sslcert cert/1604818_dear.red.pem --extend server/server-extend.js",
-    "server:install": "npm install compression express github-webhook-handler node-cmd rundist graphql css-modules-require-hook asset-require-hook cross-env",
+    "server:install": "npm install compression express github-webhook-handler node-cmd rundist graphql css-modules-require-hook asset-require-hook cross-env @babel/polyfill @babel/register @babel/core",
     "commit": "npx git-cz"
   },
   "dependencies": {
