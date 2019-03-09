@@ -24,7 +24,7 @@ const PlaceHolder = props => <div style={style}>hello, {JSON.stringify(props.sto
 
 class Index extends PureComponent<Props> {
   render() {
-    const { children, store } = this.props;
+    const { store } = this.props;
     return (
       <Flex>
         <Flex.Item>
