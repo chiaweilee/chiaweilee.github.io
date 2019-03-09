@@ -56,7 +56,8 @@
     "tslint-react": "^3.6.0",
     "umi": "^2.5.4",
     "umi-plugin-react": "^1.5.2",
-    "umi-plugin-ssr": "^0.1.4"
+    "umi-plugin-ssr": "^0.1.4",
+    "webpack-bundle-analyzer": "^3.1.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
