@@ -1,4 +1,5 @@
 const chainWebpack = require('./chainWebpack');
+const { resolve } = require('./webpack.config');
 const pwa = require('./pwa');
 
 export default {
@@ -6,9 +7,7 @@ export default {
   treeShaking: true,
   ignoreMomentLocale: true,
   chainWebpack,
-  alias: {
-    '@': 'src'
-  },
+  alias: resolve.alias,
   copy: [
     {
       from: 'src/assets',
