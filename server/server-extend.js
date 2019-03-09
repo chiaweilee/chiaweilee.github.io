@@ -17,10 +17,9 @@ require('asset-require-hook')({
   limit: 8000,
 });
 
+const isSever = require('./is-server');
 const cmd = require('node-cmd');
 const createHandler = require('github-webhook-handler');
-const gql = require('./gql-response');
-const type = require('./type.graphql');
 const { secret } = require('../cert/git');
 
 const handler = createHandler({ path: '/', secret });
@@ -36,6 +35,10 @@ handler.on('push', function() {
 });
 
 module.exports = function(app) {
+  if (!isSever) {
+    //
+  }
+
   app.post('/', function(request, response) {
     // eslint-disable-next-line
     handler(request, response, function(err) {
@@ -44,5 +47,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get('/q', gql(type));
+  app.get('/q', require('./gql-response')(require('./type.graphql')));
+
+  app.get('*', require('./ssr'));
 };
