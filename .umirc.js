@@ -4,6 +4,7 @@ const pwa = require('./pwa');
 
 export default {
   hash: true,
+  history: 'hash',
   treeShaking: true,
   ignoreMomentLocale: true,
   chainWebpack,
