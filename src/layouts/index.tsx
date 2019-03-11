@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavBar, Icon } from 'antd-mobile';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import Starter from './starter';
 
 export type BasicLayoutComponent<Props> = React.SFC<Props>;
 
@@ -20,21 +21,23 @@ const NavBarRightContent: Array = [
 
 const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = ({ children, history, location }) => {
   return (
-    <TransitionGroup>
-      <CSSTransition key={location.pathname} classNames="transition" timeout={300}>
-        <div className={'app'}>
-          <NavBar
-            mode="light"
-            icon={<Icon type="left" />}
-            onLeftClick={history.goBack}
-            rightContent={NavBarRightContent}
-          >
-            {JSON.stringify(location.pathname)}
-          </NavBar>
-          {children}
-        </div>
-      </CSSTransition>
-    </TransitionGroup>
+    <Starter>
+      <TransitionGroup>
+        <CSSTransition key={location.pathname} classNames="transition" timeout={300}>
+          <div className={'app'}>
+            <NavBar
+              mode="light"
+              icon={<Icon type="left" />}
+              onLeftClick={history.goBack}
+              rightContent={NavBarRightContent}
+            >
+              {JSON.stringify(location.pathname)}
+            </NavBar>
+            {children}
+          </div>
+        </CSSTransition>
+      </TransitionGroup>
+    </Starter>
   );
 };
 
