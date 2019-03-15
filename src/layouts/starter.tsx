@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BasicLayoutComponent, BasicLayoutProps } from './index';
 import { Button, List } from 'antd-mobile';
+import IconfontSymbol from 'iconfont-symbol';
 
 const STARTED_SESSION = 'started-session';
 
@@ -30,6 +31,9 @@ const Starter: BasicLayoutComponent<BasicLayoutProps> = ({ children }) => {
   return !started ? (
     <List style={{ margin: '5px 0', backgroundColor: 'white' }}>
       <List.Item extra={extra} multipleLine={true}>
+        <div>
+          <IconfontSymbol name={'iconReact'} />
+        </div>
         {window.screen.width}x{window.screen.height} {window.devicePixelRatio}
         <List.Item.Brief>{navigator.userAgent}</List.Item.Brief>
       </List.Item>
