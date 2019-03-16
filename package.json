@@ -18,7 +18,7 @@
     "antd": "^3.13.5",
     "current-device": "^0.8.0",
     "dva": "^2.5.0-beta.2",
-    "iconfont-symbol": "^0.1.1",
+    "iconfont-symbol": "^0.1.2",
     "notifyjs": "^3.0.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
