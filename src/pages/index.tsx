@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import { Dispatch, Store } from 'redux';
 import { withRouter } from 'react-router-dom';
 import { Flex } from 'antd-mobile';
+import { forceUpdate, setCookie, DELETE } from 'saga-cookie';
 
 interface Props extends React.Props<any> {
   store?: Store;
@@ -23,12 +24,26 @@ const style: Object = {
 const PlaceHolder = props => <div style={style}>hello, {JSON.stringify(props.store)}!</div>;
 
 class Index extends PureComponent<Props> {
+  componentDidMount() {
+    setInterval(() => {
+      this.props.dispatch(setCookie({
+        a: Math.random(),
+      }));
+      setTimeout(() => {
+        this.props.dispatch(setCookie({
+          a: DELETE,
+        }));
+      }, 1000);
+    }, 3000);
+  }
+
   render() {
-    const { store } = this.props;
+    const { dispatch, store, cookie } = this.props;
     return (
       <Flex>
         <Flex.Item>
           <PlaceHolder store={store} />
+          <div>{JSON.stringify(cookie)}</div>
         </Flex.Item>
       </Flex>
     );
@@ -36,7 +51,8 @@ class Index extends PureComponent<Props> {
 }
 
 export default withRouter(
-  connect(({ store }) => ({
+  connect(({ store, cookie }) => ({
     store,
+    cookie,
   }))(Index)
 );
