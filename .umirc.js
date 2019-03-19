@@ -20,7 +20,7 @@ export default {
     [
       'umi-plugin-react',
       {
-        chunks: ['umi', 'vendors'], // #1086
+        chunks: ['vendors', 'umi'], // #1086
         pwa,
         antd: true,
         dva: true,
