@@ -17,13 +17,10 @@ export default {
   ],
   extraBabelPlugins: ['transform-react-jsx-filter'],
   plugins: [
-    // TODO https://github.com/umijs/umi/issues/1330
-    // [
-    //   'umi-plugin-ssr'
-    // ],
     [
       'umi-plugin-react',
       {
+        chunks: ['umi', 'vendors'], // #1086
         pwa,
         antd: true,
         dva: true,
