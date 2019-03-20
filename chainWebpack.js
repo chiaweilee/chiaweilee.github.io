@@ -1,8 +1,10 @@
-const analyzer = !require('./scripts/is-build')
+const extend = !require('./scripts/is-build')
   ? {}
   : {
-      plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
-      args: [],
+      analyzer: {
+        plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
+        args: [],
+      },
     };
 
 module.exports = function(config /* , { webpack } */) {
@@ -28,7 +30,7 @@ module.exports = function(config /* , { webpack } */) {
       },
     },
     plugin: {
-      analyzer: { ...analyzer },
+      ...extend,
       'banner-js': {
         plugin: require('banner-js-webpack-plugin'),
         args: [require('./src/banner')],
