@@ -26,13 +26,17 @@ const PlaceHolder = props => <div style={style}>hello, {JSON.stringify(props.sto
 class Index extends PureComponent<Props> {
   componentDidMount() {
     setInterval(() => {
-      this.props.dispatch(setCookie({
-        a: Math.random(),
-      }));
+      this.props.dispatch(
+        setCookie({
+          a: Math.random(),
+        })
+      );
       setTimeout(() => {
-        this.props.dispatch(setCookie({
-          a: DELETE,
-        }));
+        this.props.dispatch(
+          setCookie({
+            a: DELETE,
+          })
+        );
       }, 1000);
     }, 3000);
   }

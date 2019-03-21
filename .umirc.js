@@ -12,8 +12,8 @@ export default {
   copy: [
     {
       from: 'src/assets',
-      to: 'static'
-    }
+      to: 'static',
+    },
   ],
   extraBabelPlugins: ['transform-react-jsx-filter'],
   plugins: [

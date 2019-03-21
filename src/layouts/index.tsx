@@ -14,11 +14,9 @@ export interface BasicLayoutProps extends React.Props<any> {
 }
 
 const NavBarRightContent: Array = [
-  (
-    <Link key={'test'} to={'/test'}>
-      <Icon key="1" type="ellipsis" />
-    </Link>
-  ),
+  <Link key={'test'} to={'/test'}>
+    <Icon key="1" type="ellipsis" />
+  </Link>,
 ];
 
 const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = ({ children, history, location }) => {
