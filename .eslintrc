@@ -1,5 +1,5 @@
 {
-  "extends": ["ali/react", "plugin:prettier/recommended", "react-jsx-filter"],
+  "extends": ["ali/react", "react-jsx-filter", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error"
