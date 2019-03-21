@@ -22,7 +22,9 @@
     "notifyjs": "^3.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-transition-group": "^2.6.1"
+    "react-transition-group": "^2.6.1",
+    "saga-cookie": "^0.1.0",
+    "why-did-you-update": "^1.0.6"
   },
   "devDependencies": {
     "@types/jest": "^23.3.12",
@@ -52,9 +54,9 @@
     "prettier": "^1.16.4",
     "react-test-renderer": "^16.8.4",
     "rundist": "^0.2.5",
-    "saga-cookie": "^0.1.0",
     "stylelint": "^9.10.1",
     "stylelint-config-ali": "^0.1.1",
+    "stylelint-config-prettier": "^5.0.0",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
@@ -62,8 +64,7 @@
     "umi": "^2.5.4",
     "umi-plugin-react": "^1.5.2",
     "umi-plugin-ssr": "^0.1.4",
-    "webpack-bundle-analyzer": "^3.1.0",
-    "why-did-you-update": "^1.0.6"
+    "webpack-bundle-analyzer": "^3.1.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -76,6 +77,10 @@
     ],
     "*.ts": [
       "npm run lint:ts",
+      "git add"
+    ],
+    "*.{js,jsx,json,ts,tsx,css,md}": [
+      "prettier --write",
       "git add"
     ]
   }
