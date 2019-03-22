@@ -23,7 +23,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-transition-group": "^2.6.1",
-    "saga-cookie": "^0.1.0",
+    "saga-cookie": "^0.2.0",
     "why-did-you-update": "^1.0.6"
   },
   "devDependencies": {

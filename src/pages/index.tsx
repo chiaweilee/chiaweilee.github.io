@@ -3,7 +3,7 @@ import { connect } from 'dva';
 import { Dispatch, Store } from 'redux';
 import { withRouter } from 'react-router-dom';
 import { Flex } from 'antd-mobile';
-import { forceUpdate, setCookie, DELETE } from 'saga-cookie';
+import { forceUpdate, setCookie } from 'saga-cookie';
 
 interface Props extends React.Props<any> {
   store?: Store;
@@ -34,7 +34,7 @@ class Index extends PureComponent<Props> {
       setTimeout(() => {
         this.props.dispatch(
           setCookie({
-            a: DELETE,
+            a: null,
           })
         );
       }, 1000);
