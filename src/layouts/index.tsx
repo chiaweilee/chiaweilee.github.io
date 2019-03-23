@@ -5,7 +5,6 @@ import en_GB from 'antd/lib/locale-provider/en_GB';
 import { NavBar, Icon } from 'antd-mobile';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Starter from './starter';
-import style from './index.less';
 
 export type BasicLayoutComponent<Props> = React.SFC<Props>;
 
@@ -26,7 +25,7 @@ const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = ({ children, history
       <Starter>
         <TransitionGroup>
           <CSSTransition key={location.pathname} classNames="transition" timeout={300}>
-            <div className={style.app}>
+            <div className={'app'}>
               <NavBar
                 mode="light"
                 icon={<Icon type="left" />}
