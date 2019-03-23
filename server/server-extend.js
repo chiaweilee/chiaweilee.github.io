@@ -1,7 +1,7 @@
 const isSever = require('./is-server');
 const cmd = require('node-cmd');
 const createHandler = require('github-webhook-handler');
-const { secret } = require('../cert/git');
+const secret = require('../cert/git-secret');
 
 const handler = createHandler({ path: '/', secret });
 
