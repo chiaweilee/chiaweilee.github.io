@@ -14,7 +14,7 @@ handler.on('push', function(event) {
     const { ref, commits } = event.payload;
 
     if (ref === 'refs/heads/master') {
-      if (commits.message === 'build: release') {
+      if (!commits.every(commit => commit.message !== 'build: release')) {
         process.stdout.write('git build-release event detected.\n');
         cmd.run('git clean -f');
         cmd.run('git pull');
