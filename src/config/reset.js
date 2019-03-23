@@ -1,10 +1,10 @@
-window.addEventListener('contextmenu', e => {
+window.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 });
 
 document.body.addEventListener(
   'touchmove',
-  e => {
+  function(e) {
     e.preventDefault();
   },
   { passive: false }
