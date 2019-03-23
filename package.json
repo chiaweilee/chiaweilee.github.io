@@ -12,7 +12,7 @@
     "lint:sty": "stylelint \"**/*.less\" --fix",
     "dist": "cross-env NODE_ENV=server rundist --extend server/server-extend.js",
     "server": "cross-env NODE_ENV=server rundist --port 443 --https --sslkey cert/1604818_dear.red.key --sslcert cert/1604818_dear.red.pem --extend server/server-extend.js",
-    "server:install": "npm install compression express github-webhook-handler node-cmd rundist graphql css-modules-require-hook asset-require-hook cross-env @babel/polyfill @babel/register @babel/core",
+    "server:install": "npm install compression express github-webhook-handler node-cmd rundist graphql cross-env",
     "commit": "npx git-cz"
   },
   "dependencies": {
@@ -23,7 +23,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-transition-group": "^2.6.1",
-    "saga-cookie": "^0.2.0",
+    "saga-cookie": "^0.2.1",
     "why-did-you-update": "^1.0.6"
   },
   "devDependencies": {
@@ -32,7 +32,6 @@
     "@types/react-dom": "^16.8.2",
     "@types/react-test-renderer": "^16.8.1",
     "@types/react-transition-group": "^2.0.16",
-    "asset-require-hook": "^1.2.0",
     "babel-eslint": "^9.0.0",
     "babel-plugin-transform-react-jsx-filter": "^6.0.1",
     "banner-js-webpack-plugin": "^0.0.0-beta.0",
