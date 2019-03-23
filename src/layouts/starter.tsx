@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BasicLayoutComponent, BasicLayoutProps } from './index';
 import { Button, List } from 'antd-mobile';
 import IconfontSymbol from 'iconfont-symbol';
+import style from './starter.less';
 
 const STARTED_SESSION = 'started-session';
 
@@ -29,7 +30,7 @@ const Starter: BasicLayoutComponent<BasicLayoutProps> = ({ children }) => {
   );
 
   return !started ? (
-    <List style={{ margin: '5px 0', backgroundColor: 'white' }}>
+    <List style={style.list}>
       <List.Item extra={extra} multipleLine={true}>
         <div>
           <IconfontSymbol name={'iconReact'} />
