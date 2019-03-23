@@ -1,3 +1,3 @@
 import { config } from 'iconfont-symbol';
 
-config('1089854_phq99uk0x5');
+config('1089854_twzp03gxxgq');
