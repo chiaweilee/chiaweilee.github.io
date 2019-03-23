@@ -10,13 +10,13 @@ const Starter: BasicLayoutComponent<BasicLayoutProps> = ({ children }) => {
   const [count, setCount] = useState(9);
   const [started, _setStarted] = useState(sessionStorage.getItem(STARTED_SESSION) !== null);
 
-  setTimeout(() => {
-    if (count === 1) {
-      setStarted();
-      return;
-    }
-    setCount(count - 1);
-  }, 1000);
+  // setTimeout(() => {
+  //   if (count === 1) {
+  //     setStarted();
+  //     return;
+  //   }
+  //   setCount(count - 1);
+  // }, 1000);
 
   const setStarted = () => {
     _setStarted(true);
@@ -31,6 +31,16 @@ const Starter: BasicLayoutComponent<BasicLayoutProps> = ({ children }) => {
 
   return !started ? (
     <div className={style.starter}>
+      <video style={{ height: '100%' }}
+        poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg"
+        playsinline={true}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+      >
+        <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm" />
+        <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4" />
+      </video>
       <List>
         <List.Item extra={extra} multipleLine={true}>
           <div>

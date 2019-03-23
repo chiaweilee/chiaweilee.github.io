@@ -4,7 +4,7 @@ import { LocaleProvider } from 'antd';
 import en_GB from 'antd/lib/locale-provider/en_GB';
 import { NavBar, Icon } from 'antd-mobile';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Starter from './starter';
+import Starter from './Starter';
 
 export type BasicLayoutComponent<Props> = React.SFC<Props>;
 
