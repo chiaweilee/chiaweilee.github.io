@@ -1,18 +1,14 @@
 self.__precacheManifest = [
   {
-    "revision": "edf25a309d8cafc89730",
-    "url": "/umi.8c5520c2.js"
+    "revision": "b579769ba896c7ef47f9",
+    "url": "/umi.fe767cdc.js"
   },
   {
-    "revision": "e8d4db0b04f8b0aaf366",
-    "url": "/vendors.a0f5595e.chunk.css"
+    "revision": "9e65f3fcabd86b242620",
+    "url": "/vendors.831ced24.chunk.css"
   },
   {
-    "revision": "e8d4db0b04f8b0aaf366",
-    "url": "/vendors.a99f9794.async.js"
-  },
-  {
-    "revision": "ed57ca58ba0186ba9a844b07180a8731",
+    "revision": "9ee5c78d3c41f9be67af163dcaa792b4",
     "url": "/index.html"
   },
   {
@@ -24,7 +20,11 @@ self.__precacheManifest = [
     "url": "/static/.gitkeep"
   },
   {
-    "revision": "edf25a309d8cafc89730",
+    "revision": "9e65f3fcabd86b242620",
+    "url": "/vendors.548cfd84.async.js"
+  },
+  {
+    "revision": "b579769ba896c7ef47f9",
     "url": "/umi.c3cac6f4.css"
   },
   {
