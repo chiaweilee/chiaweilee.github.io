@@ -4,22 +4,21 @@ import { LocaleProvider } from 'antd';
 import en_GB from 'antd/lib/locale-provider/en_GB';
 import { NavBar, Icon } from 'antd-mobile';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Starter from './Starter';
-
-export type BasicLayoutComponent<Props> = React.SFC<Props>;
+import Starter from '@/layouts/Starter';
 
 export interface BasicLayoutProps extends React.Props<any> {
   history?: History;
   location?: Location;
+  children?: any;
 }
 
-const NavBarRightContent: Array = [
+const NavBarRightContent: Array<any> = [
   <Link key={'test'} to={'/test'}>
     <Icon key="1" type="ellipsis" />
   </Link>,
 ];
 
-const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = ({ children, history, location }) => {
+const BasicLayout: React.SFC<BasicLayoutProps> = ({ children, history, location }) => {
   return (
     <LocaleProvider locale={en_GB}>
       <Starter>
@@ -29,7 +28,7 @@ const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = ({ children, history
               <NavBar
                 mode="light"
                 icon={<Icon type="left" />}
-                onLeftClick={history.goBack}
+                onLeftClick={history.back}
                 rightContent={NavBarRightContent}
               >
                 {JSON.stringify(location.pathname)}

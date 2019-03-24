@@ -1,22 +1,28 @@
 import React, { useState } from 'react';
-import { BasicLayoutComponent, BasicLayoutProps } from './index';
 import { Button, List } from 'antd-mobile';
 import IconfontSymbol from 'iconfont-symbol';
-import style from './starter.less';
+// @ts-ignore
+import style from './Starter.less';
+
+export interface StarterProps extends React.Props<any> {
+  history?: History;
+  location?: Location;
+  children?: any;
+}
 
 const STARTED_SESSION = 'started-session';
 
-const Starter: BasicLayoutComponent<BasicLayoutProps> = ({ children }) => {
+const Starter: React.SFC<StarterProps> = ({ children }) => {
   const [count, setCount] = useState(9);
   const [started, _setStarted] = useState(sessionStorage.getItem(STARTED_SESSION) !== null);
 
-  // setTimeout(() => {
-  //   if (count === 1) {
-  //     setStarted();
-  //     return;
-  //   }
-  //   setCount(count - 1);
-  // }, 1000);
+  setTimeout(() => {
+    if (count === 1) {
+      setStarted();
+      return;
+    }
+    setCount(count - 1);
+  }, 1000);
 
   const setStarted = () => {
     _setStarted(true);
@@ -31,7 +37,8 @@ const Starter: BasicLayoutComponent<BasicLayoutProps> = ({ children }) => {
 
   return !started ? (
     <div className={style.starter}>
-      <video style={{ height: '100%' }}
+      <video
+        style={{ height: '100%' }}
         poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg"
         playsinline={true}
         autoPlay={true}
