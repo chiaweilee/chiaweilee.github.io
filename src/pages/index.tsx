@@ -1,62 +1,48 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { connect } from 'dva';
-import { Dispatch, Store } from 'redux';
 import { withRouter } from 'react-router-dom';
-import { Flex } from 'antd-mobile';
-import { forceUpdate, setCookie } from 'saga-cookie';
+import { Flex, WingBlank } from 'antd-mobile';
+import { Timeline, Spin } from 'antd';
+import { map } from 'aliba';
 
-interface Props extends React.Props<any> {
-  store?: Store;
-  dispatch?: Dispatch;
-  history?: History;
-  location?: Location;
-}
+function Index({ airasia }) {
+  return (
+    <Flex>
+      <Flex.Item>
+        <WingBlank>
+          {!airasia ? (
+            <Spin />
+          ) : (
+            map(airasia, (prices, key) => {
+              const bestPrice = map(prices, (price, date) => {
+                return [date, price];
+              }).sort((a, b) => a[1] - b[1]);
 
-const style: Object = {
-  backgroundColor: '#ebebef',
-  color: '#bbb',
-  textAlign: 'center',
-  height: '30px',
-  lineHeight: '30px',
-  width: '100%',
-};
+              bestPrice.length = 20;
 
-const PlaceHolder = props => <div style={style}>hello, {JSON.stringify(props.store)}!</div>;
+              return (
+                <Timeline key={key}>
+                  {map(bestPrice, priceDate => {
+                    const [date, price] = priceDate;
 
-class Index extends PureComponent<Props> {
-  componentDidMount() {
-    setInterval(() => {
-      this.props.dispatch(
-        setCookie({
-          a: Math.random(),
-        })
-      );
-      setTimeout(() => {
-        this.props.dispatch(
-          setCookie({
-            a: null,
-          })
-        );
-      }, 1000);
-    }, 3000);
-  }
-
-  render() {
-    const { dispatch, store, cookie } = this.props;
-    return (
-      <Flex>
-        <Flex.Item>
-          <PlaceHolder store={store} />
-          <div>{JSON.stringify(cookie)}</div>
-        </Flex.Item>
-      </Flex>
-    );
-  }
+                    return (
+                      <Timeline.Item key={date}>
+                        {date} {price}
+                      </Timeline.Item>
+                    );
+                  })}
+                </Timeline>
+              );
+            })
+          )}
+        </WingBlank>
+      </Flex.Item>
+    </Flex>
+  );
 }
 
 export default withRouter(
-  connect(({ store, cookie }) => ({
-    store,
-    cookie,
+  connect(({ airasia }) => ({
+    airasia,
   }))(Index)
 );

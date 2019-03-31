@@ -40,7 +40,7 @@ const Starter: React.SFC<StarterProps> = ({ children }) => {
       <video
         style={{ height: '100%' }}
         poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg"
-        playsinline={true}
+        playsInline={true}
         autoPlay={true}
         muted={true}
         loop={true}
