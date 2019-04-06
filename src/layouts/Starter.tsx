@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, List } from 'antd-mobile';
 import IconfontSymbol from 'iconfont-symbol';
-// @ts-ignore
 import style from './Starter.less';
 
 export interface StarterProps extends React.Props<any> {

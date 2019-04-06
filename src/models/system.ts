@@ -19,7 +19,7 @@ export default {
   effects: {
     *fetch(action, { put }) {
       const { t } = yield fetchql('q', '{t}');
-      yield put({ type: 'set', t: new Date() - t });
+      yield put({ type: 'set', t: Number(new Date()) - t });
     },
   },
 };
