@@ -4,6 +4,9 @@ config:
     static:
       prefix: '/'
       dir: 'dist'
+      gzip: true
+      usePrecompiledGzip: true,
+      maxAge: 31536000
 plugin:
   index:
     enable: true
