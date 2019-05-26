@@ -1,0 +1,10 @@
+config:
+  default:
+    keys: 'dearred'
+    static:
+      prefix: '/'
+      dir: 'dist'
+plugin:
+  index:
+    enable: true
+    package: 'egg-index'
