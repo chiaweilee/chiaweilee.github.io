@@ -12,7 +12,7 @@
     "lint:sty": "stylelint \"**/*.less\" --fix",
     "dist": "gge start",
     "server": "gge start --port=443 --https.key=./cert/1604818_dear.red.key --https.cert=./cert/1604818_dear.red.pem",
-    "server:install": "npm install gge egg-index",
+    "server:install": "npm install gge egg-index egg-alinode",
     "commit": "npx git-cz"
   },
   "dependencies": {
@@ -37,6 +37,7 @@
     "babel-plugin-transform-react-jsx-filter": "^6.0.1",
     "banner-js-webpack-plugin": "^0.0.0-beta.0",
     "css-modules-require-hook": "^4.2.3",
+    "egg-alinode": "^2.0.1",
     "eslint": "^5.12.0",
     "eslint-config-ali": "^5.0.1",
     "eslint-config-prettier": "^4.1.0",
