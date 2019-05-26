@@ -11,7 +11,7 @@
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
     "lint:sty": "stylelint \"**/*.less\" --fix",
     "dist": "gge start",
-    "server": "gge start --port=443 --https.key=./cert/1604818_dear.red.key --https.cert=./cert/1604818_dear.red.pem",
+    "server": "ENABLE_NODE_LOG=YES gge start --port=443 --https.key=./cert/1604818_dear.red.key --https.cert=./cert/1604818_dear.red.pem",
     "server:install": "npm install gge egg-index egg-alinode",
     "commit": "npx git-cz"
   },
