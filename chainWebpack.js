@@ -1,4 +1,4 @@
-const extend = !require('./scripts/is-build')
+const extend = process.argv.indexOf('build') === -1;
   ? {}
   : {
       analyzer: {
