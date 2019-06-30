@@ -1,44 +1,13 @@
+const chainWebpack = require('./chainWebpack');
 const { resolve } = require('./webpack.config');
+const pwa = require('./pwa');
 
 export default {
   hash: true,
   history: 'hash',
   treeShaking: true,
   ignoreMomentLocale: true,
-  chainWebpack: function(config /* , { webpack } */) {
-    config.plugins.delete('progress');
-
-    config.merge({
-      optimization: {
-        minimize: true,
-        splitChunks: {
-          chunks: 'all',
-          minSize: 0,
-          minChunks: 1,
-          automaticNameDelimiter: '.',
-          cacheGroups: {
-            vendor: {
-              name: 'vendors',
-              test({ resource }) {
-                return /[\\/]node_modules[\\/]/.test(resource);
-              },
-              priority: 99,
-            },
-          },
-        },
-      },
-      plugin: {
-        analyzer: process.argv.indexOf('build') ? {
-          plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
-          args: [],
-        } : {},
-        'banner-js': {
-          plugin: require('banner-js-webpack-plugin'),
-          args: [require('./src/banner')],
-        },
-      },
-    });
-  },
+  chainWebpack,
   alias: resolve.alias,
   copy: [
     {
@@ -52,17 +21,7 @@ export default {
       'umi-plugin-react',
       {
         chunks: ['vendors', 'umi'], // #1086
-        pwa: {
-          manifestOptions: {
-            srcPath: 'src/manifest.json',
-          },
-          workboxPluginMode: 'InjectManifest',
-          workboxOptions: {
-            importWorkboxFrom: 'local',
-            swSrc: 'src/sw.js',
-            swDest: 'sw.js',
-          },
-        },
+        pwa,
         antd: true,
         dva: true,
         dynamicImport: { webpackChunkName: true },
