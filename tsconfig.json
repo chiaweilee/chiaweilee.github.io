@@ -5,10 +5,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "jsx": "react",
-    "lib": ["esnext", "dom"],
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "strict": true,
     "paths": {
       "@/*": ["src/*"]
     },
