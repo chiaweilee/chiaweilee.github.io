@@ -1,11 +1,12 @@
-const extend = process.argv.indexOf('build') === -1;
-  ? {}
-  : {
-      analyzer: {
-        plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
-        args: [],
-      },
-    };
+const extend =
+  process.argv.indexOf('build') === -1
+    ? {}
+    : {
+        analyzer: {
+          plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
+          args: [],
+        },
+      };
 
 module.exports = function(config /* , { webpack } */) {
   config.plugins.delete('progress');
