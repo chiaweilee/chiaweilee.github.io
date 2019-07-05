@@ -43,6 +43,7 @@ export default {
     });
   },
   plugins: [
+    'umi-plugin-md',
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       chunks: ['vendors', 'umi'], // #1086
