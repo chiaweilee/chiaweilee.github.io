@@ -1,7 +1,9 @@
 import React from 'react';
 
-const BasicLayout: React.FC = props => {
+interface Props {
+  children: any;
+}
+
+export default (props: Props) => {
   return props.children;
 };
-
-export default BasicLayout;
