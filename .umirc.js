@@ -1,7 +1,7 @@
 // ref: https://umijs.org/config/
 export default {
   hash: true,
-  history: 'hash',
+  history: 'browser',
   treeShaking: true,
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
