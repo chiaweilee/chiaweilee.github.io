@@ -15,6 +15,3 @@ plugin:
   index:
     enable: true
     package: 'egg-index'
-  alinode:
-    enable: true
-    package: 'egg-alinode'
