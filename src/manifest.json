@@ -6,7 +6,7 @@
   "start_url": "/",
   "display": "fullscreen",
   "background_color": "#000",
-  "theme_color": "#000",
+  "theme_color": "#76bbb7",
   "orientation": "portrait",
   "permissions": {
     "desktop-notification": {}

@@ -1,4 +1,7 @@
 import React from 'react';
+import { NavBar } from 'antd-mobile';
+import IconFont from '@/components/Iconfont-Symbol';
+import Content from '@/components/Content';
 
 interface Props {
   children: any;
@@ -6,9 +9,12 @@ interface Props {
 }
 
 export default (props: Props) => {
-  if (/^docs\//.test(props.location.pathname)) {
-    return <div><h3>docs</h3>{props.children}</div>;
-  }
-
-  return props.children;
+  return (
+    <>
+      <NavBar>
+        <IconFont name={'iconInstagram'} style={{ color: '#fff', width: 'auto', height: '50%' }} />
+      </NavBar>
+      <Content>{props.children}</Content>
+    </>
+  );
 };

@@ -1,6 +1,7 @@
 // ref: https://umijs.org/config/
 export default {
   hash: true,
+  theme: './src/theme.js',
   history: 'browser',
   treeShaking: true,
   ignoreMomentLocale: true,
