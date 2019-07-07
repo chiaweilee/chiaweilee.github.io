@@ -1,29 +1,10 @@
-@import 'style/variable';
-@import 'style/reset';
-@import 'style/transition';
-@import 'style/android-font';
-@import 'style/root-loading';
+@import "~github-markdown-css/github-markdown.css";
+@import "./components/Content/style/index";
 
-.app {
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  transform: translate(0, 0);
+svg path {
+  fill: inherit;
 }
 
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
+.markdown-body {
+  padding: 8%;
 }

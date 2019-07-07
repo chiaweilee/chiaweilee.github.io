@@ -1,22 +1,20 @@
 import React from 'react';
-import { LocaleProvider } from 'antd';
-import en_GB from 'antd/lib/locale-provider/en_GB';
-import { NavBar, Icon } from 'antd-mobile';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { NavBar } from 'antd-mobile';
+import IconFont from '@/components/Iconfont-Symbol';
+import Content from '@/components/Content';
 
-export default ({ children, history, location }) => {
+interface Props {
+  children: any;
+  location: Location;
+}
+
+export default (props: Props) => {
   return (
-    <LocaleProvider locale={en_GB}>
-      <TransitionGroup>
-        <CSSTransition key={location.pathname} classNames="transition" timeout={300}>
-          <div>
-            <NavBar mode="light" icon={<Icon type="left" />}>
-              {JSON.stringify(location.pathname)}
-            </NavBar>
-            {children}
-          </div>
-        </CSSTransition>
-      </TransitionGroup>
-    </LocaleProvider>
+    <>
+      <NavBar>
+        <IconFont name={'iconInstagram'} style={{ color: '#fff', width: 'auto', height: '50%' }} />
+      </NavBar>
+      <Content>{props.children}</Content>
+    </>
   );
 };

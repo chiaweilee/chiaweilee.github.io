@@ -7,14 +7,7 @@ config:
       gzip: true
       usePrecompiledGzip: true,
       maxAge: 31536000
-    alinode:
-      enable: true
-      appid: ''
-      secret: ''
 plugin:
   index:
     enable: true
     package: 'egg-index'
-  alinode:
-    enable: true
-    package: 'egg-alinode'
