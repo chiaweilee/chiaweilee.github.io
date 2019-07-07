@@ -58,7 +58,7 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
     "umi": "^2.8.9",
-    "umi-plugin-md": "^0.0.0-beta.9",
+    "umi-plugin-md": "^0.0.0-beta.10",
     "umi-plugin-react": "^1.9.6",
     "webpack-bundle-analyzer": "^3.3.2"
   },

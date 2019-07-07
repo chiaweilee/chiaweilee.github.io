@@ -13,11 +13,11 @@ export default {
       process.env.NODE_ENV !== 'production'
         ? {}
         : {
-          analyzer: {
-            plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
-            args: [],
-          },
-        };
+            analyzer: {
+              plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
+              args: [],
+            },
+          };
 
     config.merge({
       optimization: {
@@ -44,35 +44,43 @@ export default {
     });
   },
   plugins: [
-    'umi-plugin-md',
+    [
+      'umi-plugin-md',
+      {
+        className: 'markdown-body',
+      },
+    ],
     // ref: https://umijs.org/plugin/umi-plugin-react.html
-    ['umi-plugin-react', {
-      chunks: ['vendors', 'umi'], // #1086
-      pwa: {
-        manifestOptions: {
-          srcPath: 'src/manifest.json',
+    [
+      'umi-plugin-react',
+      {
+        chunks: ['vendors', 'umi'], // #1086
+        pwa: {
+          manifestOptions: {
+            srcPath: 'src/manifest.json',
+          },
+          workboxPluginMode: 'InjectManifest',
+          workboxOptions: {
+            importWorkboxFrom: 'local',
+            swSrc: 'src/sw.js',
+            swDest: 'sw.js',
+          },
         },
-        workboxPluginMode: 'InjectManifest',
-        workboxOptions: {
-        importWorkboxFrom: 'local',
-          swSrc: 'src/sw.js',
-          swDest: 'sw.js',
+        antd: true,
+        dva: true,
+        dynamicImport: { webpackChunkName: true },
+        title: 'test',
+        dll: false,
+        routes: {
+          exclude: [
+            /models\//,
+            /services\//,
+            /model\.(t|j)sx?$/,
+            /service\.(t|j)sx?$/,
+            /components\//,
+          ],
         },
       },
-      antd: true,
-      dva: true,
-      dynamicImport: { webpackChunkName: true },
-      title: 'test',
-      dll: false,
-      routes: {
-        exclude: [
-          /models\//,
-          /services\//,
-          /model\.(t|j)sx?$/,
-          /service\.(t|j)sx?$/,
-          /components\//,
-        ],
-      },
-    }],
+    ],
   ],
 };
