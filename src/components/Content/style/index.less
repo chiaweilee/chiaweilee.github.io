@@ -10,25 +10,20 @@
   bottom: 0;
   margin: 0 auto;
   position: absolute;
+  overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
   height: 100%;
-  z-index: 99999;
+  z-index: -1;
+  box-sizing: border-box;
 }
 
 .am-navbar ~ .am-content,
 .am-navbar + .am-content {
-  margin-top: @navbar-height;
-  height: calc(100% - 45 * @hd);
+  padding-top: @navbar-height;
 }
 
 .am-tab-bar ~ .am-content,
 .am-tab-bar + .am-content {
-  margin-bottom: @tabbar-height;
-  height: calc(100% - 50 * @hd);
-}
-
-.am-tab-bar + .am-navbar + .am-content,
-.am-navbar + .am-tab-bar + .am-content {
-  height: calc(100% - @navbar-height - @tabbar-height);
+  padding-bottom: @tabbar-height;
 }
