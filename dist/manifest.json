@@ -1,1 +1,1 @@
-{"name":"Dear Red","short_name":"Dear Red","description":"","icons":[],"start_url":"/","display":"fullscreen","background_color":"#000","theme_color":"#76bbb7","orientation":"portrait","permissions":{"desktop-notification":{}}}
+{"name":"Dear Red","short_name":"Dear Red","description":"","icons":[],"start_url":"/","display":"standalone","background_color":"#000","theme_color":"#76bbb7","orientation":"portrait","permissions":{"desktop-notification":{}}}
