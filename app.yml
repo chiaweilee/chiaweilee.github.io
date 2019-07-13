@@ -7,7 +7,15 @@ config:
       gzip: true
       usePrecompiledGzip: true,
       maxAge: 31536000
+    githubWebhook:
+      path: '/'
+      secret: '...'
+      event:
+        push: './scripts/githook.js'
 plugin:
   index:
     enable: true
     package: 'egg-index'
+  githubWebhook:
+    enable: true
+    package: 'egg-github-webhook'
