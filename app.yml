@@ -1,6 +1,9 @@
 config:
   default:
     keys: 'dearred'
+    security:
+      csrf:
+        enable: false
     static:
       prefix: '/'
       dir: 'dist'
