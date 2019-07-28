@@ -1,4 +1,12 @@
-const cmd = require('node-cmd');
+const run = function(pwd) {
+  require('node-cmd').get(pwd, function(err, data) {
+    if (err) {
+      process.stderr.write(data);
+      return;
+    }
+    process.stdout.write(data);
+  });
+};
 
 module.exports = function(event) {
   if (event.payload) {
@@ -7,9 +15,9 @@ module.exports = function(event) {
     if (ref === 'refs/heads/master') {
       if (!commits.every(commit => commit.message !== 'build: release')) {
         process.stdout.write('git build-release event detected.\n');
-        cmd.run('git fetch --all');
-        cmd.run('git reset --hard origin/master');
-        cmd.run('git pull');
+        run('git fetch --all');
+        run('git reset --hard origin/master');
+        run('git pull');
       }
     }
   }
