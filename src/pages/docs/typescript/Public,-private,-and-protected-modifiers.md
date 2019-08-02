@@ -41,3 +41,15 @@ class MyComponent extends Component {
 
 ### Abstract
 `abstract` keyword is used to define abstract classes as well as abstract methods within an abstract class.
+
+```tsx
+abstract class Component {
+  protected abstract render(): void;
+}
+
+class MyComponent extends Component {
+  public render() {
+    return <div>Hello, world!</div>;
+  }
+}
+```
