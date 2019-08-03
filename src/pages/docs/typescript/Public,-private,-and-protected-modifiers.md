@@ -48,11 +48,12 @@ class MyComponent extends Component {
 
 ```tsx
 abstract class Component {
-  protected abstract render(): void;
   protected props: any;
   protected constructor(props: any) {
     this.props = props;
   }
+  
+  protected abstract render(): void;
 }
 
 class MyComponent extends Component {
