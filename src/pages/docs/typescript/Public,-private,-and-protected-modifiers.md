@@ -11,6 +11,8 @@ by default
 ### Protected
 `protected`, can also be accessed within deriving classes.
 
+[sandbox](https://codesandbox.io/s/typescript-9eywy)
+
 ```ts
 class Component {
   protected props: any;
@@ -42,14 +44,25 @@ class MyComponent extends Component {
 ### Abstract
 `abstract` keyword is used to define abstract classes as well as abstract methods within an abstract class.
 
+[sandbox](https://codesandbox.io/s/typescript-1kpzw)
+
 ```tsx
 abstract class Component {
   protected abstract render(): void;
+  protected props: any;
+  protected constructor(props: any) {
+    this.props = props;
+  }
 }
 
 class MyComponent extends Component {
+  public constructor(props: any) {
+    super(props);
+  }
+
   public render() {
-    return <div>Hello, world!</div>;
+    const { name } = this.props;
+    return 'Hello, '.concat(name, '!');
   }
 }
 ```
