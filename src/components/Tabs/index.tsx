@@ -21,9 +21,7 @@ export default class Index extends React.PureComponent<ContentProps> {
   public render() {
     return (
       <div>
-        <Tabs tabs={tabs} renderTabBar={this.renderTabBar}>
-          1111
-        </Tabs>
+        <Tabs tabs={tabs} renderTabBar={this.renderTabBar} />
         <WhiteSpace />
       </div>
     );

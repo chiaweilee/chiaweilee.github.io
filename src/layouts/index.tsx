@@ -2,6 +2,7 @@ import React from 'react';
 import { Icon, NavBar } from 'antd-mobile';
 import IconFont from '@/components/Iconfont-Symbol';
 import Content from '@/components/Content';
+import Sitemap from '@/components/Sitemap';
 import Tabs from '@/components/Tabs';
 
 interface Props {
@@ -22,6 +23,7 @@ export default class Layout extends React.PureComponent<Props>{
         </NavBar>
         <Content>
           <Tabs />
+          <Sitemap {...this.props} />
           {this.props.children}
         </Content>
       </>
