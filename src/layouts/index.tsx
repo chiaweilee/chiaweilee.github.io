@@ -11,18 +11,21 @@ interface Props {
   route: any;
 }
 
-export default class Layout extends React.PureComponent<Props>{
+export default class Layout extends React.PureComponent<Props> {
   public render() {
     return (
       <>
         <NavBar
-          icon={<Icon type="left" />}
-          rightContent={<Icon type="search" style={{ marginRight: '16px' }} />}
+        // icon={<Icon type="left" />}
+        // rightContent={<Icon type="search" style={{ marginRight: '16px' }} />}
         >
-          <IconFont name={'iconInstagram'} style={{ color: '#fff', width: 'auto', height: '50%' }} />
+          <IconFont
+            name={'iconInstagram'}
+            style={{ color: '#fff', width: 'auto', height: '50%' }}
+          />
         </NavBar>
         <Content>
-          <Tabs />
+          {/*<Tabs />*/}
           <Sitemap {...this.props} />
           {this.props.children}
         </Content>
