@@ -46,7 +46,7 @@ class MyComponent extends Component {
 
 [sandbox](https://codesandbox.io/s/typescript-1kpzw)
 
-```tsx
+```ts
 abstract class Component {
   protected props: any;
   protected constructor(props: any) {
