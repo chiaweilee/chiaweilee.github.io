@@ -18,14 +18,18 @@ const tabs = [
 ];
 
 export default class Index extends React.PureComponent<ContentProps> {
-  render() {
+  public render() {
     return (
       <div>
-        <Tabs tabs={tabs} renderTabBar={props => <Tabs.DefaultTabBar {...props} page={3} />}>
+        <Tabs tabs={tabs} renderTabBar={this.renderTabBar}>
           1111
         </Tabs>
         <WhiteSpace />
       </div>
     );
+  }
+
+  private renderTabBar(props: object) {
+    return <Tabs.DefaultTabBar {...props} page={3} />;
   }
 }

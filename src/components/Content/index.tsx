@@ -5,7 +5,7 @@ interface ContentProps {
 }
 
 export default class Index extends React.PureComponent<ContentProps> {
-  render() {
+  public render() {
     return <div className={'am-content'}>{this.props.children}</div>;
   }
 }

@@ -12,3 +12,4 @@ rules:
   no-debugger: true
   no-reference: true
   no-implicit-dependencies: false
+  member-access: false

@@ -7,21 +7,24 @@ import Tabs from '@/components/Tabs';
 interface Props {
   children: any;
   location: Location;
+  route: any;
 }
 
-export default (props: Props) => {
-  return (
-    <>
-      <NavBar
-        icon={<Icon type="left" />}
-        rightContent={<Icon type="search" style={{ marginRight: '16px' }} />}
-      >
-        <IconFont name={'iconInstagram'} style={{ color: '#fff', width: 'auto', height: '50%' }} />
-      </NavBar>
-      <Content>
-        <Tabs />
-        {props.children}
-      </Content>
-    </>
-  );
-};
+export default class Layout extends React.PureComponent<Props>{
+  public render() {
+    return (
+      <>
+        <NavBar
+          icon={<Icon type="left" />}
+          rightContent={<Icon type="search" style={{ marginRight: '16px' }} />}
+        >
+          <IconFont name={'iconInstagram'} style={{ color: '#fff', width: 'auto', height: '50%' }} />
+        </NavBar>
+        <Content>
+          <Tabs />
+          {this.props.children}
+        </Content>
+      </>
+    );
+  }
+}
