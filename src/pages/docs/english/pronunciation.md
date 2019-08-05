@@ -20,7 +20,7 @@
 - goose /ɡuːs/
 - two /tuː/
 - blue /bluː/
-- roup /gruːp/
+- group /gruːp/
 
 ## /aː/
 - father /ˈfɑːðə/
@@ -30,7 +30,7 @@
 ## /ɔː/
 
 - thought /θɔːt/
-- lay /lɔː/
+- law /lɔː/
 - north /nɔːθ/
 - war /wɔː/
 
