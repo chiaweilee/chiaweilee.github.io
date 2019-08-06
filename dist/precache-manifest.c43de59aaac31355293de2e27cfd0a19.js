@@ -12,12 +12,12 @@ self.__precacheManifest = [
     "url": "/vendors.db3b23ea.async.js"
   },
   {
-    "revision": "927849e4d9d1945da041",
+    "revision": "6279fae08615511d775c",
     "url": "/umi.b271edb7.css"
   },
   {
-    "revision": "927849e4d9d1945da041",
-    "url": "/umi.91718b98.js"
+    "revision": "6279fae08615511d775c",
+    "url": "/umi.5981b60a.js"
   },
   {
     "revision": "b19327e3e83ce06113ae14c0d0497903",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/p__docs__typescript__Public,-private,-and-protected-modifiers.md.98dee2e6.async.js"
   },
   {
-    "revision": "33275dbadacf8656eca2",
-    "url": "/p__docs__english__pronunciation.md.2802f606.async.js"
+    "revision": "05dbc792ae430f5bda99",
+    "url": "/p__docs__english__pronunciation.md.aaaae3b4.async.js"
   },
   {
     "revision": "e346ffcbbdceba6d7b2611b4e41e0dda",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/layouts__index.5b702e82.async.js"
   },
   {
-    "revision": "a57e586f635eb98a8e05068763c8c46e",
+    "revision": "2ed68f81436da35932e1e7d0131bf10b",
     "url": "/index.html"
   }
 ];
