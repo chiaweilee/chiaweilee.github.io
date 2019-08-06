@@ -43,6 +43,52 @@
 
 ## /ɪə/
 
+- ear /ɪə/
 - near /nɪə/
 - hear /hɪə/
 - weary /ˈwɪəri/
+
+## /ʊə/
+
+- tour /tʊə/
+- pure /pjʊə/
+- cure /kjʊə/
+
+## /aɪ/
+
+- eye /aɪ/
+- price /praɪs/
+- high /haɪ/
+- try /traɪ/
+
+## /ɔɪ/
+
+- choice /tʃɔɪs/
+- noise /nɔɪz/
+- boy /bɔɪ/
+
+## /əʊ/
+
+- boat /bəʊt/
+- show /ʃəʊ/
+- knwo /nəʊ/
+
+## /əʊ/ and /ɔː/
+
+- coat /kəʊt/, caught /kɔːt/
+- dough /dəʊ/, door /dɔː/
+- sew /səʊ/, saw /sɔː/
+- flow /fləʊ/, floor /flɔː/
+
+## /eə/
+
+- air /eə/
+- square /skweə/
+- fair /feə/
+- pair /peə/
+
+## /eə/ and /æ/
+
+- dared /deəd/, dad /dæd/
+- glared /gleəd/, glad /glæd/
+- Mary /ˈMeəri/, marry /ˈmæri/
