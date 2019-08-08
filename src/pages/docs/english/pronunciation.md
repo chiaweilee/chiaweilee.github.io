@@ -92,3 +92,29 @@
 - dared /deəd/, dad /dæd/
 - glared /gleəd/, glad /glæd/
 - Mary /ˈMeəri/, marry /ˈmæri/
+
+## /aʊ/
+
+- mouth /maʊθ/
+- now /naʊ/
+- fowl /faʊl/
+
+## /aʊ/ and /əʊ/
+
+- couch /kaʊtʃ/, coach /kəʊtʃ/
+- clown /klaʊn/, clone /kləʊn/
+- loud /laʊd/, load /ləʊd/
+- found /faʊnd/ , phoned /fəʊnd/
+
+## /eɪ/
+
+- face /feɪs/
+- day /deɪ/
+- break /breɪk/
+
+## /eɪ/ and /iː/
+
+- ate /eɪt/, eat /iːt/
+- faced /feɪst/, feast /fiːst/
+- great /greɪt/, greet /griːt/
+- mate /meɪt/, meet /miːt/
