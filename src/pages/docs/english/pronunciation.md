@@ -118,3 +118,34 @@
 - faced /feɪst/, feast /fiːst/
 - great /greɪt/, greet /griːt/
 - mate /meɪt/, meet /miːt/
+
+## /p/
+
+- pack /pæk/
+- pan /pæn/
+- copy /ˈkɒpi/
+- happen /ˈhæpən/
+- hop /hɒp/
+- pop /pɒp/
+
+## /p/ and /b/
+
+- pack /pæk/, back /bæk/
+- punch /pʌntʃ/, bunch /bʌntʃ/
+- pump /pʌmp/, bump /bʌmp/
+- pull /pʊl/, bull /bʊl/
+
+## /t/
+
+- tin /tɪn/
+- button /ˈbʌtn/
+- get /get/
+- tight /taɪt/
+
+## /t/ and /d/
+
+- tin /tɪn/, din /dɪn/
+- to /tuː/, do /duː/
+- town /taʊn/, down /daʊn/
+- eight /eɪt/, aid /eɪd/
+- bet /bet/, bed /bed/
