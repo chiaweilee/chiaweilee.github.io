@@ -9,16 +9,6 @@ export default {
   chainWebpack(config /* , { webpack } */) {
     config.plugins.delete('progress');
 
-    const extend =
-      process.env.NODE_ENV !== 'production'
-        ? {}
-        : {
-            analyzer: {
-              plugin: require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
-              args: [],
-            },
-          };
-
     config.merge({
       optimization: {
         minimize: true,
@@ -37,9 +27,6 @@ export default {
             },
           },
         },
-      },
-      plugin: {
-        ...extend,
       },
     });
   },
