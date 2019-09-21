@@ -13,7 +13,7 @@
     "dist": "gge start",
     "server": "ENABLE_NODE_LOG=YES gge start --port=443 --https.key=../1604818_dear.red.key --https.cert=../1604818_dear.red.pem",
     "server:dev": "gge start",
-    "server:install": "npm install gge egg-index egg-github-webhook node-cmd",
+    "server:install": "npm install gge egg-index egg-github-webhook node-cmd umi",
     "commit": "npx git-cz"
   },
   "dependencies": {
