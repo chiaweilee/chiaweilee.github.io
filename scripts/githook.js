@@ -17,7 +17,7 @@ module.exports = function(event) {
       run('git fetch --all');
       run('git reset --hard origin/master');
       run('git pull');
-      run('npm i && npm run build');
+      run('cnpm i && npm run build');
     }
   }
 };
