@@ -14,10 +14,7 @@ module.exports = function(event) {
 
     if (ref === 'refs/heads/master') {
       process.stdout.write('master changes detected.\n');
-      run('git fetch --all');
-      run('git reset --hard origin/master');
-      run('git pull');
-      run('cnpm i && npm run build');
+      run('npm run update');
     }
   }
 };
