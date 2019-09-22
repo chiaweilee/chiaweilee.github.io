@@ -15,7 +15,7 @@ if (document.all)
 
 ## Truthy
 
-```
+```js
 if (true)
 if ({})
 if ([])
