@@ -149,3 +149,10 @@
 - town /taʊn/, down /daʊn/
 - eight /eɪt/, aid /eɪd/
 - bet /bet/, bed /bed/
+
+## /tʃ/
+
+- choke /tʃəʊk/
+- teacher /ˈtiːtʃə/
+- match /mætʃ/
+- church /tʃɜːtʃ/
