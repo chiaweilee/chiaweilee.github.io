@@ -4,6 +4,8 @@ config:
     security:
       csrf:
         enable: false
+    siteFile:
+      /favicon.ico: 'https://github.com/fluidicon.png'
     static:
       prefix: '/'
       dir: 'dist'
