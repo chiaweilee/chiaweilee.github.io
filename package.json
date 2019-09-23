@@ -14,7 +14,7 @@
     "server": "ENABLE_NODE_LOG=YES gge start --port=443 --https.key=../1604818_dear.red.key --https.cert=../1604818_dear.red.pem",
     "server:dev": "gge start",
     "server:install": "cnpm install gge egg-index egg-github-webhook node-cmd umi",
-    "update": "git fetch --all && git reset --hard origin/master && git pull && cnpm i && umi build",
+    "update": "git fetch --all && git reset --hard origin/master && git pull && umi build",
     "commit": "npx git-cz"
   },
   "dependencies": {
