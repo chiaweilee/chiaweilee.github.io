@@ -1,9 +1,8 @@
 import React from 'react';
-import { Icon, NavBar } from 'antd-mobile';
-import IconFont from '@/components/Iconfont-Symbol';
-import Content from '@/components/Content';
-import Sitemap from '@/components/Sitemap';
-import Tabs from '@/components/Tabs';
+import { NavBar } from 'antd-mobile';
+import Content from '@/components/content';
+import Sitemap from '@/components/sitemap';
+import TanukiLogo from '@/components/tanuki-logo';
 
 interface Props {
   children: any;
@@ -16,14 +15,9 @@ export default class Layout extends React.PureComponent<Props> {
     return (
       <>
         <NavBar
-        // icon={<Icon type="left" />}
-        // rightContent={<Icon type="search" style={{ marginRight: '16px' }} />}
-        >
-          <IconFont
-            name={'iconInstagram'}
-            style={{ color: '#fff', width: 'auto', height: '50%' }}
-          />
-        </NavBar>
+          icon={<TanukiLogo />}
+          // rightContent={<Icon type="search" style={{ marginRight: '16px' }} />}
+        />
         <Content>
           {/*<Tabs />*/}
           <Sitemap {...this.props} />
