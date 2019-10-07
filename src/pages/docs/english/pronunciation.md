@@ -149,3 +149,31 @@
 - town /taʊn/, down /daʊn/
 - eight /eɪt/, aid /eɪd/
 - bet /bet/, bed /bed/
+
+## /tʃ/
+
+- choke /tʃəʊk/
+- teacher /ˈtiːtʃə/
+- match /mætʃ/
+- church /tʃɜːtʃ/
+
+## /tʃ/ and /dʒ/
+
+- choke /tʃəʊk/, joke /dʒəʊk/
+- chunk /tʃʌŋk/, junk /dʒʌŋk/
+- rich /rɪtʃ/, ridge /rɪdʒ/
+- lunch /lʌntʃ/, lunge /lʌndʒ/
+
+## /k/
+
+- came /keɪm/
+- lucky /ˈlʌki/
+- sick /sɪk/
+- clock /klɒk/
+
+## /k/ and /g/
+
+- came /keɪm/, game /ɡeɪm/
+- back /bæk/, bag /bæɡ/
+- cage /keɪdʒ/, gauge /ɡeɪdʒ/
+- calories /ˈkæləriz/, galleries /ˈgæləriz/
