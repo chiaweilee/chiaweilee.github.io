@@ -1,0 +1,54 @@
+:global {
+  .tanuki-color (@color, @transition, @hover-color, @hover-transition) {
+    fill: @color;
+    transition: all @transition;
+    &:hover {
+      fill: @hover-color;
+      transition: all @hover-transition;
+    }
+  }
+
+  .tanuki-logo {
+    .tanuki-left-ear,
+    .tanuki-right-ear,
+    .tanuki-nose {
+      .tanuki-color(#e24329, 0.8s, #f1a699, 0.1s);
+    }
+    .tanuki-left-eye,
+    .tanuki-right-eye {
+      .tanuki-color(#fc6d26, 0.8s, #fec2a4, 0.1s);
+    }
+    .tanuki-left-cheek,
+    .tanuki-right-cheek {
+      .tanuki-color(#fca326, 0.8s, #fec2a4, 0.1s);
+    }
+
+    &.animate {
+      .tanuki-shape {
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+      .tanuki-left-cheek {
+        animation-name: animate-tanuki-left-cheek;
+      }
+      .tanuki-left-eye {
+        animation-name: animate-tanuki-left-eye;
+      }
+      .tanuki-left-ear {
+        animation-name: animate-tanuki-left-ear;
+      }
+      .tanuki-nose {
+        animation-name: animate-tanuki-nose;
+      }
+      .tanuki-right-eye {
+        animation-name: animate-tanuki-right-eye;
+      }
+      .tanuki-right-ear {
+        animation-name: animate-tanuki-right-ear;
+      }
+      .tanuki-right-cheek {
+        animation-name: animate-tanuki-right-cheek;
+      }
+    }
+  }
+}
