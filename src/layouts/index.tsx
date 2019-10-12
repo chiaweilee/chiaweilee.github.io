@@ -3,6 +3,7 @@ import { NavBar } from 'antd-mobile';
 import Content from '@/components/content';
 import Sitemap from '@/components/sitemap';
 import TanukiLogo from '@/components/tanuki-logo';
+import bl from '@/services/bl';
 
 interface Props {
   children: any;
@@ -11,6 +12,14 @@ interface Props {
 }
 
 export default class Layout extends React.PureComponent<Props> {
+  public componentDidUpdate(
+    prevProps: Readonly<Props>,
+    prevState: Readonly<{}>,
+    snapshot?: any,
+  ): void {
+    bl.sum('test');
+  }
+
   public render() {
     return (
       <>
