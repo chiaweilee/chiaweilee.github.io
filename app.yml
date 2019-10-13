@@ -24,3 +24,6 @@ plugin:
   githubWebhook:
     enable: true
     package: 'egg-github-webhook'
+  rewriter:
+    enable: true
+    package: 'egg-rewriter'
