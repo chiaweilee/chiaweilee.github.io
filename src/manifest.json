@@ -3,10 +3,11 @@
   "short_name": "Dear Red",
   "description": "",
   "icons": [],
-  "start_url": "/",
+  "lang": "en-UK",
+  "start_url": "/#pwa",
   "display": "standalone",
-  "background_color": "#000",
-  "theme_color": "#76bbb7",
+  "background_color": "#fff",
+  "theme_color": "#fff",
   "orientation": "portrait",
   "permissions": {
     "desktop-notification": {}
