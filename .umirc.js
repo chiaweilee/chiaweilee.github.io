@@ -70,5 +70,11 @@ export default {
       },
     ],
     ['umi-plugin-pwa', {}],
+    [
+      'umi-plugin-arms',
+      {
+        pid: 'tsd43@75f93dab56f96e6',
+      },
+    ],
   ],
 };

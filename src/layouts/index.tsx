@@ -3,7 +3,6 @@ import { NavBar } from 'antd-mobile';
 import Content from '@/components/content';
 import Sitemap from '@/components/sitemap';
 import TanukiLogo from '@/components/tanuki-logo';
-import bl from '@/services/bl';
 
 interface Props {
   children: any;
