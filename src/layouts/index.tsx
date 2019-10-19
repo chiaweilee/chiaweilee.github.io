@@ -16,7 +16,7 @@ export default class Layout extends React.PureComponent<Props> {
     prevState: Readonly<{}>,
     snapshot?: any,
   ): void {
-    bl.sum('test');
+    window.__bl.sum('test');
   }
 
   public render() {
