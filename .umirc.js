@@ -11,7 +11,7 @@ export default {
 
     config.merge({
       optimization: {
-        minimize: true,
+        minimize: process.env.NODE_ENV === 'production',
         splitChunks: {
           chunks: 'all',
           minSize: 0,
