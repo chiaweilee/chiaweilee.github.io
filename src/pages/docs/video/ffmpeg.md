@@ -1,5 +1,5 @@
 ```
-ffmpeg -i test.h264 -vcodec copy -f mp4 test.mp4
+ffmpeg -i test.h264 -codec copy -f mp4 test.mp4
 ```
 
 `-i` *url (input)*  
