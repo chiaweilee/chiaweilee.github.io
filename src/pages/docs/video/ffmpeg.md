@@ -1,6 +1,12 @@
 ```
-ffmpeg -i test.h264 -codec copy -f mp4 test.mp4
+ffmpeg -i test.h264 -vcodec copy -f mp4 test.mp4
 ```
+
+```
+ffmpeg -i test.h264 -vcodec h264 -preset slower test.mp4
+```
+
+`ultrafast`, superfast`, `veryfast`,`faster`, `fast`, `medium`, `slow`, `slower`, `veryslow`, `placebo`
 
 `-i` *url (input)*  
 input file url
