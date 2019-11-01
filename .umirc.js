@@ -58,7 +58,7 @@ export default {
         antd: true,
         dva: true,
         dynamicImport: { webpackChunkName: true },
-        title: 'test',
+        title: 'app',
         dll: false,
         routes: {
           exclude: [
