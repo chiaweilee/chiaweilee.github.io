@@ -71,7 +71,7 @@
 
 - boat /bəʊt/
 - show /ʃəʊ/
-- knwo /nəʊ/
+- know /nəʊ/
 
 ## /əʊ/ and /ɔː/
 
