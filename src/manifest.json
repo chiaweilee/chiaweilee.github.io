@@ -4,11 +4,14 @@
   "description": "",
   "icons": [],
   "lang": "en-UK",
-  "start_url": "/#pwa",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
   "orientation": "portrait",
+  "serviceworker": {
+    "src": "./sw.js"
+  },
   "permissions": {
     "desktop-notification": {}
   }
