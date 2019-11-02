@@ -71,7 +71,7 @@
 
 - boat /bəʊt/
 - show /ʃəʊ/
-- knwo /nəʊ/
+- know /nəʊ/
 
 ## /əʊ/ and /ɔː/
 
@@ -177,3 +177,18 @@
 - back /bæk/, bag /bæɡ/
 - cage /keɪdʒ/, gauge /ɡeɪdʒ/
 - calories /ˈkæləriz/, galleries /ˈgæləriz/
+
+## /f/
+
+- fat /fæt/
+- coffee /ˈkɒfi/
+- rough /rʌf/
+- fluff /flʌf/
+
+## /f/ and /v/
+
+- fan /fæn/, van /væn/
+- leaf /liːf/, leave /liːv/
+- off /ɒf/, of /ɒv/
+- rifle /ˈraɪfl/, rival /ˈraɪvl/
+
