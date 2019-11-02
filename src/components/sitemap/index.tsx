@@ -16,30 +16,37 @@ interface Route {
 }
 
 export default class SiteMap extends React.PureComponent<Props> {
-  renderRoutes(routes: Route[] | void) {
-    if (!routes) {
-      return null;
-    }
+  public render() {
+    return <div>{this.renderRoutes(this.routes)}</div>;
+  }
 
+  private get routes() {
     return (
-      <ul>
-        {routes.map((route, i) => {
-          if (route.path) {
-            return (
-              <li key={route.key || i}>
-                <Link to={route.path}>{route.path}</Link>
-                {route.routes ? this.renderRoutes(route.routes) : null}
-              </li>
-            );
-          }
-
-          return null;
-        })}
-      </ul>
+      this.props.route &&
+      this.props.route.routes &&
+      this.props.route.routes
+        .filter(route => !!route.path)
+        .map((route: any) => route.path.split('/').slice(1))
+        .filter(route => !!route[0])
     );
   }
 
-  render() {
-    return <div>{this.renderRoutes(this.props.route && this.props.route.routes)}</div>;
+  private renderRoutes(routes: Route[] | void) {
+    if (!routes) {
+      return null;
+    }
+    return (
+      <ul>
+        {this.routes &&
+          this.routes.map((route: string[]) => {
+            const pathname = route.join('/');
+            return (
+              <li key={pathname}>
+                <Link to={`/${pathname}`}>{route.slice(1).join('/')}</Link>
+              </li>
+            );
+          })}
+      </ul>
+    );
   }
 }
