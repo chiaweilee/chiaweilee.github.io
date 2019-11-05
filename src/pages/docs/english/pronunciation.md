@@ -192,3 +192,12 @@
 - off /ɒf/, of /ɒv/
 - rifle /ˈraɪfl/, rival /ˈraɪvl/
 
+## /θ/
+
+- thin /θɪn/
+- throw /θrəʊ/
+- thumb /θʌm/
+- author /ˈɔːθə/
+- healthy /ˈhelθi/
+- birth /bɜːθ/
+- path /pɑːθ/
