@@ -24,7 +24,7 @@
     "egg-rewriter": "^1.0.4",
     "gge": "^0.0.0-beta.2",
     "github-markdown-css": "^3.0.1",
-    "iconfont-symbol": "^0.2.0",
+    "iconfont-symbol": "^0.2.1-beta.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-transition-group": "^2.9.0"
