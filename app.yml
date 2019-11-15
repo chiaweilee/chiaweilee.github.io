@@ -1,6 +1,6 @@
 config:
   default:
-    keys: 'dearred'
+    keys: 'lee6'
     security:
       csrf:
         enable: false
