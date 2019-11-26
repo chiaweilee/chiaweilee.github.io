@@ -8,6 +8,7 @@
 - MALING canned beef luncheon meat
 - quail egg
 - duck blood
-- chinese dumpling
+- boiled chinese dumpling
 - white mushroom
 - shrimp paste
+- sliced short loin
