@@ -2,13 +2,10 @@ The first scene should be the second best scene if the last scene is the best.
 
 ## Letter Box
 
-### 4:3 to 16:9
-Crop top and bottom at 12.5%.
+### 4:3 to 2.35:1
 
-### 4:3 to 2.4:1
+Crop top and bottom at 21.63%
 
-Crop top and bottom at 22.22%
+### 16:9 to 2.35:1
 
-### 16:9 to 2.4:1
-
-Crop top and bottom at 12.96%
+Crop top and bottom at 12.17%
