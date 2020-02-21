@@ -1,30 +1,18 @@
 import React from 'react';
-import { History } from 'history';
 import { NavBar } from 'antd-mobile';
+import Icon from '@/components/icon';
 import Content from '@/components/content';
-import Sitemap from '@/components/sitemap';
-import Iconfont from '@/components/Iconfont-Symbol';
+import Sitemap  from '@/components/sitemap';
+import utils from '@/utils/index';
 
-interface Props {
-  children: any;
-  history: History;
-  location: Location;
-  route: any;
-}
-
-export default class extends React.PureComponent<Props> {
-  public constructor(props: any) {
-    super(props);
-    this.goBack = this.goBack.bind(this);
-  }
-
+export default class extends React.PureComponent<any> {
   public render() {
     return (
       <>
         <NavBar
-          icon={<Iconfont name={'iconarrow-lift'} onClick={this.goBack} />}
-          leftContent={<Iconfont name={'iconagriculture'} />}
-          rightContent={<Iconfont name={'iconoperation'} />}
+          mode="light"
+          icon={<Icon type="iconback" />}
+          onLeftClick={utils.historyGoBack}
         />
         <Content>
           <Sitemap {...this.props} />
@@ -32,9 +20,5 @@ export default class extends React.PureComponent<Props> {
         </Content>
       </>
     );
-  }
-
-  private goBack() {
-    this.props.history.goBack();
   }
 }
