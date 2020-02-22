@@ -34,7 +34,7 @@ class L6 extends React.PureComponent<any> {
   }
 
   get card() {
-    const { id, deleted, fav } = this.props;
+    const { id } = this.props;
     return (
       <Card full={true} style={{ marginBottom: '100px' }}>
         <Card.Header
@@ -42,8 +42,7 @@ class L6 extends React.PureComponent<any> {
           extra={id && hash[id]}
         />
         <Card.Body>
-          <div><Badge text={deleted.length}>Deleted</Badge></div>
-          <div><Badge text={fav.length}>Fav</Badge></div>
+          {' '}
         </Card.Body>
       </Card>
     );
@@ -51,8 +50,9 @@ class L6 extends React.PureComponent<any> {
 
   get btn() {
     const { deleted, fav, id } = this.props;
-    const isDeleted = deleted.indexOf(id) > -1;
-    const isFav = fav.indexOf(id) > -1;
+    const i = Number(id);
+    const isDeleted = deleted.indexOf(i) > -1;
+    const isFav = fav.indexOf(i) > -1;
     return (
       <div className={style['l6-bottom']}>
         <div className={[style['l6-btn'], style.previous].join(' ')} onClick={this.go.bind(this, -1)}>
