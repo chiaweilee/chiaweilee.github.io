@@ -5,7 +5,6 @@ const namespace = 'l6';
 export default {
   namespace,
   state: {
-    read: [],
     fav: [],
     deleted: [],
   },
