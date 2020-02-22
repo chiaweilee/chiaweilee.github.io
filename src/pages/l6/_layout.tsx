@@ -1,48 +1,52 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Modal, NavBar } from 'antd-mobile';
+import {Modal, NavBar } from 'antd-mobile';
 import Icon from '@/components/icon';
-import Content from '@/components/content';
 import utils from '@/utils/index';
+import style from './_layout.less';
 
-export default connect()(class extends React.PureComponent<any> {
+class Layout extends React.PureComponent<any> {
   public render() {
     return (
-      <>
-      <NavBar
-        mode="light"
-        icon={<Icon type="iconback" />}
-        onLeftClick={utils.historyGoBack}
-        rightContent={[
-          <Icon key={1} type="iconrefresh" onClick={() => this.props.dispatch({ type: 'l6/stepNext' })} style={{ marginRight: '16px' }} />,
-          <Icon key={2} type="iconsettings" onClick={this.setting} />,
-        ]}
-      />
-      <Content>
+      <div className={style['l6-layout']}>
+        <NavBar
+          mode="light"
+          rightContent={[
+            <Icon className={style['header-icon']} key={2} type="iconmore" onClick={this.setting} />,
+          ]}
+        />
         {this.props.children}
-      </Content>
-      </>
+      </div>
     );
   }
 
   private setting = () => {
     this.askSetting('pageServer', () => {
       this.askSetting('imgServer', () => {
-        this.askSetting('stepNumber', () => {
+        this.askSetting('id', () => {
           this.props.dispatch({ type: 'l6/loadConfig' });
         });
       });
     });
   };
 
-  private askSetting = (key: string, next?: any) => Modal.prompt(
-    'Setting',
-    key,
-    (value: string) => {
-      utils.setConfig('l6', key, value);
-      utils.triggerFn(next);
-    },
-    'default',
-    utils.getConfig('l6', key) || '',
-  );
-})
+  private askSetting = (key: string, next?: any) => {
+    const { l6, dispatch } = this.props;
+    return Modal.prompt(
+      'Setting',
+      `Please set ${key}:`,
+      (value: string) => {
+        dispatch({ type: 'l6/set', layout: {
+          [key]: value,
+        }});
+        utils.triggerFn(next);
+      },
+      'default',
+      l6[key] || '',
+    )
+  };
+}
+
+export default connect((state: any) => ({
+  l6: state.l6,
+}))(Layout);

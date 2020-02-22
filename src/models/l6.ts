@@ -1,33 +1,30 @@
 import utils from '@/utils';
-import { index } from '@/pages/l6'
+
+const namespace = 'l6';
 
 export default {
-  namespace: 'l6',
-  state: {},
+  namespace,
+  state: {
+    read: [],
+    fav: [],
+    deleted: [],
+  },
   reducers: {
     update(state, { payload }) {
-      return Object.assign(state, payload);
+      const result = Object.assign(state, payload);
+      utils.setItem(namespace, result);
+      return result;
     },
   },
   effects: {
-    *loadConfig(_, { put }) {
-      yield put({ type: 'update', payload: {
-        pageServer: utils.getConfig('l6', 'pageServer'),
-        imgServer: utils.getConfig('l6', 'imgServer'),
-        stepNumber: utils.getConfig('l6', 'stepNumber'),
-      }});
-    },
-    *stepNext(_, { put }) {
-      const next = String(Number(utils.getConfig('l6', 'stepNumber')) + index.length);
-      utils.setConfig('l6', 'stepNumber', next);
-      yield put({ type: 'update', payload: {
-        stepNumber: next,
-      } });
+    *set({ payload, layout }, { put }) {
+      yield put({type: 'update', payload: Object.assign(payload || {}, layout || {})});
     },
   },
   subscriptions: {
     init({ dispatch }) {
-      dispatch({ type: 'loadConfig' });
+      const config = utils.getItem(namespace) || {};
+      dispatch({type: 'set', payload: config});
     }
   }
 }

@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavBar } from 'antd-mobile';
 import Icon from '@/components/icon';
-import Content from '@/components/content';
-import Sitemap  from '@/components/sitemap';
+import Sitemap from '@/components/sitemap';
 import utils from '@/utils/index';
 
 export default class extends React.PureComponent<any> {
@@ -14,10 +13,8 @@ export default class extends React.PureComponent<any> {
           icon={<Icon type="iconback" />}
           onLeftClick={utils.historyGoBack}
         />
-        <Content>
-          <Sitemap {...this.props} />
-          {this.props.children}
-        </Content>
+        <Sitemap {...this.props} />
+        {this.props.children}
       </>
     );
   }
