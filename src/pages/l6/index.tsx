@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Card, Carousel, Grid, Toast } from 'antd-mobile';
+import { Card, Carousel, Grid } from 'antd-mobile';
 import Icon from '@/components/icon';
 import utils from '@/utils';
 import md5 from '@/utils/md5';
@@ -164,12 +164,8 @@ class L6 extends React.PureComponent<any> {
     const { imgServer, id } = this.props;
     const idn = id + (addition || 0);
     const idStr = typeof i === 'number' ? `${i}_${idn}` : idn;
-    return <img onError={this.onError} referrerPolicy="no-referrer" src={imgServer && utils.replaceParam(imgServer, idStr)} alt="" />
+    return <img referrerPolicy="no-referrer" src={imgServer && utils.replaceParam(imgServer, idStr)} alt="" />
   }
-
-  onError = () => {
-    Toast.info('', 1, undefined, false);
-  };
 }
 
 export default connect((state: any) => ({
