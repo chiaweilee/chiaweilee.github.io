@@ -1,15 +1,16 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Badge, Card, Carousel } from 'antd-mobile';
+import { Card, Carousel, Grid, Toast } from 'antd-mobile';
 import Icon from '@/components/icon';
-// @ts-ignore
-import hash from 'uh06l6/hash.json';
 import utils from '@/utils';
+import md5 from '@/utils/md5';
 import style from './index.less';
 
-const replaceParams = (url: string, param: string) => url.replace('{$}', param);
-
 class L6 extends React.PureComponent<any> {
+  public state = {
+    backTarget: undefined,
+  };
+
   render() {
     return <div>
       {this.imgView}
@@ -26,9 +27,15 @@ class L6 extends React.PureComponent<any> {
         autoplay={false}
         infinite={true}
       >
-        {this.getImg()}
-        {this.getImg(2)}
-        {this.getImg(3)}
+        {
+          Array.from(new Array(3)).map((_, i) => {
+            return (
+              <div key={i} className={style['l6-img']}>
+                {this.getImg(i ? i + 1 : undefined)}
+              </div>
+            )
+          })
+        }
       </Carousel>
     );
   }
@@ -36,48 +43,77 @@ class L6 extends React.PureComponent<any> {
   get card() {
     const { id } = this.props;
     return (
-      <Card full={true} style={{ marginBottom: '100px' }}>
+      <Card full={true} className={style['l6-card']}>
         <Card.Header
           title={id}
-          extra={id && hash[id]}
+          extra={this.hash}
         />
         <Card.Body>
-          {' '}
+          {this.grid}
         </Card.Body>
       </Card>
     );
   }
 
+  get grid() {
+    const { id } = this.props;
+    return (
+      <Grid
+        className={style['l6-grid']}
+        data={Array.from(new Array(6))}
+        columnNum={3}
+        renderItem={(_, i) => (
+          <div key={i} onClick={this.go.bind(this, 0, id + i + 1)}>
+            {this.getImg(undefined, i + 1)}
+          </div>
+        )}
+      />
+    );
+  }
+
   get btn() {
+    const { backTarget } = this.state;
     const { deleted, fav, id } = this.props;
-    const i = Number(id);
-    const isDeleted = deleted.indexOf(i) > -1;
-    const isFav = fav.indexOf(i) > -1;
+    const isDeleted = deleted.indexOf(id) > -1;
+    const isFav = fav.indexOf(id) > -1;
     return (
       <div className={style['l6-bottom']}>
-        <div className={[style['l6-btn'], style.previous].join(' ')} onClick={this.go.bind(this, -1)}>
+        <div className={[style['l6-btn'], style.previous].join(' ')} onClick={this.go.bind(this, ...(backTarget ? [0, backTarget] : [-1, 0]))}>
           <Icon type="iconreturn" />
         </div>
         <div className={[style['l6-btn'], style.previous, isDeleted ? style.active : ''].join(' ')} onClick={this.del}>
-          <Icon type="icondelete_light" />
+          <Icon type="iconcardboardforbid" />
         </div>
         <div className={style['l6-btn']} onClick={this.open}>
-          <Icon type="iconcamera" />
+          <Icon type="iconcardboard" />
         </div>
         <div className={[style['l6-btn'], isFav ? style.active : ''].join(' ')} onClick={this.fav}>
           <Icon type={ isFav ? 'iconlikefill' : 'iconlike'} />
         </div>
-        <div className={style['l6-btn']} onClick={this.go.bind(this, 1)}>
+        <div className={style['l6-btn']} onClick={this.go.bind(this, 1, 0)}>
           <Icon type="iconrefresh" />
         </div>
       </div>
     );
   }
 
-  open = () => {
-    const { pageServer, id } = this.props;
-    if (pageServer && hash[id]) {
-      window.open(replaceParams(pageServer, hash[id]));
+  get hash() {
+    const { id } = this.props;
+    if (id) {
+      return md5(id);
+    }
+    return '';
+  }
+
+  open = (nhd?: boolean) => {
+    const { pageServer } = this.props;
+    if (pageServer) {
+      const url = utils.replaceParam(pageServer, this.hash);
+      if (nhd === true) {
+        window.open(url.replace('_hd', ''));
+        return;
+      }
+      window.open(url);
     }
   };
 
@@ -102,35 +138,44 @@ class L6 extends React.PureComponent<any> {
         }});
         return;
       }
-      dispatch({ type: 'l6/set', layout: {
-        [key]: t.concat(i).filter((item: any, index: number, arr: any[]) => arr.indexOf(item, 0) === index),
-      }});
+      dispatch({
+        type: 'l6/set',
+        layout: {
+          [key]: t.concat(i).filter((item: any, index: number, arr: any[]) => arr.indexOf(item, 0) === index),
+        }
+      });
     }
   };
 
-  go(addition: number) {
+  go(addition: number, target?: number) {
     const { dispatch, id } = this.props;
-    const i = Number(id);
-    if (i) {
+    const t = target || id;
+    if (t) {
+      this.setState({
+        backTarget: id,
+      });
       dispatch({ type: 'l6/set', layout: {
-        id: i + addition,
+        id: t + addition,
       }});
     }
   }
 
-  getImg(i?: number) {
+  getImg(i?: number, addition?: number) {
     const { imgServer, id } = this.props;
-    const idStr = typeof i === 'number' ? `${i}_${id}` : id;
-    return <div className={style['l6-img']}>
-      <img referrerpolicy="no-referrer" src={imgServer && utils.replaceParam(imgServer, idStr)} alt="" />
-    </div>
+    const idn = id + (addition || 0);
+    const idStr = typeof i === 'number' ? `${i}_${idn}` : idn;
+    return <img onError={this.onError} referrerPolicy="no-referrer" src={imgServer && utils.replaceParam(imgServer, idStr)} alt="" />
   }
+
+  onError = () => {
+    Toast.info('', 1, undefined, false);
+  };
 }
 
 export default connect((state: any) => ({
   pageServer: state.l6.pageServer,
   imgServer: state.l6.imgServer,
-  id: state.l6.id,
+  id: Number(state.l6.id),
   deleted: state.l6.deleted,
   fav: state.l6.fav,
 }))(L6);

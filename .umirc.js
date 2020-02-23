@@ -6,7 +6,7 @@ export default {
   treeShaking: true,
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
-  targets: { chrome: 69, firefox: 69, safari: 10, ios: 10 },
+  targets: { chrome: 69, firefox: 69, safari: 13, ios: 13 },
   chainWebpack(config /* , { webpack } */) {
     config.plugins.delete('progress');
 
