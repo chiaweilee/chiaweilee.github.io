@@ -24,7 +24,7 @@
     "egg-github-webhook": "^0.1.0-beta.3",
     "egg-index": "^0.0.1",
     "egg-rewriter": "^1.0.4",
-    "gge": "^0.0.0-beta.2",
+    "gge": "^0.0.0-beta.3",
     "github-markdown-css": "^3.0.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
