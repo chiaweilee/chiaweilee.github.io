@@ -90,7 +90,7 @@ class L6 extends React.PureComponent<any> {
         <div className={[style['l6-btn'], isFav ? style.active : ''].join(' ')} onClick={this.fav}>
           <Icon type={ isFav ? 'iconlikefill' : 'iconlike'} />
         </div>
-        <div className={style['l6-btn']} onClick={this.go.bind(this, 1, 0)}>
+        <div className={style['l6-btn']} onClick={this.go.bind(this, 7, 0)}>
           <Icon type="iconrefresh" />
         </div>
       </div>
@@ -152,7 +152,7 @@ class L6 extends React.PureComponent<any> {
     const t = target || id;
     if (t) {
       this.setState({
-        backTarget: id,
+        backTarget: t + addition > id ? id : undefined,
       });
       dispatch({ type: 'l6/set', layout: {
         id: t + addition,
