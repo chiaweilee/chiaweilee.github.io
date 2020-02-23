@@ -196,23 +196,23 @@ self.__precacheManifest = [
     "url": "/p__l6___layout.84c58115.async.js"
   },
   {
-    "revision": "9ee3c57df2605a23bab0",
-    "url": "/p__l6__index.7358255e.chunk.css"
+    "revision": "5eb86e31c66b7bda25b9",
+    "url": "/p__l6__index.20306745.chunk.css"
   },
   {
-    "revision": "9ee3c57df2605a23bab0",
+    "revision": "5eb86e31c66b7bda25b9",
     "url": "/p__l6__index.2d0abf48.async.js"
   },
   {
-    "revision": "fabd288c0ce2da1037a2",
-    "url": "/umi.d25357b3.css"
+    "revision": "92faa8b1bc3ab7903d88",
+    "url": "/umi.fc69fce2.css"
   },
   {
-    "revision": "fabd288c0ce2da1037a2",
-    "url": "/umi.bcf37efa.js"
+    "revision": "92faa8b1bc3ab7903d88",
+    "url": "/umi.44f6108f.js"
   },
   {
-    "revision": "2cf6b46af3db5806c9b1ee290666898a",
+    "revision": "77fa8fa078950162f91e897eba2d2c87",
     "url": "/index.html"
   },
   {
