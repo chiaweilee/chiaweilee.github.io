@@ -29,7 +29,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-transition-group": "^2.9.0",
-    "uh06l6": "0.0.0-rc.1"
+    "uh06l6": "0.0.0-rc.2"
   },
   "devDependencies": {
     "@types/jest": "^23.3.13",
