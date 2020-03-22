@@ -17,7 +17,7 @@ const createTask = (name, cmd) =>
 createTask(fetch, 'git fetch --all');
 createTask(reset, 'git reset --hard origin/master');
 createTask(pull, 'git pull');
-createTask(install, 'npm i');
+createTask(install, 'cnpm i');
 createTask(build, 'umi build');
 
 exports.default = series(fetch, reset, pull, install, build);
