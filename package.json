@@ -13,8 +13,6 @@
     "dist": "gge start",
     "server": "gge start --port=443 --https.key=../key.key --https.cert=../pem.pem",
     "server:dev": "gge start",
-    "server:install": "cnpm install gge egg-index egg-github-webhook node-cmd umi",
-    "update": "git fetch --all && git reset --hard origin/master && git pull && umi build",
     "commit": "npx git-cz"
   },
   "dependencies": {
@@ -52,6 +50,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "gulp": "^4.0.2",
     "husky": "^0.14.3",
     "lint-staged": "^7.3.0",
     "node-cmd": "^3.0.0",
