@@ -20,4 +20,4 @@ createTask(pull, 'git pull');
 createTask(install, 'cnpm i');
 createTask(build, 'umi build');
 
-export default series(fetch, reset, pull, install, build);
+exports.default = series(fetch, reset, pull, install, build);
