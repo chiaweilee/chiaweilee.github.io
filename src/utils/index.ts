@@ -1,5 +1,5 @@
 // @ts-ignore
-import history from '@/pages/.umi/history';
+import history from '@tmp/history';
 
 export default class Utils {
   public static historyGoBack = () => {
