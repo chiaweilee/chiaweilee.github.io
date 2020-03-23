@@ -4,7 +4,6 @@ const exec = require('child_process').exec;
 const fetch = 'fetch';
 const reset = 'reset';
 const pull = 'pull';
-const install = 'install';
 const build = 'build';
 
 const createTask = (name, cmd) =>
@@ -17,7 +16,6 @@ const createTask = (name, cmd) =>
 createTask(fetch, 'git fetch --all');
 createTask(reset, 'git reset --hard origin/master');
 createTask(pull, 'git pull');
-createTask(install, 'npm i');
 createTask(build, 'umi build');
 
-exports.default = series(fetch, reset, pull, install, build);
+exports.default = series(fetch, reset, pull, build);

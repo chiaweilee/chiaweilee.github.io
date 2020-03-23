@@ -17,10 +17,6 @@ config:
       secret: '...'
       event:
         push: './scripts/githook.js'
-    alinode:
-      enable: true
-      appid: '79920'
-      secret: 'ee24acff05a47fa4b92539bb870e4a951e1d98a9'
 plugin:
   index:
     enable: true
@@ -31,6 +27,3 @@ plugin:
   rewriter:
     enable: true
     package: 'egg-rewriter'
-  alinode:
-    enable: true
-    package: 'egg-alinode'
