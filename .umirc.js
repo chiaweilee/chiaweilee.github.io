@@ -7,32 +7,32 @@ export default {
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
   targets: { chrome: 69, firefox: 69, safari: 13, ios: 13 },
-  chainWebpack(config /* , { webpack } */) {
-    config.plugins.delete('progress');
-
-    if (process.env.NODE_ENV === 'production') {
-      config.merge({
-        optimization: {
-          minimize: process.env.NODE_ENV === 'production',
-          splitChunks: {
-            chunks: 'all',
-            minSize: 0,
-            minChunks: 1,
-            automaticNameDelimiter: '.',
-            cacheGroups: {
-              vendor: {
-                name: 'vendors',
-                test({ resource }) {
-                  return /[\\/]node_modules[\\/]/.test(resource);
-                },
-                priority: 99,
-              },
-            },
-          },
-        },
-      });
-    }
-  },
+  // chainWebpack(config /* , { webpack } */) {
+  //   config.plugins.delete('progress');
+  //
+  //   if (process.env.NODE_ENV === 'production') {
+  //     config.merge({
+  //       optimization: {
+  //         minimize: process.env.NODE_ENV === 'production',
+  //         splitChunks: {
+  //           chunks: 'all',
+  //           minSize: 0,
+  //           minChunks: 1,
+  //           automaticNameDelimiter: '.',
+  //           cacheGroups: {
+  //             vendor: {
+  //               name: 'vendors',
+  //               test({ resource }) {
+  //                 return /[\\/]node_modules[\\/]/.test(resource);
+  //               },
+  //               priority: 99,
+  //             },
+  //           },
+  //         },
+  //       },
+  //     });
+  //   }
+  // },
   plugins: [
     [
       'umi-plugin-md',
