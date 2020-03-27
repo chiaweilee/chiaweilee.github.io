@@ -3,9 +3,6 @@ orbs:
   node: circleci/node@1.1.6
 jobs:
   build:
-    branches:
-      only:
-        - master
     executor:
       name: node/default
     steps:
@@ -14,3 +11,10 @@ jobs:
           steps:
             - run: npm install
       - run: sh deploy-circleci.sh
+workflows:
+  version: 2.1
+    jobs:
+      - build:
+        filters:
+          branches:
+            only: master
