@@ -5,6 +5,9 @@ jobs:
   build-and-deploy:
     executor:
       name: node/default
+    filters:
+      branches:
+        only: master
     steps:
       - checkout
       - node/with-cache:
@@ -15,6 +18,3 @@ workflows:
     build-and-deploy:
       jobs:
         - build-and-deploy
-          filters:
-            branches:
-              only: master
