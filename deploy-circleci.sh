@@ -1,5 +1,5 @@
 git pull
 yarn build
-git add dist
+git add -f dist
 git commit -m "build"
 git push
