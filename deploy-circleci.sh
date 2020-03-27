@@ -1,4 +1,5 @@
 git pull
 yarn build
-git checkout dist
+git add dist
+git commit -m "build"
 git push
