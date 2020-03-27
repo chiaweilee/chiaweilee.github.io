@@ -1,4 +1,4 @@
 git pull
 yarn build
-git checkout gh-pages
+git checkout dist
 git push
