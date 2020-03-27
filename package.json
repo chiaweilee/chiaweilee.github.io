@@ -20,11 +20,7 @@
     "egg-rewriter": "^1.0.4",
     "gge": "^0.0.0-beta.3",
     "github-markdown-css": "^3.0.1",
-    "gulp": "^4.0.2",
-    "umi": "^2.13.7",
-    "umi-plugin-md": "^0.2.6",
-    "umi-plugin-pwa": "0.0.0-beta.0",
-    "umi-plugin-react": "^1.15.2"
+    "gulp": "^4.0.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.9",
@@ -51,7 +47,11 @@
     "tslint-config-ali": "^0.2.4",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-react": "^3.6.0"
+    "tslint-react": "^3.6.0",
+    "umi": "^2.13.7",
+    "umi-plugin-md": "^0.2.6",
+    "umi-plugin-pwa": "0.0.0-beta.0",
+    "umi-plugin-react": "^1.15.2"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
