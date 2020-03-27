@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[45],{QeBL:function(e,n,a){"use strict";a.r(n);var l=a("ZZRV"),t=a.n(l);n["default"]=(()=>t.a.createElement("ul",null,t.a.createElement("li",null,t.a.createElement("a",{href:"/docs"},"docs"))))}}]);
