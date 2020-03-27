@@ -8,9 +8,6 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
-          filters:
-            branches:
-              only: master
           steps:
             - run: npm install
       - run: sh deploy-circleci.sh
