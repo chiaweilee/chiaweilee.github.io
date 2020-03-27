@@ -8,13 +8,9 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
+          filters:
+            branches:
+              only: master
           steps:
             - run: npm install
       - run: sh deploy-circleci.sh
-workflows:
-  version: 2.1
-    jobs:
-      - build:
-        filters:
-          branches:
-            only: master
