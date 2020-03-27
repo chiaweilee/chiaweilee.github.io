@@ -12,9 +12,7 @@
     "lint:sty": "stylelint \"**/*.less\" --fix",
     "dist": "gge start",
     "server": "gge start --port=443 --https.key=../key.key --https.cert=../pem.pem",
-    "server:dev": "gge start",
-    "commit": "npx git-cz",
-    "install": "cnpm i egg-github-webhook && cnpm i egg-index && cnpm i egg-rewriter && cnpm i gge && cnpm i github-markdown-css && cnpm i gulp && cnpm i umi && cnpm i umi-plugin-md && cnpm i umi-plugin-react && cnpm i umi-plugin-pwa"
+    "server:dev": "gge start"
   },
   "dependencies": {
     "egg-github-webhook": "^0.1.0-beta.3",
