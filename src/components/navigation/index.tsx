@@ -21,20 +21,22 @@ export default class SiteMap extends React.PureComponent<Props> {
   }
 
   private get routes() {
+    const { route } = this.props;
     return (
-      this.props.route &&
-      this.props.route.routes &&
-      this.props.route.routes
-        .filter(route => !!route.path)
+      route &&
+      Array.isArray(route.routes) &&
+      route.routes
+        .filter(r => !!r.path)
         .map((route: any) => route.path.split('/').slice(1))
-        .filter(route => !!route[0])
+        .filter(r => !!r[0])
     );
   }
 
-  private renderRoutes(routes: Route[] | void) {
+  private renderRoutes(routes: any) {
     if (!routes) {
       return null;
     }
+
     return (
       <ul>
         {this.routes &&
