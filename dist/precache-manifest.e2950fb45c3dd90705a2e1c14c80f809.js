@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/vendors.4c9a691e.async.js"
   },
   {
-    "revision": "2cdc6bcf7de4eec2487d",
-    "url": "/p__docs___layout.07135bd9.async.js"
+    "revision": "7529d67175c0f9154ac4",
+    "url": "/p__docs___layout.c4d824ce.async.js"
   },
   {
     "revision": "f21c3628f23f7a09f038",
@@ -188,15 +188,15 @@ self.__precacheManifest = [
     "url": "/p__index.ddbc966f.async.js"
   },
   {
-    "revision": "98d1bb3b16f26cc217da",
+    "revision": "375fa3faa1535003ccc7",
     "url": "/umi.5de87e31.css"
   },
   {
-    "revision": "98d1bb3b16f26cc217da",
-    "url": "/umi.34eeb666.js"
+    "revision": "375fa3faa1535003ccc7",
+    "url": "/umi.793149b4.js"
   },
   {
-    "revision": "563315b16ee4a9bd99606d34604d94ce",
+    "revision": "ec1a79cf29f7a10c8203aa5d8857bd6c",
     "url": "/index.html"
   },
   {
