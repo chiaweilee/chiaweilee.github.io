@@ -148,55 +148,59 @@ self.__precacheManifest = [
     "url": "/p__docs__food__hotpot.md.96754f23.async.js"
   },
   {
-    "revision": "ee111118a7e371fbdd2f",
-    "url": "/p__docs__movie__lines.md.2137968c.async.js"
+    "revision": "faab39190f2468a75910",
+    "url": "/p__docs__index.6b712551.async.js"
   },
   {
-    "revision": "d6fb2b019c7d4dd52d02",
-    "url": "/p__docs__tour__checklist.md.34e27249.async.js"
+    "revision": "a3b655aee31b854320eb",
+    "url": "/p__docs__movie__lines.md.1e6e2061.async.js"
   },
   {
-    "revision": "27fbb0e59ebb921b079d",
-    "url": "/p__docs__typescript__Public,-private,-and-protected-modifiers.md.421ff1dd.async.js"
+    "revision": "ff01269a389db633ec74",
+    "url": "/p__docs__tour__checklist.md.3b8aa5c6.async.js"
   },
   {
-    "revision": "beb9adacc3b7b46a0840",
-    "url": "/p__docs__video__cinematic.md.4d8deb0c.async.js"
+    "revision": "1b68963863c18504fcb8",
+    "url": "/p__docs__typescript__Public,-private,-and-protected-modifiers.md.bdbfc21d.async.js"
   },
   {
-    "revision": "2c90e785edbe6a5ae291",
-    "url": "/p__docs__video__color-grading.md.a6b034da.async.js"
+    "revision": "0a974bb1837519484e69",
+    "url": "/p__docs__video__cinematic.md.7f77fba0.async.js"
   },
   {
-    "revision": "0b5b3de8a00f68b1e59c",
-    "url": "/p__docs__video__composition.md.4dfb3753.async.js"
+    "revision": "7fddbf8e675330117d6e",
+    "url": "/p__docs__video__color-grading.md.c9b15fcd.async.js"
   },
   {
-    "revision": "652126137353daf56d49",
-    "url": "/p__docs__video__edting.md.065ecfc2.async.js"
+    "revision": "67d8adbdd2d2a6131e72",
+    "url": "/p__docs__video__composition.md.68d81997.async.js"
   },
   {
-    "revision": "7510bafe6f40ee0bc1e8",
-    "url": "/p__docs__video__ffmpeg.md.172922b9.async.js"
+    "revision": "6b143edf54ddbec5b10f",
+    "url": "/p__docs__video__edting.md.c5703133.async.js"
   },
   {
-    "revision": "dec08d998dec0905078e",
-    "url": "/p__docs__video__gopro.md.37083fd1.async.js"
+    "revision": "98ad11dc02a2a5a85fb8",
+    "url": "/p__docs__video__ffmpeg.md.7d3de269.async.js"
   },
   {
-    "revision": "39767dd2eed42ed39f47",
-    "url": "/p__index.ddbc966f.async.js"
+    "revision": "8b9a531cecd96ed2f491",
+    "url": "/p__docs__video__gopro.md.66fdeb83.async.js"
   },
   {
-    "revision": "375fa3faa1535003ccc7",
+    "revision": "2dc850db949abfeed4d1",
+    "url": "/p__index.0270f29a.async.js"
+  },
+  {
+    "revision": "aca28edc8679dc9ceb5d",
     "url": "/umi.5de87e31.css"
   },
   {
-    "revision": "375fa3faa1535003ccc7",
-    "url": "/umi.793149b4.js"
+    "revision": "aca28edc8679dc9ceb5d",
+    "url": "/umi.12e03345.js"
   },
   {
-    "revision": "ec1a79cf29f7a10c8203aa5d8857bd6c",
+    "revision": "43b82961cf2a52cc1f2e0520fbac0152",
     "url": "/index.html"
   },
   {
