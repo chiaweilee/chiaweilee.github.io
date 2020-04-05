@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "19e8a40420520c568ba4",
+    "revision": "aa37911d7aa9170815c1",
     "url": "/home/vendors.7d3f36ec.chunk.css"
   },
   {
-    "revision": "19e8a40420520c568ba4",
-    "url": "/home/vendors.62e6e8d7.async.js"
+    "revision": "aa37911d7aa9170815c1",
+    "url": "/home/vendors.23653294.async.js"
   },
   {
     "revision": "d34e30afe2e78448b09f",
@@ -148,8 +148,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__food__hotpot.mdx.74bb5cda.async.js"
   },
   {
-    "revision": "faab39190f2468a75910",
-    "url": "/home/p__docs__index.6b712551.async.js"
+    "revision": "aa0e876cfa73fa2103dd",
+    "url": "/home/p__docs__index.mdx.2ed636d2.async.js"
   },
   {
     "revision": "6aa600f79802979db5f1",
@@ -160,51 +160,59 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__checklist.mdx.948158f8.async.js"
   },
   {
-    "revision": "fc752817e2a2400d3532",
-    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.5195db57.async.js"
+    "revision": "9316e25fa21299095775",
+    "url": "/home/p__docs__tour__thailand-1.mdx.53d8b858.chunk.css"
   },
   {
-    "revision": "82618ea6e351ead3d098",
-    "url": "/home/p__docs__typescript__Types.mdx.748722b2.async.js"
+    "revision": "9316e25fa21299095775",
+    "url": "/home/p__docs__tour__thailand-1.mdx.20a8edaf.async.js"
   },
   {
-    "revision": "54912ad64e580ffdc19b",
-    "url": "/home/p__docs__video__cinematic.mdx.688e8bd1.async.js"
+    "revision": "222acd381f8c1ee2a023",
+    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.332de5fe.async.js"
   },
   {
-    "revision": "3c23d65b250a9f99897a",
-    "url": "/home/p__docs__video__color-grading.mdx.362f708a.async.js"
+    "revision": "8cf9e06a0ed8c935822d",
+    "url": "/home/p__docs__typescript__Types.mdx.aedbefd7.async.js"
   },
   {
-    "revision": "78563106c71ada6998f3",
-    "url": "/home/p__docs__video__composition.mdx.d44283dc.async.js"
+    "revision": "436a7fab72a848eb9c63",
+    "url": "/home/p__docs__video__cinematic.mdx.44a8c276.async.js"
   },
   {
-    "revision": "34934a7097c8b79d28f7",
-    "url": "/home/p__docs__video__edting.mdx.9f771d16.async.js"
+    "revision": "c07318df0b172d780520",
+    "url": "/home/p__docs__video__color-grading.mdx.199ed06b.async.js"
   },
   {
-    "revision": "e0a34f4a28d82bef93b7",
-    "url": "/home/p__docs__video__ffmpeg.mdx.2058375a.async.js"
+    "revision": "90be39750ac5913d7d6d",
+    "url": "/home/p__docs__video__composition.mdx.d26fd0b0.async.js"
   },
   {
-    "revision": "59ffdb335bbcc604dbf7",
-    "url": "/home/p__docs__video__gopro.mdx.5915c5ab.async.js"
+    "revision": "f7abeb6c8a2a3d455d81",
+    "url": "/home/p__docs__video__edting.mdx.134871bb.async.js"
   },
   {
-    "revision": "95c27dfdac0ba0b80298",
-    "url": "/home/p__index.868296d1.async.js"
+    "revision": "4943a88a0de07f5413a8",
+    "url": "/home/p__docs__video__ffmpeg.mdx.79a5aa3f.async.js"
   },
   {
-    "revision": "61155e871536fdcccb39",
+    "revision": "63a1d3a8051c1309577a",
+    "url": "/home/p__docs__video__gopro.mdx.aeaba5e3.async.js"
+  },
+  {
+    "revision": "d7da4d450e8b5dd3de7e",
+    "url": "/home/p__index.ac66d121.async.js"
+  },
+  {
+    "revision": "409e2ba3b2cc7f1beefa",
     "url": "/home/umi.6eb8c0a3.css"
   },
   {
-    "revision": "61155e871536fdcccb39",
-    "url": "/home/umi.22e78af2.js"
+    "revision": "409e2ba3b2cc7f1beefa",
+    "url": "/home/umi.af5b2408.js"
   },
   {
-    "revision": "041076e1ea0e4568841a9457d11c1f7d",
+    "revision": "265e1ceebbab9943c13d85283a59c24c",
     "url": "/home/index.html"
   },
   {
