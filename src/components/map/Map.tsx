@@ -14,7 +14,7 @@ interface IMapProps {
 }
 
 const defaultProps = {
-  zoom: 13,
+  zoom: 14,
 };
 
 export default class extends React.PureComponent<IMapProps & typeof defaultProps, any> {
