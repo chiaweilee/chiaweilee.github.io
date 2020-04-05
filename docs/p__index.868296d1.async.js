@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[47],{QeBL:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("7DNP");n["default"]=(()=>l.a.createElement("ul",null,l.a.createElement("li",null,l.a.createElement(c["Link"],{to:"/docs"},"DOCS"))))}}]);
