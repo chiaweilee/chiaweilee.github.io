@@ -1,10 +1,10 @@
 // ref: https://umijs.org/config/
 export default {
-  base: '/pages/',
-  publicPath: '/pages/',
-  cssPublicPath: '/pages/',
+  base: '/home/',
+  publicPath: '/home/',
+  cssPublicPath: '/home/',
   runtimePublicPath: true,
-  outputPath: 'pages',
+  outputPath: 'home',
   hash: true,
   history: 'hash',
   theme: './src/theme.js',
