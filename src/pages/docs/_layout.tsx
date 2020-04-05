@@ -29,7 +29,7 @@ export default class extends React.PureComponent<any> {
   private get githubPage(): string {
     const { location: { pathname } } = this.props;
     const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
-    const ext = '.md';
+    const ext = '.mdx';
     return `${baseUrl}${pathname}${ext}`;
   }
 }
