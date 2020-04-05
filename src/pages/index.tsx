@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'dva/router';
 
-export default () => <ul>
-  <li>
-    <a href={'/docs'} >DOCS</a>
-  </li>
-</ul>
+export default () => (
+  <ul>
+    <li>
+      <Link to={'/docs'}>DOCS</Link>
+    </li>
+  </ul>
+);

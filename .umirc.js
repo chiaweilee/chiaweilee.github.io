@@ -7,7 +7,6 @@ export default {
   outputPath: 'docs',
   hash: true,
   theme: './src/theme.js',
-  history: 'browser',
   treeShaking: true,
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
