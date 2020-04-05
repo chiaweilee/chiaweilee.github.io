@@ -10,7 +10,8 @@
     "lint:sty": "stylelint \"**/*.less\" --fix"
   },
   "dependencies": {
-    "github-markdown-css": "^3.0.1"
+    "github-markdown-css": "^3.0.1",
+    "highlight.js": "^9.18.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.9",

@@ -1,8 +1,8 @@
 // ref: https://umijs.org/config/
 export default {
-  base: '/_/',
-  publicPath: '/_/',
-  cssPublicPath: '/_/',
+  base: '/-/',
+  publicPath: '/-/',
+  cssPublicPath: '/-/',
   runtimePublicPath: true,
   outputPath: 'docs',
   hash: true,
