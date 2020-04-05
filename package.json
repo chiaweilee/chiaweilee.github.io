@@ -1,26 +1,15 @@
 {
-  "name": "app",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
-    "test": "umi test --coverage",
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:sty",
     "lint:es": "eslint --ext .js --ext .jsx . --fix",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
-    "lint:sty": "stylelint \"**/*.less\" --fix",
-    "dist": "gge start",
-    "server": "gge start --port=443 --https.key=../key.key --https.cert=../pem.pem",
-    "server:dev": "gge start"
+    "lint:sty": "stylelint \"**/*.less\" --fix"
   },
   "dependencies": {
-    "egg-github-webhook": "^0.1.0-beta.3",
-    "egg-index": "^0.0.1",
-    "egg-rewriter": "^1.0.4",
-    "gge": "^0.0.0-beta.3",
-    "github-markdown-css": "^3.0.1",
-    "gulp": "^4.0.2"
+    "github-markdown-css": "^3.0.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.9",
@@ -49,7 +38,7 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
     "umi": "^2.13.7",
-    "umi-plugin-md": "^0.2.6",
+    "umi-plugin-mdx": "^0.2.6",
     "umi-plugin-pwa": "0.0.0-beta.0",
     "umi-plugin-react": "^1.15.2"
   },

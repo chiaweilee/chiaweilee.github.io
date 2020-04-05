@@ -1,5 +1,10 @@
 // ref: https://umijs.org/config/
 export default {
+  base: '/_/',
+  publicPath: '/_/',
+  cssPublicPath: '/_/',
+  runtimePublicPath: true,
+  outputPath: 'docs',
   hash: true,
   theme: './src/theme.js',
   history: 'browser',
@@ -31,12 +36,7 @@ export default {
     }
   },
   plugins: [
-    [
-      'umi-plugin-md',
-      {
-        className: 'markdown-body',
-      },
-    ],
+    'umi-plugin-mdx',
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     [
       'umi-plugin-react',

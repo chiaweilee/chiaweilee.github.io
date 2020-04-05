@@ -18,7 +18,9 @@ export default class extends React.PureComponent<any> {
             </a>
           }
         />
-        {this.props.children}
+        <section className={'markdown-body'}>
+          {this.props.children}
+        </section>
         <Navigation {...this.props} />
       </>
     );
