@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/home/vendors.393983dc.async.js"
   },
   {
-    "revision": "d34e30afe2e78448b09f",
-    "url": "/home/p__docs___layout.83c64ffc.async.js"
+    "revision": "9a7f297fe136e6970272",
+    "url": "/home/p__docs___layout.42c55fc1.async.js"
   },
   {
     "revision": "40231b912d4c24e02661",
@@ -160,8 +160,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.0b713a79.async.js"
   },
   {
-    "revision": "1e671821fc7f7d462ff8",
-    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.c7f30f68.async.js"
+    "revision": "51854ca5811f49c5ddb6",
+    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.e88e8a1f.async.js"
   },
   {
     "revision": "25ca44b2ce69017c76c0",
@@ -208,15 +208,15 @@ self.__precacheManifest = [
     "url": "/home/p__index.6d6fc12f.async.js"
   },
   {
-    "revision": "0e5df1183a555f2cbf94",
+    "revision": "ac1362ed4b5a54a66c7c",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "0e5df1183a555f2cbf94",
-    "url": "/home/umi.a1e5f817.js"
+    "revision": "ac1362ed4b5a54a66c7c",
+    "url": "/home/umi.559bfb79.js"
   },
   {
-    "revision": "2f2710e1d20211a286c3d7c8b2569b8d",
+    "revision": "bc06e31cc4f3f1caa301ba52f6c9e014",
     "url": "/home/index.html"
   },
   {
