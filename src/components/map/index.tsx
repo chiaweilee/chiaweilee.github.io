@@ -9,5 +9,29 @@ const apiKey =
 
 export default (props: any) => {
   const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
-  return <Map className={styles.map} apiKey={apiKey} center={{ latitude, longitude }} />;
+  const points = Array.isArray(props.points)
+    ? props.points.map((point: any) => {
+        // tslint:disable-next-line:no-shadowed-variable
+        const [latitude, longitude] = point.split(',');
+        return { latitude, longitude };
+      })
+    : [];
+  const walking = Array.isArray(props.walking)
+    ? props.walking.map((point: any) => {
+      // tslint:disable-next-line:no-shadowed-variable
+      const [latitude, longitude, address] = point.split(',');
+      return { latitude, longitude, address };
+    })
+    : [];
+
+  return (
+    <Map
+      className={styles.map}
+      apiKey={apiKey}
+      center={{ latitude, longitude }}
+      points={points}
+      walking={walking}
+      zoom={props.zoom}
+    />
+  );
 };

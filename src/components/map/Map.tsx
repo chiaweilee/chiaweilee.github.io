@@ -2,15 +2,18 @@ import * as React from 'react';
 import { loadBingApi, Microsoft } from './loader';
 
 export interface LatLng {
+  address?: string;
   latitude: number;
   longitude: number;
 }
 
 interface IMapProps {
   apiKey: string;
-  center: LatLng;
   className: string;
-  zoom: number;
+  zoom?: number;
+  center?: LatLng;
+  points?: LatLng[];
+  walking?: LatLng[];
 }
 
 const defaultProps = {
@@ -29,22 +32,82 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
   public componentDidMount() {
     loadBingApi(this.props.apiKey).then(() => {
       this.initMap();
+      this.walking();
+      this.addPoint();
+      this.setCenter();
     });
   }
 
   public componentWillUnmount() {
-    this.map && this.map.dispose();
+    if (this.map) {
+      this.map.dispose();
+    }
   }
 
   private initMap() {
+    this.map = new Microsoft.Maps.Map(this.mapRef.current, {
+      customMapStyle: {
+        elements: {
+          area: { fillColor: '#b6e591' },
+          water: { fillColor: '#75cff0' },
+          tollRoad: { fillColor: '#a964f4', strokeColor: '#a964f4' },
+          arterialRoad: { fillColor: '#ffffff', strokeColor: '#d7dae7' },
+          road: { fillColor: '#ffa35a', strokeColor: '#ff9c4f' },
+          street: { fillColor: '#ffffff', strokeColor: '#ffffff' },
+          transit: { fillColor: '#000000' },
+        },
+        settings: {
+          landColor: '#efe9e1',
+        },
+      },
+    });
+  }
+
+  private setCenter() {
     const { center: { latitude, longitude } = {}, zoom } = this.props;
-
-    this.map = new Microsoft.Maps.Map(this.mapRef.current);
-
     if (latitude && longitude) {
       this.map.setView({
         center: new Microsoft.Maps.Location(latitude, longitude),
         zoom,
+      });
+    }
+  }
+
+  private addPoint() {
+    const { points = [] } = this.props;
+    if (Array.isArray(points) && points.length) {
+      points.forEach(({ latitude, longitude }) => {
+        const pushpin = new Microsoft.Maps.Pushpin(
+          new Microsoft.Maps.Location(latitude, longitude),
+          null,
+        );
+        const layer = new Microsoft.Maps.Layer();
+        layer.add(pushpin);
+        this.map.layers.insert(layer);
+      });
+    }
+  }
+
+  private walking() {
+    const { walking = [] } = this.props;
+    if (Array.isArray(walking) && walking.length) {
+      Microsoft.Maps.loadModule('Microsoft.Maps.Directions', () => {
+        const directionsManager = new Microsoft.Maps.Directions.DirectionsManager(this.map);
+        directionsManager.setRequestOptions({
+          routeMode: Microsoft.Maps.Directions.RouteMode.walking,
+        });
+        walking.forEach(({ address, latitude, longitude }) => {
+          directionsManager.addWaypoint(
+            new Microsoft.Maps.Directions.Waypoint({
+              address,
+              location: new Microsoft.Maps.Location(latitude, longitude),
+            }),
+          );
+        });
+        directionsManager.setRenderOptions({
+          itineraryContainer: document.getElementById('printoutPanel'),
+        });
+        directionsManager.calculateDirections();
       });
     }
   }

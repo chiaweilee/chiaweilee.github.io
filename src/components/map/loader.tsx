@@ -2,7 +2,7 @@ export let Microsoft: any;
 declare let window: any;
 
 export function loadBingApi(key: string): Promise<void> {
-  if (window.bingAPIReady) {
+  if (!!window.Microsoft) {
     return Promise.resolve();
   }
 
