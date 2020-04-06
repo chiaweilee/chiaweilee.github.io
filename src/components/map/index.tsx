@@ -40,6 +40,7 @@ export default (props: any) => {
       walking={walking}
       driving={driving}
       zoom={props.zoom}
+      aerial={props.aerial}
     />
   );
 };

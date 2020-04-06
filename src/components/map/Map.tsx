@@ -10,6 +10,7 @@ export interface LatLng {
 interface IMapProps {
   apiKey: string;
   className: string;
+  aerial?: boolean;
   zoom?: number;
   center?: LatLng;
   points?: LatLng[];
@@ -47,7 +48,13 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
   }
 
   private initMap() {
+    const { aerial } = this.props;
     this.map = new Microsoft.Maps.Map(this.mapRef.current, {
+      ...(!aerial
+        ? {}
+        : {
+            mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+          }),
       customMapStyle: {
         elements: {
           area: { fillColor: '#b6e591' },
