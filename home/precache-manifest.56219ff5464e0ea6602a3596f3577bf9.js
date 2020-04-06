@@ -156,71 +156,79 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.88fd5eda.async.js"
   },
   {
-    "revision": "1674c702fa659a389afc",
-    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.0b713a79.async.js"
+    "revision": "d90a45d124f88bc8ab8f",
+    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.1656084c.async.js"
   },
   {
-    "revision": "d2617da1569e951451e5",
-    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.5a15640e.async.js"
+    "revision": "6733ed2f8f5f6d963cd8",
+    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.5c96d93f.async.js"
   },
   {
-    "revision": "25ca44b2ce69017c76c0",
-    "url": "/home/p__docs__tour__checklist.mdx.ca28c667.async.js"
+    "revision": "eb9315c2c7fe24986f33",
+    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.4e5721dd.async.js"
   },
   {
-    "revision": "6e8cbaa0e7397c7b8891",
-    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.2da38add.async.js"
+    "revision": "4bb97ac64fcf9badf423",
+    "url": "/home/p__docs__tour__checklist.mdx.67bf38dd.async.js"
   },
   {
-    "revision": "52ce7167a3db64c5a08b",
-    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.5b835b78.async.js"
+    "revision": "773da65dc980a7cd40a5",
+    "url": "/home/p__docs__tour__emei--20℃.mdx.8f3afb41.async.js"
   },
   {
-    "revision": "615024fa06d01e6cc488",
-    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.b6367fd4.async.js"
+    "revision": "8b874ae1e7caa5820ae3",
+    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.83ca86d9.async.js"
   },
   {
-    "revision": "5d3207d7c1c50838b2d7",
-    "url": "/home/p__docs__typescript__Types.mdx.02e1efbc.async.js"
+    "revision": "1f8e0e092a4e22013fe7",
+    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.0bef4b8e.async.js"
   },
   {
-    "revision": "36ac119e066f4174f9e3",
-    "url": "/home/p__docs__video__cinematic.mdx.bd3aace9.async.js"
+    "revision": "e50b30a4d437747fd753",
+    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.681c378f.async.js"
   },
   {
-    "revision": "334581e62aefe6108db8",
-    "url": "/home/p__docs__video__color-grading.mdx.89921d16.async.js"
+    "revision": "739f33176a9ed0efef9e",
+    "url": "/home/p__docs__typescript__Types.mdx.95ad0743.async.js"
   },
   {
-    "revision": "fddea68dbd19aa493a28",
-    "url": "/home/p__docs__video__composition.mdx.91391e71.async.js"
+    "revision": "14b2a8981ffc79357be2",
+    "url": "/home/p__docs__video__cinematic.mdx.6376d7d4.async.js"
   },
   {
-    "revision": "f7fa0792fae44376d5c6",
-    "url": "/home/p__docs__video__edting.mdx.e43413ba.async.js"
+    "revision": "b38585de75cebcdd29ad",
+    "url": "/home/p__docs__video__color-grading.mdx.8b17fdbb.async.js"
   },
   {
-    "revision": "f3f85db6344dcaa61778",
-    "url": "/home/p__docs__video__ffmpeg.mdx.b1da20e3.async.js"
+    "revision": "a139eddd122a67c2d3f1",
+    "url": "/home/p__docs__video__composition.mdx.49a3bfe9.async.js"
   },
   {
-    "revision": "af6a44394b31c315a4d5",
-    "url": "/home/p__docs__video__gopro.mdx.604275a3.async.js"
+    "revision": "3929c7054e3d1afb317f",
+    "url": "/home/p__docs__video__edting.mdx.b267ed8c.async.js"
   },
   {
-    "revision": "90cd8987d0a290d5c723",
-    "url": "/home/p__index.04b630ac.async.js"
+    "revision": "c5e105ba43f3040fb942",
+    "url": "/home/p__docs__video__ffmpeg.mdx.cb2eeee4.async.js"
   },
   {
-    "revision": "cbf541fd96f3bbe8a161",
+    "revision": "939693056a78acac6545",
+    "url": "/home/p__docs__video__gopro.mdx.a7ab59b9.async.js"
+  },
+  {
+    "revision": "62ffd157a22accf67645",
+    "url": "/home/p__index.394012fb.async.js"
+  },
+  {
+    "revision": "fdc822a23b3d8b6dbf9f",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "cbf541fd96f3bbe8a161",
-    "url": "/home/umi.da26880e.js"
+    "revision": "fdc822a23b3d8b6dbf9f",
+    "url": "/home/umi.93f0608d.js"
   },
   {
-    "revision": "e62bcaabf9b6297dc2c263115ebea767",
+    "revision": "6c1e7ce7cca9bb19781ebaaa7c605003",
     "url": "/home/index.html"
   },
   {
