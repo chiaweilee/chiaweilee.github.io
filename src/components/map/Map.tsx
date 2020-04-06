@@ -14,6 +14,7 @@ interface IMapProps {
   center?: LatLng;
   points?: LatLng[];
   walking?: LatLng[];
+  driving?: LatLng[];
 }
 
 const defaultProps = {
@@ -33,6 +34,7 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
     loadBingApi(this.props.apiKey).then(() => {
       this.initMap();
       this.walking();
+      this.driving();
       this.addPoint();
       this.setCenter();
     });
@@ -91,12 +93,25 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
   private walking() {
     const { walking = [] } = this.props;
     if (Array.isArray(walking) && walking.length) {
+      this.route(walking, 'walking');
+    }
+  }
+
+  private driving() {
+    const { driving = [] } = this.props;
+    if (Array.isArray(driving) && driving.length) {
+      this.route(driving, 'driving');
+    }
+  }
+
+  private route(route: any, type = 'walking' as 'walking' | 'driving') {
+    if (Array.isArray(route) && route.length) {
       Microsoft.Maps.loadModule('Microsoft.Maps.Directions', () => {
         const directionsManager = new Microsoft.Maps.Directions.DirectionsManager(this.map);
         directionsManager.setRequestOptions({
-          routeMode: Microsoft.Maps.Directions.RouteMode.walking,
+          routeMode: Microsoft.Maps.Directions.RouteMode[type],
         });
-        walking.forEach(({ address, latitude, longitude }) => {
+        route.forEach(({ address, latitude, longitude }) => {
           directionsManager.addWaypoint(
             new Microsoft.Maps.Directions.Waypoint({
               address,

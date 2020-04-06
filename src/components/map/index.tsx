@@ -23,6 +23,13 @@ export default (props: any) => {
       return { latitude, longitude, address };
     })
     : [];
+  const driving = Array.isArray(props.driving)
+    ? props.driving.map((point: any) => {
+      // tslint:disable-next-line:no-shadowed-variable
+      const [latitude, longitude, address] = point.split(',');
+      return { latitude, longitude, address };
+    })
+    : [];
 
   return (
     <Map
@@ -31,6 +38,7 @@ export default (props: any) => {
       center={{ latitude, longitude }}
       points={points}
       walking={walking}
+      driving={driving}
       zoom={props.zoom}
     />
   );
