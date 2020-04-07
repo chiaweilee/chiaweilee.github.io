@@ -168,67 +168,71 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.4e5721dd.async.js"
   },
   {
-    "revision": "4bb97ac64fcf9badf423",
-    "url": "/home/p__docs__tour__checklist.mdx.67bf38dd.async.js"
+    "revision": "072f2d369a3075888eb0",
+    "url": "/home/p__docs__tour__2nd-malaysia:mabul-scuba-paradise.mdx.2b47c582.async.js"
   },
   {
-    "revision": "773da65dc980a7cd40a5",
-    "url": "/home/p__docs__tour__emei--20℃.mdx.8f3afb41.async.js"
+    "revision": "77236d506ae0bc224694",
+    "url": "/home/p__docs__tour__checklist.mdx.49c9b770.async.js"
   },
   {
-    "revision": "8b874ae1e7caa5820ae3",
-    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.83ca86d9.async.js"
+    "revision": "c518e392cda7b717d991",
+    "url": "/home/p__docs__tour__emei--20℃.mdx.fc3f8dc4.async.js"
   },
   {
-    "revision": "1f8e0e092a4e22013fe7",
-    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.0bef4b8e.async.js"
+    "revision": "85f8038aa331a6fe32bc",
+    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.b824d352.async.js"
   },
   {
-    "revision": "e50b30a4d437747fd753",
-    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.681c378f.async.js"
+    "revision": "b38ff466530b4920fef7",
+    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.805ad473.async.js"
   },
   {
-    "revision": "739f33176a9ed0efef9e",
-    "url": "/home/p__docs__typescript__Types.mdx.95ad0743.async.js"
+    "revision": "7d2a7adb08ae6802ed1a",
+    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.90111664.async.js"
   },
   {
-    "revision": "14b2a8981ffc79357be2",
-    "url": "/home/p__docs__video__cinematic.mdx.6376d7d4.async.js"
+    "revision": "75bb7ff344b82b82bbc3",
+    "url": "/home/p__docs__typescript__Types.mdx.b72580a7.async.js"
   },
   {
-    "revision": "b38585de75cebcdd29ad",
-    "url": "/home/p__docs__video__color-grading.mdx.8b17fdbb.async.js"
+    "revision": "fe0877a295e484fed661",
+    "url": "/home/p__docs__video__cinematic.mdx.e8cb51a9.async.js"
   },
   {
-    "revision": "a139eddd122a67c2d3f1",
-    "url": "/home/p__docs__video__composition.mdx.49a3bfe9.async.js"
+    "revision": "b0e7276f4fdfd29a9fb9",
+    "url": "/home/p__docs__video__color-grading.mdx.6592b8b7.async.js"
   },
   {
-    "revision": "3929c7054e3d1afb317f",
-    "url": "/home/p__docs__video__edting.mdx.b267ed8c.async.js"
+    "revision": "de5ba83f7b74261a43a4",
+    "url": "/home/p__docs__video__composition.mdx.0f56bfba.async.js"
   },
   {
-    "revision": "c5e105ba43f3040fb942",
-    "url": "/home/p__docs__video__ffmpeg.mdx.cb2eeee4.async.js"
+    "revision": "436d1213e378179a7ace",
+    "url": "/home/p__docs__video__edting.mdx.3e945bf3.async.js"
   },
   {
-    "revision": "939693056a78acac6545",
-    "url": "/home/p__docs__video__gopro.mdx.a7ab59b9.async.js"
+    "revision": "6e0e007d7242d7ad546c",
+    "url": "/home/p__docs__video__ffmpeg.mdx.e8279f1a.async.js"
   },
   {
-    "revision": "62ffd157a22accf67645",
-    "url": "/home/p__index.394012fb.async.js"
+    "revision": "128d51427f1f7bf5b160",
+    "url": "/home/p__docs__video__gopro.mdx.af19d28b.async.js"
   },
   {
-    "revision": "fdc822a23b3d8b6dbf9f",
+    "revision": "e0f9a78718e2b2253db4",
+    "url": "/home/p__index.06ffa997.async.js"
+  },
+  {
+    "revision": "279f890c1d47276e2da6",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "fdc822a23b3d8b6dbf9f",
-    "url": "/home/umi.93f0608d.js"
+    "revision": "279f890c1d47276e2da6",
+    "url": "/home/umi.f4213ef7.js"
   },
   {
-    "revision": "6c1e7ce7cca9bb19781ebaaa7c605003",
+    "revision": "9952c7b5b47049c750f7361391b15c82",
     "url": "/home/index.html"
   },
   {
