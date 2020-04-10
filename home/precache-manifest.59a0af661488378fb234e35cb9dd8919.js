@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "5e71a23cd01fdb2621b7",
+    "revision": "9a5a4e3c97e892e5045a",
     "url": "/home/vendors.5d7ae22b.chunk.css"
   },
   {
-    "revision": "5e71a23cd01fdb2621b7",
-    "url": "/home/vendors.393983dc.async.js"
+    "revision": "9a5a4e3c97e892e5045a",
+    "url": "/home/vendors.f235df46.async.js"
   },
   {
     "revision": "9a7f297fe136e6970272",
     "url": "/home/p__docs___layout.42c55fc1.async.js"
   },
   {
-    "revision": "40231b912d4c24e02661",
-    "url": "/home/p__docs__english__pronunciation.mdx.0ec3ea10.async.js"
+    "revision": "3d4ec065b95ae362dff1",
+    "url": "/home/p__docs__english__pronunciation.mdx.bb59627a.chunk.css"
+  },
+  {
+    "revision": "3d4ec065b95ae362dff1",
+    "url": "/home/p__docs__english__pronunciation.mdx.1cb050e8.async.js"
   },
   {
     "revision": "68659c26df9c8cda5e8d",
@@ -228,15 +232,15 @@ self.__precacheManifest = [
     "url": "/home/p__index.a65930d7.async.js"
   },
   {
-    "revision": "8944b70fd7d5f33d7c3a",
+    "revision": "bf32335c238f9285a7c5",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "8944b70fd7d5f33d7c3a",
-    "url": "/home/umi.ad4f9cd0.js"
+    "revision": "bf32335c238f9285a7c5",
+    "url": "/home/umi.46bf1a26.js"
   },
   {
-    "revision": "d409d17d432ff93e384cca1c0f37a59e",
+    "revision": "f883854c2a3ab53ef48d9c3634af416b",
     "url": "/home/index.html"
   },
   {
