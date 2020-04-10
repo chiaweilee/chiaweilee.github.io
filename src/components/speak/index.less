@@ -1,0 +1,18 @@
+.clear {
+  > button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    &:before {
+      position: relative;
+      content: '♫';
+      padding-right: 8px;
+      color: #ccc;
+    }
+    &:disabled {
+      &:before {
+        color: #111;
+      }
+    }
+  }
+}
