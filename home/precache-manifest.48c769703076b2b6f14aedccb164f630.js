@@ -164,8 +164,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.1656084c.async.js"
   },
   {
-    "revision": "6733ed2f8f5f6d963cd8",
-    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.5c96d93f.async.js"
+    "revision": "03deb475d8bc59a5a17a",
+    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.f0f57629.async.js"
   },
   {
     "revision": "eb9315c2c7fe24986f33",
@@ -232,15 +232,15 @@ self.__precacheManifest = [
     "url": "/home/p__index.a65930d7.async.js"
   },
   {
-    "revision": "bf32335c238f9285a7c5",
+    "revision": "b2429353555d806dd94c",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "bf32335c238f9285a7c5",
-    "url": "/home/umi.46bf1a26.js"
+    "revision": "b2429353555d806dd94c",
+    "url": "/home/umi.ab557943.js"
   },
   {
-    "revision": "f883854c2a3ab53ef48d9c3634af416b",
+    "revision": "a0754845f7d6c47c19891f5a92becf33",
     "url": "/home/index.html"
   },
   {
