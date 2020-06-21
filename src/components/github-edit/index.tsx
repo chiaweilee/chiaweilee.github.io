@@ -8,8 +8,10 @@ interface Props {
 
 export default (props: Props) => (
   <div className={styles['github-edit-wrapper']}>
-    <a href={props.href} rel="noreferrer">
-      <Icon type="icongithub" />
-    </a>
+    <div className={styles['github-edit']}>
+      <a href={props.href} rel="noreferrer">
+        <Icon type="icongithub" />
+      </a>
+    </div>
   </div>
 );
