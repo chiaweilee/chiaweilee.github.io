@@ -29,7 +29,7 @@ export default class SiteMap extends React.PureComponent<Props> {
       route.routes
         .filter(r => !!r.path)
         .map((route: any) => route.path.split('/').slice(1))
-        .filter(r => !!r[0])
+        .filter(r => r.length > 1 && !!r[0])
     );
   }
 
