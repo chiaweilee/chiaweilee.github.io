@@ -73,6 +73,7 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
   }
 
   private setCenter() {
+    // @ts-ignore
     const { center: { latitude, longitude } = {}, zoom } = this.props;
     if (latitude && longitude) {
       this.map.setView({

@@ -8,6 +8,7 @@ const apiKey =
     : 'AvHBgtLyf4zbDhXESAuvFMSqIg1GgomX6DnDgw-CaXFeRmWVzvXPC55WveE4pJla';
 
 export default (props: any) => {
+  // @ts-ignore
   const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
   const points = Array.isArray(props.points)
     ? props.points.map((point: any) => {
@@ -18,17 +19,17 @@ export default (props: any) => {
     : [];
   const walking = Array.isArray(props.walking)
     ? props.walking.map((point: any) => {
-      // tslint:disable-next-line:no-shadowed-variable
-      const [latitude, longitude, address] = point.split(',');
-      return { latitude, longitude, address };
-    })
+        // tslint:disable-next-line:no-shadowed-variable
+        const [latitude, longitude, address] = point.split(',');
+        return { latitude, longitude, address };
+      })
     : [];
   const driving = Array.isArray(props.driving)
     ? props.driving.map((point: any) => {
-      // tslint:disable-next-line:no-shadowed-variable
-      const [latitude, longitude, address] = point.split(',');
-      return { latitude, longitude, address };
-    })
+        // tslint:disable-next-line:no-shadowed-variable
+        const [latitude, longitude, address] = point.split(',');
+        return { latitude, longitude, address };
+      })
     : [];
 
   return (
