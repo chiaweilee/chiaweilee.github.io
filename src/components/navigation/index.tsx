@@ -3,6 +3,7 @@ import Link from 'umi/link';
 
 interface Props {
   route?: Route;
+  close: () => void;
 }
 
 interface Route {
@@ -44,7 +45,9 @@ export default class SiteMap extends React.PureComponent<Props> {
             const pathname = route.join('/');
             return (
               <li key={pathname}>
-                <Link to={`/${pathname}`}>{route.slice(1).join('/')}</Link>
+                <Link to={`/${pathname}`} onClick={this.props.close}>
+                  {route.slice(1).join('/')}
+                </Link>
               </li>
             );
           })}
