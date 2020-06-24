@@ -196,8 +196,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.68d9afd6.async.js"
   },
   {
-    "revision": "45f39f3f966c1633b7c6",
-    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.77ed7904.async.js"
+    "revision": "b2bad97012dd180339d9",
+    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.51e0e514.async.js"
   },
   {
     "revision": "31b3d4ea5a09660d34cc",
@@ -236,15 +236,15 @@ self.__precacheManifest = [
     "url": "/home/p__index.a65930d7.async.js"
   },
   {
-    "revision": "ac0b218493491aefae38",
+    "revision": "84f6ce0c3c0fafc1406d",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "ac0b218493491aefae38",
-    "url": "/home/umi.efcda90a.js"
+    "revision": "84f6ce0c3c0fafc1406d",
+    "url": "/home/umi.7abdda25.js"
   },
   {
-    "revision": "d0284fae1e7c1ae99b4a99427d51bc90",
+    "revision": "792fbf0b25df612edb9a4c6a2f598e61",
     "url": "/home/index.html"
   },
   {
