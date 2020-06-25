@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "50468f125f374d09c176",
+    "revision": "4df6c58098a650639ff8",
     "url": "/home/vendors.ddbf6f39.chunk.css"
   },
   {
-    "revision": "50468f125f374d09c176",
-    "url": "/home/vendors.923901ff.async.js"
+    "revision": "4df6c58098a650639ff8",
+    "url": "/home/vendors.2fc30d10.async.js"
   },
   {
     "revision": "5865aecbb4b7cdc85a92",
@@ -164,8 +164,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.88fd5eda.async.js"
   },
   {
-    "revision": "d90a45d124f88bc8ab8f",
-    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.1656084c.async.js"
+    "revision": "3fd2a43cfd900a16deff",
+    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.7a0727dc.async.js"
   },
   {
     "revision": "03deb475d8bc59a5a17a",
@@ -176,8 +176,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.4e5721dd.async.js"
   },
   {
-    "revision": "072f2d369a3075888eb0",
-    "url": "/home/p__docs__tour__2nd-malaysia:mabul-scuba-paradise.mdx.2b47c582.async.js"
+    "revision": "05dec3e7753e8a31c992",
+    "url": "/home/p__docs__tour__2nd-malaysia:mabul-scuba-paradise.mdx.efa3b2de.async.js"
   },
   {
     "revision": "77236d506ae0bc224694",
@@ -188,16 +188,16 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__emei--20℃.mdx.fc3f8dc4.async.js"
   },
   {
-    "revision": "7cc578bb0e931cfe075f",
-    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.d74721ee.async.js"
+    "revision": "b69b03f9eff28664d6be",
+    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.9b915091.async.js"
   },
   {
     "revision": "5bceabb354928b77e33f",
     "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.68d9afd6.async.js"
   },
   {
-    "revision": "0a46e0e2ea5c2f27c107",
-    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.2fdcbfaa.async.js"
+    "revision": "533c6f7b6de8bb940d44",
+    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.409c388a.async.js"
   },
   {
     "revision": "31b3d4ea5a09660d34cc",
@@ -236,15 +236,15 @@ self.__precacheManifest = [
     "url": "/home/p__index.a65930d7.async.js"
   },
   {
-    "revision": "131f6b0e1a08c00d01d6",
+    "revision": "71b7193fe6e3740685e4",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "131f6b0e1a08c00d01d6",
-    "url": "/home/umi.3955c045.js"
+    "revision": "71b7193fe6e3740685e4",
+    "url": "/home/umi.9fe910a1.js"
   },
   {
-    "revision": "f271eb56972d5b0bdc6e1a8e376bcf5d",
+    "revision": "176a22e80ed776702f0750affc4cd1ab",
     "url": "/home/index.html"
   },
   {
