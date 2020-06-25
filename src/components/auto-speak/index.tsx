@@ -1,6 +1,8 @@
 import React from 'react';
 import Speak from '../speak';
 
+const tagBlackList = ['h1', 'h2', 'h3', 'h4', 'h5'];
+
 export default function AutoSpeak(props: any) {
   if (typeof props.children === 'undefined') {
     return null;
@@ -16,11 +18,10 @@ export default function AutoSpeak(props: any) {
   if (
     typeof props.children === 'object' &&
     props.children.props &&
-    Array.isArray(props.children.props.children) &&
-    props.children.props.originalType === 'ul'
+    Array.isArray(props.children.props.children)
   ) {
     return props.children.props.children.map((li: any) => {
-      if (li.props && li.props.originalType === 'li' && typeof li.props.children === 'string') {
+      if (li.props && tagBlackList.indexOf(li.props.originalType) === -1 && typeof li.props.children === 'string') {
         return React.createElement(li.props.originalType, {
           key: li.props.children,
           children: <AutoSpeak>{li.props.children}</AutoSpeak>,
