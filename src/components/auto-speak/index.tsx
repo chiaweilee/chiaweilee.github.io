@@ -33,7 +33,7 @@ export default function AutoSpeak(props: any) {
   // convert word to speak
   if (typeof props.children === 'string') {
     return props.children.split(/([a-z']+)(\s)/gi).map((text: string) => {
-      if (/^[a-z']+$/.test(text)) {
+      if (/^[a-z']+$/i.test(text)) {
         return <Speak key={text}>{text}</Speak>;
       }
       return text;
