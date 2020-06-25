@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4df6c58098a650639ff8",
+    "revision": "d56e725534075db2c90f",
     "url": "/home/vendors.ddbf6f39.chunk.css"
   },
   {
-    "revision": "4df6c58098a650639ff8",
-    "url": "/home/vendors.2fc30d10.async.js"
+    "revision": "d56e725534075db2c90f",
+    "url": "/home/vendors.04bcf50a.async.js"
   },
   {
     "revision": "5865aecbb4b7cdc85a92",
@@ -188,63 +188,75 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__emei--20℃.mdx.fc3f8dc4.async.js"
   },
   {
-    "revision": "b69b03f9eff28664d6be",
-    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.9b915091.async.js"
+    "revision": "cfaeab09900b08f79b59",
+    "url": "/home/p__docs__tour__malaysia-tour:Mount Kinabalu.mdx.e0de1fca.async.js"
   },
   {
-    "revision": "5bceabb354928b77e33f",
-    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.68d9afd6.async.js"
+    "revision": "dbdfdfbad8ff84e45afe",
+    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.76c39a2c.async.js"
   },
   {
-    "revision": "533c6f7b6de8bb940d44",
-    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.409c388a.async.js"
+    "revision": "e32e3554ee5415502756",
+    "url": "/home/p__docs__tour__thailand-tour:koh-samui-bb.mdx.a9c93df1.async.js"
   },
   {
-    "revision": "31b3d4ea5a09660d34cc",
-    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.648bb6ee.async.js"
+    "revision": "e887dd6c366f7092447d",
+    "url": "/home/p__docs__tour__thailand-tour:kou-samui-songkran.mdx.d4404499.async.js"
   },
   {
-    "revision": "8f447208e27c68ff51b8",
-    "url": "/home/p__docs__typescript__Types.mdx.4a2dcfe2.async.js"
+    "revision": "fb7de3b0ded3742e79cd",
+    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.ccf8a4db.async.js"
   },
   {
-    "revision": "3323e7bc16c530ac21c3",
-    "url": "/home/p__docs__video__cinematic.mdx.f6e9cb43.async.js"
+    "revision": "ed42b9db2d9717289ea1",
+    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.94c01d54.async.js"
   },
   {
-    "revision": "91767a0e60455ef2ad13",
-    "url": "/home/p__docs__video__color-grading.mdx.ca19548e.async.js"
+    "revision": "93d7298b34844ab26f3b",
+    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.992222cb.async.js"
   },
   {
-    "revision": "d7486a7d5b9105bae628",
-    "url": "/home/p__docs__video__composition.mdx.833d5dea.async.js"
+    "revision": "ca82c127d64e0e9dff8e",
+    "url": "/home/p__docs__typescript__Types.mdx.2de43232.async.js"
   },
   {
-    "revision": "a0e6dfe79c426ab8d8bd",
-    "url": "/home/p__docs__video__edting.mdx.9f7cf087.async.js"
+    "revision": "c9c2dc30d0d539b7ab5e",
+    "url": "/home/p__docs__video__cinematic.mdx.3f93f373.async.js"
   },
   {
-    "revision": "f75d0a727fe17a3a9b8e",
-    "url": "/home/p__docs__video__ffmpeg.mdx.a43867e7.async.js"
+    "revision": "892cd1414cc95db010e0",
+    "url": "/home/p__docs__video__color-grading.mdx.cb2e5370.async.js"
   },
   {
-    "revision": "c6d9cf074417d07e98a2",
-    "url": "/home/p__docs__video__gopro.mdx.efc1d444.async.js"
+    "revision": "adafcf9dc7bdce6af505",
+    "url": "/home/p__docs__video__composition.mdx.e4004f21.async.js"
   },
   {
-    "revision": "f6f63f1579f1c00eab1c",
-    "url": "/home/p__index.a65930d7.async.js"
+    "revision": "1f195b5bf2d853b3a718",
+    "url": "/home/p__docs__video__edting.mdx.03dfa723.async.js"
   },
   {
-    "revision": "71b7193fe6e3740685e4",
+    "revision": "a05f28d75ffe0f647c9c",
+    "url": "/home/p__docs__video__ffmpeg.mdx.a66a9df6.async.js"
+  },
+  {
+    "revision": "c1dc3995a93206da04ca",
+    "url": "/home/p__docs__video__gopro.mdx.abda01f9.async.js"
+  },
+  {
+    "revision": "aa24e83836fe95b8e422",
+    "url": "/home/p__index.c3bb0155.async.js"
+  },
+  {
+    "revision": "f67460431bf4d1c17c75",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "71b7193fe6e3740685e4",
-    "url": "/home/umi.9fe910a1.js"
+    "revision": "f67460431bf4d1c17c75",
+    "url": "/home/umi.c41445ab.js"
   },
   {
-    "revision": "176a22e80ed776702f0750affc4cd1ab",
+    "revision": "bc026b57b07d6d8955dfc904703d220d",
     "url": "/home/index.html"
   },
   {
