@@ -10,7 +10,7 @@ export function loadBingApi(key: string): Promise<void> {
   if (!loader) {
     loader = new Promise((resolve, reject) => {
       const callbackName = 'bingAPIReady';
-      let url = `https://www.bing.com/api/maps/mapcontrol?callback=${callbackName}`;
+      let url = `https://www.bing.com/api/maps/mapcontrol?callback=${callbackName}&setLang=en`;
       if (key) {
         url += `&key=${key}`;
       }
