@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/home/p__docs___layout.53f9debd.async.js"
   },
   {
-    "revision": "0c17a845eff0d7d9d137",
+    "revision": "666c77a06995d1cc6809",
     "url": "/home/p__docs__english__pronunciation.mdx.b7e08b15.chunk.css"
   },
   {
-    "revision": "0c17a845eff0d7d9d137",
-    "url": "/home/p__docs__english__pronunciation.mdx.329b9b30.async.js"
+    "revision": "666c77a06995d1cc6809",
+    "url": "/home/p__docs__english__pronunciation.mdx.118b64c7.async.js"
   },
   {
     "revision": "68659c26df9c8cda5e8d",
@@ -236,15 +236,15 @@ self.__precacheManifest = [
     "url": "/home/p__index.a65930d7.async.js"
   },
   {
-    "revision": "6345b7ec8c9c1a3c6445",
+    "revision": "131f6b0e1a08c00d01d6",
     "url": "/home/umi.904a49dd.css"
   },
   {
-    "revision": "6345b7ec8c9c1a3c6445",
-    "url": "/home/umi.44a615a0.js"
+    "revision": "131f6b0e1a08c00d01d6",
+    "url": "/home/umi.3955c045.js"
   },
   {
-    "revision": "63d459893d52020c33371cb277cb0d83",
+    "revision": "f271eb56972d5b0bdc6e1a8e376bcf5d",
     "url": "/home/index.html"
   },
   {
