@@ -164,8 +164,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.88fd5eda.async.js"
   },
   {
-    "revision": "3fd2a43cfd900a16deff",
-    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.7a0727dc.async.js"
+    "revision": "fcfeea98de286720d276",
+    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.d0e83933.async.js"
   },
   {
     "revision": "03deb475d8bc59a5a17a",
@@ -192,8 +192,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__tour__malaysia-tour:Mount Kinabalu.mdx.e0de1fca.async.js"
   },
   {
-    "revision": "dbdfdfbad8ff84e45afe",
-    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.76c39a2c.async.js"
+    "revision": "531e53fa11ecdffb2c2a",
+    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.f5b77e5a.async.js"
   },
   {
     "revision": "e32e3554ee5415502756",
@@ -248,15 +248,23 @@ self.__precacheManifest = [
     "url": "/home/p__index.c3bb0155.async.js"
   },
   {
-    "revision": "f67460431bf4d1c17c75",
-    "url": "/home/umi.904a49dd.css"
+    "revision": "21b1d3ec3316e807fb9b",
+    "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "f67460431bf4d1c17c75",
-    "url": "/home/umi.c41445ab.js"
+    "revision": "21b1d3ec3316e807fb9b",
+    "url": "/home/umi.4be35705.js"
   },
   {
-    "revision": "bc026b57b07d6d8955dfc904703d220d",
+    "revision": "e7dffb518ae638476d8879b45b9a97a2",
+    "url": "/home/static/b737-pubket-airport.e7dffb51.jpg"
+  },
+  {
+    "revision": "a403d602b044a710e7fe33e1c0a60f82",
+    "url": "/home/static/tree-house-girl.a403d602.jpg"
+  },
+  {
+    "revision": "2fb62a4d782031529bb38de412655618",
     "url": "/home/index.html"
   },
   {
