@@ -1,57 +1,66 @@
 import React from 'react';
+import { WingBlank, WhiteSpace, Tag } from 'antd-mobile';
 import Link from 'umi/link';
+import groupBy from 'lodash/groupBy';
+import isEqual from 'lodash/isEqual';
+import isPlainObject from 'lodash/isPlainObject';
+import map from 'lodash/map';
 
-interface Props {
-  route?: Route;
-  close: () => void;
-}
-
-interface Route {
-  key: any;
-  component: any;
-  exact?: boolean;
-  path?: string;
-  _title?: string;
-  _title_default?: string;
-  routes?: Route[];
-}
-
-export default class SiteMap extends React.PureComponent<Props> {
-  public render() {
-    return <div>{this.renderRoutes(this.routes)}</div>;
-  }
-
-  private get routes() {
-    const { route } = this.props;
-    return (
-      route &&
-      Array.isArray(route.routes) &&
-      route.routes
+const computeRoutes = (routes: any): any[] => {
+  return (
+    (routes &&
+      Array.isArray(routes) &&
+      routes
         .filter(r => !!r.path)
         .map((route: any) => route.path.split('/').slice(1))
-        .filter(r => r.length > 1 && !!r[0])
-    );
+        .filter(r => r.length > 1 && !!r[0])) ||
+    []
+  );
+};
+
+export default class extends React.PureComponent<any, any> {
+  public constructor(props: any) {
+    super(props);
+    this.state = {
+      routes: computeRoutes(props.route && props.route.routes),
+    };
   }
 
-  private renderRoutes(routes: any) {
-    if (!routes) {
-      return null;
-    }
+  public render() {
+    return [<WhiteSpace size="lg" />, <WingBlank size="md">{this.renderRoutes}</WingBlank>];
+  }
 
+  private get currentRoute() {
+    return this.props.location.pathname.split('/').splice(1);
+  }
+
+  private get currentDir() {
+    return this.currentRoute.slice(0, this.currentRoute.length);
+  }
+
+  private get routesIndex() {
+    const { routes } = this.state;
+    const matchedRoutes = routes.filter((route: any[]) => {
+      return (
+        isEqual(this.currentDir, route.slice(0, this.currentDir.length)) &&
+        !isEqual(this.currentDir, route)
+      );
+    });
+    return groupBy(matchedRoutes, this.currentRoute.length);
+  }
+
+  private get renderRoutes() {
     return (
-      <ul>
-        {this.routes &&
-          this.routes.map((route: string[]) => {
-            const pathname = route.join('/');
-            return (
-              <li key={pathname}>
-                <Link to={`/${pathname}`} onClick={this.props.close}>
-                  {route.slice(1).join('/')}
-                </Link>
-              </li>
-            );
-          })}
-      </ul>
+      isPlainObject(this.routesIndex) &&
+      map(this.routesIndex, (route: string[], key) => {
+        const pathname = [...this.currentDir, key].join('/');
+        console.warn(pathname, JSON.stringify(route));
+        return (
+          <Tag key={pathname}>
+            <Link to={`/${pathname}`}>{key}</Link>
+          </Tag>
+        );
+      })
     );
   }
 }

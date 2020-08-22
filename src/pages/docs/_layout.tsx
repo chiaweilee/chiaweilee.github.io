@@ -3,7 +3,6 @@ import { NavBar } from 'antd-mobile';
 import Icon from '@/components/icon';
 import GithubEdit from '@/components/github-edit';
 import Navigation from '@/components/navigation';
-import Drawer from '@/components/drawer';
 import utils from '@/utils/index';
 
 interface State {
@@ -18,14 +17,10 @@ export default class extends React.PureComponent<any, State> {
           mode="light"
           icon={<Icon type="iconback" />}
           onLeftClick={utils.historyGoBack}
-          rightContent={
-            <Drawer sidebar={(close: () => void) => <Navigation {...this.props} close={close} />}>
-              <Icon type="iconlist" />
-            </Drawer>
-          }
+          rightContent={<GithubEdit href={this.githubPage} />}
         />
+        <Navigation {...this.props} />
         <section className={'markdown-body'}>{this.props.children}</section>
-        <GithubEdit href={this.githubPage} />
       </>
     );
   }
