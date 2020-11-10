@@ -1,4 +1,4 @@
-## BANGKOK
+## BANGKOK 1
 
 *Bangkok, good-time city. Gateway to Southeast Asia. Where dollars and Duetsmarks get  turned into counterfeit watches and genuine scars.*
 
@@ -10,9 +10,8 @@
 
 ...
 
-*So never refuse an invitation. Never resist the unfamiliar. Never fall to be polite. Never outstay your welcome. Just keep your mind open and suck in the experience. And if hurts it’s probably worth it.*
+*I was traveling alone. Being alone allows me more opportunity to absorb your experience on your person level.*
 
 *- The Beach, 2000*   
 
-## LONELY SOUL
 
