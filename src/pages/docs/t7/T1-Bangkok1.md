@@ -1,3 +1,5 @@
+import thebeach2000 from './the.beach.2000.png'
+
 ## BANGKOK 1
 
 *Bangkok, good-time city. Gateway to Southeast Asia. Where dollars and Duetsmarks get  turned into counterfeit watches and genuine scars.*
@@ -14,4 +16,4 @@
 
 *- The Beach, 2000*   
 
-
+<img src={thebeach2000} />
