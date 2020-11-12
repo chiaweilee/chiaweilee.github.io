@@ -9,5 +9,5 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: npm install
+            - run: npm install --force
       - run: sh deploy-circleci.sh
