@@ -9,5 +9,5 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: npm install --force
+            - run: npm install --legacy-peer-deps
       - run: sh deploy-circleci.sh
