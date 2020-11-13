@@ -16,3 +16,6 @@ workflows:
   build-deploy:
     jobs:
       - umi-build
+          filters:
+            branches:
+              only: master
