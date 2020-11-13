@@ -6,11 +6,11 @@ jobs:
     executor:
       name: node/default
     steps:
+      - checkout
       - when:
           condition:
             equal: [ master, << pipeline.git.branch >> ]
           steps:
-            - checkout
             - node/with-cache:
                 steps:
                   - run: npm install --legacy-peer-deps
