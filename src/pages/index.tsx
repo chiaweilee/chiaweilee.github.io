@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default () => <ul>
-  <li>
-    <a href={'/docs'} >docs</a>
-  </li>
-</ul>
+export default (props: any) => {
+  props.history.push({
+    pathname: '/docs',
+  });
+  return null;
+};

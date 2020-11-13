@@ -1,12 +1,16 @@
 // ref: https://umijs.org/config/
 export default {
+  base: '/home/',
+  publicPath: '/home/',
+  cssPublicPath: '/home/',
+  runtimePublicPath: true,
+  outputPath: 'home',
   hash: true,
+  history: 'hash',
   theme: './src/theme.js',
-  history: 'browser',
   treeShaking: true,
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
-  targets: { chrome: 69, firefox: 69, safari: 13, ios: 13 },
   chainWebpack(config /* , { webpack } */) {
     if (process.env.NODE_ENV === 'production') {
       config.merge({
@@ -32,12 +36,7 @@ export default {
     }
   },
   plugins: [
-    [
-      'umi-plugin-md',
-      {
-        className: 'markdown-body',
-      },
-    ],
+    'umi-plugin-mdx',
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     [
       'umi-plugin-react',
