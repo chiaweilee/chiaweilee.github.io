@@ -11,3 +11,11 @@ jobs:
           steps:
             - run: npm install --legacy-peer-deps
       - run: sh deploy-circleci.sh
+workflows:
+  version: 2
+    build-deploy:
+      jobs:
+        - build:
+            filters:
+              branches:
+                only: master
