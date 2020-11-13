@@ -2,20 +2,16 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
-  umi-build:
+  build:
     executor:
       name: node/default
     steps:
       - checkout
-      - node/with-cache:
+      - when:
+          condition:
+            equal: [ master, << pipeline.git.branch >> ]
           steps:
-            - run: npm install --legacy-peer-deps
-      - run: sh deploy-circleci.sh
-
-workflows:
-  build-deploy:
-    jobs:
-      - umi-build
-          filters:
-            branches:
-              only: master
+            - node/with-cache:
+                steps:
+                  - run: npm install --legacy-peer-deps
+                  - run: sh deploy-circleci.sh
