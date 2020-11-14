@@ -21,7 +21,11 @@ export default function AutoSpeak(props: any) {
     Array.isArray(props.children.props.children)
   ) {
     return props.children.props.children.map((li: any) => {
-      if (li.props && tagBlackList.indexOf(li.props.originalType) === -1 && typeof li.props.children === 'string') {
+      if (
+        li.props &&
+        tagBlackList.indexOf(li.props.originalType) === -1 &&
+        typeof li.props.children === 'string'
+      ) {
         return React.createElement(li.props.originalType, {
           key: li.props.children,
           children: <AutoSpeak>{li.props.children}</AutoSpeak>,

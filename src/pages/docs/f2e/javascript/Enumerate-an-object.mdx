@@ -1,13 +1,16 @@
 ## Enmerate an object
 
 ### for..in
+
 `for...in` iterate over `all the enumerable properties` of an object.
 It traverses all enumerable properties of an object and `its prototype chain`.
 
 ### Object.keys()
+
 returns an `array` with all the own(`not in the prototype chain`) enumerable properties' names('keys') of an object.
 
 ### Object.getOwnPropertyName()
+
 returns an `array` containing all own properties' names(`enumerable or not`) of an object.
 
 ```JavaScript
@@ -55,15 +58,17 @@ console.log(B)
 
 ### Object.defineProperty()
 
-defines new or modifies existing property(s) directly on  an object, returning the object.
+defines new or modifies existing property(s) directly on an object, returning the object.
 
 ### Descriptors
 
 #### configurable
+
 `true` if and only if the type of this property `descriptor may be changed and may be deleted` from the corresponding object.
 Defaults to `false`
 
 #### enumerable
+
 `true` if and only if this property shows up during enumeration.
 Defaults to `false`
 

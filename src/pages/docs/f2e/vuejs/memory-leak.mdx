@@ -17,22 +17,11 @@ avoid use `anonymous function` to callback
 ## Closure
 
 ```vue.js
-let closure = 1
-export default {
-    data () {
-        return {
-            closure: closure
-        }
-    },
-    mounted () {
-        console.log(closure)
-        console.log(this.closure)
-        closure += 1
-    }
-}
+let closure = 1 export default { data () { return { closure: closure } }, mounted () {
+console.log(closure) console.log(this.closure) closure += 1 } }
 ```
 
-*every time mounted*
+_every time mounted_
 
 ```
 // result: 1 1, 2 2, 3 3 ...

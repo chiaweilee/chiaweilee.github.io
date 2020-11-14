@@ -64,8 +64,8 @@ const length2: number = (text as string).length;
 
 ```typescript
 interface Point {
-    readonly x: number;
-    readonly y: number;
+  readonly x: number;
+  readonly y: number;
 }
 
 const numbers: ReadonlyArray<number> = [1, 2, 3];
@@ -77,7 +77,7 @@ const num2 = numbers as number[]; // works!
 
 ```typescript
 interface Fn {
-    (source: string, subString: string): boolean;
+  (source: string, subString: string): boolean;
 }
 ```
 
@@ -87,17 +87,17 @@ interface Fn {
 
 ```typescript
 interface ClockInterface {
-    currentTime: Date;
-    setTime(d: Date): void;
-    new (hour: number, minute: number);
+  currentTime: Date;
+  setTime(d: Date): void;
+  new (hour: number, minute: number);
 }
 
 class Clock implements ClockInterface {
-    currentTime: Date = new Date();
-    setTime(d: Date) {
-        this.currentTime = d;
-    }
-    constructor(h: number, m: number) { }
+  currentTime: Date = new Date();
+  setTime(d: Date) {
+    this.currentTime = d;
+  }
+  constructor(h: number, m: number) {}
 }
 ```
 
@@ -105,11 +105,11 @@ class Clock implements ClockInterface {
 
 ```typescript
 interface Shape {
-    color: string;
+  color: string;
 }
 
 interface Square extends Shape {
-    sideLength: number;
+  sideLength: number;
 }
 ```
 
@@ -118,12 +118,12 @@ interface Square extends Shape {
 ```typescript
 namespace Validation {
   export interface StringValidator {
-      isAcceptable(s: string): boolean;
+    isAcceptable(s: string): boolean;
   }
   const lettersRegexp = /^[A-Za-z]+$/;
 }
 
-const validators: { [s: string]: Validation.StringValidator; } = {};
+const validators: { [s: string]: Validation.StringValidator } = {};
 ```
 
 ### Declare
