@@ -13,5 +13,5 @@ jobs:
           steps:
             - node/with-cache:
                 steps:
-                  - run: npm install --legacy-peer-deps
+                  - run: yarn
                   - run: sh deploy-circleci.sh
