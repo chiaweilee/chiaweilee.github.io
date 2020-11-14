@@ -10,6 +10,7 @@
     "lint:sty": "stylelint \"**/*.less\" --fix"
   },
   "dependencies": {
+    "antd": "3.x",
     "cryptorjs": "^3.0.0",
     "github-markdown-css": "^3.0.1",
     "highlight.js": "^9.18.1",

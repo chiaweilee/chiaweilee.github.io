@@ -4,9 +4,9 @@
 
 A `Promise` is in one of these states:
 
-* `pending`: initial state, neither fulfilled and rejected.
-* `fulfilled`: completed successfully
-* `rejected`: operation failed
+- `pending`: initial state, neither fulfilled and rejected.
+- `fulfilled`: completed successfully
+- `rejected`: operation failed
 
 ### then and catch return promises
 
@@ -38,8 +38,8 @@ promise.then(function (value) {
 
 return a promise that either `fulfills` when:
 
-* `all` promises `fulfilled`
-* or `one` of promises `rejects`
+- `all` promises `fulfilled`
+- or `one` of promises `rejects`
 
 ```JavaScript
 function setTime (time) {
@@ -86,7 +86,7 @@ Promise.all([setTime(1), fail(100), setTime(200)])
 
 return a promise that either `fulfills` when:
 
-* one of promise `fulfilled` or `rejects`
+- one of promise `fulfilled` or `rejects`
 
 ```JavaScript
 const rabit = new Promise(resolve => {

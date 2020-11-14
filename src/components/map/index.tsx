@@ -20,8 +20,8 @@ export default (props: any) => {
   const center =
     latitude && longitude
       ? { latitude, longitude }
-      // try using points as center
-      : points[0] && { latitude: points[0].latitude, longitude: points[0].longitude };
+      : // try using points as center
+        points[0] && { latitude: points[0].latitude, longitude: points[0].longitude };
   const walking = Array.isArray(props.walking)
     ? props.walking.map((point: any) => {
         // tslint:disable-next-line:no-shadowed-variable

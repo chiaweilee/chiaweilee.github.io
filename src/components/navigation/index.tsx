@@ -54,7 +54,6 @@ export default class extends React.PureComponent<any, any> {
       isPlainObject(this.routesIndex) &&
       map(this.routesIndex, (route: string[], key) => {
         const pathname = [...this.currentDir, key].join('/');
-        console.warn(pathname, JSON.stringify(route));
         return (
           <Tag key={pathname}>
             <Link to={`/${pathname}`}>{key}</Link>
