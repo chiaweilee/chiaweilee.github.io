@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e1db7f6cf56caaaa268d",
-    "url": "/home/vendors.c9c5614c.chunk.css"
+    "revision": "4a44ea5ea7aadf8d9900",
+    "url": "/home/vendors.cd6cc205.chunk.css"
   },
   {
-    "revision": "e1db7f6cf56caaaa268d",
-    "url": "/home/vendors.97f5a0ae.async.js"
+    "revision": "4a44ea5ea7aadf8d9900",
+    "url": "/home/vendors.941ae022.async.js"
   },
   {
     "revision": "734e411f953fb73cd414",
@@ -168,12 +168,12 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.1302cff9.async.js"
   },
   {
-    "revision": "94eebf6a967137b7ce75",
-    "url": "/home/p__docs__t7__T1-2-SUKHOTHAI1.mdx.5151640d.async.js"
+    "revision": "c6081f77a0a4974c0e8e",
+    "url": "/home/p__docs__t7__T1-1-BANGKOK1.mdx.a88b35b3.async.js"
   },
   {
-    "revision": "4ad465aed65fa2c05090",
-    "url": "/home/p__docs__t7__T1-Bangkok1.mdx.5459eba2.async.js"
+    "revision": "b4f18a1ae00d8601f93b",
+    "url": "/home/p__docs__t7__T1-2-SUKHOTHAI1.mdx.4d968784.async.js"
   },
   {
     "revision": "00052b33163b59c12b1f",
@@ -236,12 +236,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__typescript__Types.mdx.96b1c481.async.js"
   },
   {
-    "revision": "756ee072b03d7a1bd595",
-    "url": "/home/p__docs__util__encoder.mdx.d68a2f96.chunk.css"
-  },
-  {
-    "revision": "756ee072b03d7a1bd595",
-    "url": "/home/p__docs__util__encoder.mdx.428000b5.async.js"
+    "revision": "5eefd0596a1ec72c5805",
+    "url": "/home/p__docs__util__encoder.mdx.678d76ae.async.js"
   },
   {
     "revision": "39fe2626ed1063532f1a",
@@ -272,12 +268,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.0a905c3d.async.js"
   },
   {
-    "revision": "e304e550749c53423056",
+    "revision": "85f027fc6fc132da0554",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "e304e550749c53423056",
-    "url": "/home/umi.7dba5a88.js"
+    "revision": "85f027fc6fc132da0554",
+    "url": "/home/umi.3c15bca8.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -292,7 +288,7 @@ self.__precacheManifest = [
     "url": "/home/static/The.Beach.2000.e84a16e4.png"
   },
   {
-    "revision": "24e8ab00c4e9aeebe23fa5581680e9e0",
+    "revision": "83523d669c9505b1d0c4f9a98dd163bb",
     "url": "/home/index.html"
   },
   {
