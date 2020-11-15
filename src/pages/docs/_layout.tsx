@@ -19,8 +19,9 @@ export default class extends React.PureComponent<any, State> {
           onLeftClick={utils.historyGoBack}
           rightContent={<GithubEdit href={this.githubPage} />}
         />
-        <Navigation {...this.props} />
-        <section className={'markdown-body'}>{this.props.children}</section>
+        <Navigation {...this.props}>
+          <section className={'markdown-body'}>{this.props.children}</section>
+        </Navigation>
       </>
     );
   }

@@ -14,8 +14,7 @@ export default function(props: { date: any; nights?: number }) {
       <i>{moment(date).format('Do MMM, YYYY')}</i>
       {detail && typeof nights === 'number' && (
         <i>
-          {' '}
-          to{' '}
+          {' - '}
           {moment(date)
             .add(nights - 1, 'd')
             .format('Do MMM, YYYY')}
