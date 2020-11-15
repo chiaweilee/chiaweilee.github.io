@@ -12,7 +12,7 @@ export default function(props: any) {
   if (typeof window.secretKey === 'string') {
     return new Cryptor(window.secretKey).decode(props.children);
   }
-  return <Confidential />;
+  return <Confidential>{props.children}</Confidential>;
 }
 
 export function Encoder() {
