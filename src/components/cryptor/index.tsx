@@ -3,20 +3,35 @@ import { Input, Typography } from 'antd';
 import Confidential from '@/components/confidential';
 const Cryptor = require('cryptorjs');
 
-declare var window: any;
-
 const { TextArea } = Input;
 const { Text, Paragraph } = Typography;
 
+const secretKey = 'secretKey';
+
 export default function(props: any) {
-  if (typeof window.secretKey === 'string') {
-    return new Cryptor(window.secretKey).decode(props.children);
+  if (typeof localStorage.getItem(secretKey) === 'string') {
+    return new Cryptor(localStorage.getItem(secretKey)).decode(props.children);
   }
   return <Confidential>{props.children}</Confidential>;
 }
 
-export function Encoder() {
+export function SecretRegister() {
   const [password, setPassword] = useState('');
+  useEffect(() => {
+    localStorage.setItem(secretKey, password);
+  }, [password]);
+  return (
+    <Input.Password
+      placeholder="input password"
+      onChange={e => {
+        setPassword(e.target.value);
+      }}
+    />
+  );
+}
+
+export function Encoder() {
+  const [password, setPassword] = useState(localStorage.getItem(secretKey) || '');
   const [text, setText] = useState('');
   const [code, setCode] = useState('');
 
@@ -43,11 +58,15 @@ export function Encoder() {
           setText(e.target.value);
         }}
       />
-      {code && (
-        <Paragraph copyable={{ text: code }}>
+      {code && [
+        <Paragraph
+          copyable={{
+            text: `<Cryptor>${code}</Cryptor>`,
+          }}
+        >
           <Text code>{code}</Text>
-        </Paragraph>
-      )}
+        </Paragraph>,
+      ]}
     </div>
   );
 }
