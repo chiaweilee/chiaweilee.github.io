@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4a44ea5ea7aadf8d9900",
-    "url": "/home/vendors.cd6cc205.chunk.css"
+    "revision": "6e27b22122949b31952d",
+    "url": "/home/vendors.b3e9361c.chunk.css"
   },
   {
-    "revision": "4a44ea5ea7aadf8d9900",
-    "url": "/home/vendors.941ae022.async.js"
+    "revision": "6e27b22122949b31952d",
+    "url": "/home/vendors.bc69d30c.async.js"
   },
   {
     "revision": "734e411f953fb73cd414",
@@ -168,8 +168,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.1302cff9.async.js"
   },
   {
-    "revision": "c6081f77a0a4974c0e8e",
-    "url": "/home/p__docs__t7__T1-1-BANGKOK1.mdx.a88b35b3.async.js"
+    "revision": "0e001f3ed929520f11b8",
+    "url": "/home/p__docs__t7__T1-1-BANGKOK1.mdx.3b5450b2.async.js"
   },
   {
     "revision": "b4f18a1ae00d8601f93b",
@@ -268,12 +268,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.0a905c3d.async.js"
   },
   {
-    "revision": "85f027fc6fc132da0554",
+    "revision": "0c31e0769594ce1d5446",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "85f027fc6fc132da0554",
-    "url": "/home/umi.3c15bca8.js"
+    "revision": "0c31e0769594ce1d5446",
+    "url": "/home/umi.cf8866c9.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/home/static/The.Beach.2000.e84a16e4.png"
   },
   {
-    "revision": "83523d669c9505b1d0c4f9a98dd163bb",
+    "revision": "3c0acd81fa9eb2e7b0608bfb94c13baa",
     "url": "/home/index.html"
   },
   {
