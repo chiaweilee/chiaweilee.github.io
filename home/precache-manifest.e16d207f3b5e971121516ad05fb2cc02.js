@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a360045f6bea29b301c8",
+    "revision": "dcf2387b3f1cda32ec8b",
     "url": "/home/vendors.c92b0287.chunk.css"
   },
   {
-    "revision": "a360045f6bea29b301c8",
-    "url": "/home/vendors.bad5515c.async.js"
+    "revision": "dcf2387b3f1cda32ec8b",
+    "url": "/home/vendors.d37f8b75.async.js"
   },
   {
     "revision": "bbc6852bc91718c2dcaa",
@@ -292,7 +292,7 @@ self.__precacheManifest = [
     "url": "/home/static/The.Beach.2000.e84a16e4.png"
   },
   {
-    "revision": "bf8dd9591ba38720aecd74ea6b1d6ec9",
+    "revision": "e577122a7d02c42eb210e06082e77258",
     "url": "/home/index.html"
   },
   {
