@@ -9,7 +9,7 @@ const { Text, Paragraph } = Typography;
 const secretKey = 'secretKey';
 
 export default function(props: any) {
-  if (typeof localStorage.getItem(secretKey) === 'string') {
+  if (localStorage.getItem(secretKey)) {
     return new Cryptor(localStorage.getItem(secretKey)).decode(props.children);
   }
   return <Confidential>{props.children}</Confidential>;
