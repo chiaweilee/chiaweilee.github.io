@@ -168,8 +168,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.1302cff9.async.js"
   },
   {
-    "revision": "de9d1b025d8f89da2f6f",
-    "url": "/home/p__docs__t7__T1-1-BANGKOK1.mdx.0080fae7.async.js"
+    "revision": "8806b1ae9f6684b0adea",
+    "url": "/home/p__docs__t7__T1-1-BANGKOK1.mdx.588b741b.async.js"
   },
   {
     "revision": "b4f18a1ae00d8601f93b",
@@ -272,12 +272,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.9254d08c.async.js"
   },
   {
-    "revision": "1fe75a23dc4b1c3497fd",
+    "revision": "37055ad1835fbaa1bfd0",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "1fe75a23dc4b1c3497fd",
-    "url": "/home/umi.9f60a426.js"
+    "revision": "37055ad1835fbaa1bfd0",
+    "url": "/home/umi.78c22eda.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -296,7 +296,7 @@ self.__precacheManifest = [
     "url": "/home/static/The.Beach.2000.e84a16e4.png"
   },
   {
-    "revision": "7334d8ac49bb0d21caefa48ab2062435",
+    "revision": "2f27dc8c6074143d7f15ba9a4c1fd241",
     "url": "/home/index.html"
   },
   {
