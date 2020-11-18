@@ -176,8 +176,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__TOUR-FOUR-SOUL.mdx.fb18fdf5.async.js"
   },
   {
-    "revision": "3e5c306377f053dc9178",
-    "url": "/home/p__docs__t7__TOUR-ONE-SOLITARY.mdx.725b832e.async.js"
+    "revision": "84beeb7e6f71151e4ceb",
+    "url": "/home/p__docs__t7__TOUR-ONE-SOLITARY.mdx.92469264.async.js"
   },
   {
     "revision": "18f3411127a8c74c48a0",
@@ -288,12 +288,16 @@ self.__precacheManifest = [
     "url": "/home/p__index.9800a427.async.js"
   },
   {
-    "revision": "497388ffe257b035297b",
+    "revision": "de911855b49db209266c",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "497388ffe257b035297b",
-    "url": "/home/umi.00832228.js"
+    "revision": "de911855b49db209266c",
+    "url": "/home/umi.5147657c.js"
+  },
+  {
+    "revision": "e84a16e467280769b747f8846de21ca2",
+    "url": "/home/static/beach.e84a16e4.png"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -308,11 +312,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "e84a16e467280769b747f8846de21ca2",
-    "url": "/home/static/The.Beach.2000.e84a16e4.png"
-  },
-  {
-    "revision": "3d1ae036c8571769bd0f3de065d46f9b",
+    "revision": "8ed24ac38930a33ea8e5dcf6723fcbb5",
     "url": "/home/index.html"
   },
   {
