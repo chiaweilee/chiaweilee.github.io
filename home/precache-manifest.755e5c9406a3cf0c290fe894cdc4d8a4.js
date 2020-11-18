@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "dcf2387b3f1cda32ec8b",
-    "url": "/home/vendors.c92b0287.chunk.css"
+    "revision": "c0bd59d396feb3cbcc0d",
+    "url": "/home/vendors.8692e7bf.chunk.css"
   },
   {
-    "revision": "dcf2387b3f1cda32ec8b",
-    "url": "/home/vendors.d37f8b75.async.js"
+    "revision": "c0bd59d396feb3cbcc0d",
+    "url": "/home/vendors.24cc4792.async.js"
   },
   {
     "revision": "bbc6852bc91718c2dcaa",
@@ -168,135 +168,123 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.1302cff9.async.js"
   },
   {
-    "revision": "8806b1ae9f6684b0adea",
-    "url": "/home/p__docs__t7__T1-1-BANGKOK1.mdx.588b741b.async.js"
+    "revision": "94eebf6a967137b7ce75",
+    "url": "/home/p__docs__t7__T1-2-SUKHOTHAI1.mdx.5151640d.async.js"
   },
   {
-    "revision": "b4f18a1ae00d8601f93b",
-    "url": "/home/p__docs__t7__T1-2-SUKHOTHAI1.mdx.4d968784.async.js"
+    "revision": "fbcbcb2f5725aac75fe5",
+    "url": "/home/p__docs__t7__T7-KOHPHANGAN1.mdx.6d47d6a4.async.js"
   },
   {
-    "revision": "00052b33163b59c12b1f",
-    "url": "/home/p__docs__t7__T7-KOHPHANGAN1.mdx.aa86eb9b.async.js"
+    "revision": "b60db5e0ee6dd02bbdf9",
+    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.415ab6de.async.js"
   },
   {
-    "revision": "c9c0a8538fb704d20de5",
-    "url": "/home/p__docs__tour__1st-thailand-tour:phuket-catch-the-wind.mdx.51180b8c.async.js"
+    "revision": "b52e9595b52c68c49f19",
+    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.5383f7f4.async.js"
   },
   {
-    "revision": "5bfab7ec7cedd06d4dd8",
-    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-riding-in-dark.mdx.864f06f2.async.js"
+    "revision": "7e2862be8b00c1fcfc4d",
+    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.af5ca876.async.js"
   },
   {
-    "revision": "2facb6ce0c8ef95f179d",
-    "url": "/home/p__docs__tour__1st-thailand-tour:sukhothai-unexpected-ride.mdx.83d92caf.async.js"
+    "revision": "9006aa3c046e8da5d319",
+    "url": "/home/p__docs__tour__2nd-malaysia:mabul-scuba-paradise.mdx.914a2772.async.js"
   },
   {
-    "revision": "ab9c675a6b6765a09824",
-    "url": "/home/p__docs__tour__2nd-malaysia:mabul-scuba-paradise.mdx.27e54fa5.async.js"
+    "revision": "f17fa8467e61c1491769",
+    "url": "/home/p__docs__tour__checklist.mdx.7f8da224.async.js"
   },
   {
-    "revision": "1e4d33c332028cfe5113",
-    "url": "/home/p__docs__tour__checklist.mdx.a749e665.async.js"
+    "revision": "2b2f3a8aef0437615a44",
+    "url": "/home/p__docs__tour__emei--20℃.mdx.c646dd16.async.js"
   },
   {
-    "revision": "baef11a9255bb01e8fbb",
-    "url": "/home/p__docs__tour__emei--20℃.mdx.bb87fbf8.async.js"
+    "revision": "de5acdf45513e492defd",
+    "url": "/home/p__docs__tour__malaysia-tour:Mount Kinabalu.mdx.9b99ec58.async.js"
   },
   {
-    "revision": "9c11f6e9ef265e908032",
-    "url": "/home/p__docs__tour__malaysia-tour:Mount Kinabalu.mdx.4a9af307.async.js"
+    "revision": "043dc483b0368ead2357",
+    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.1385b13c.async.js"
   },
   {
-    "revision": "a50d662386aebebbd214",
-    "url": "/home/p__docs__tour__thailand-tour:chiangmai-treehouse.mdx.e52c9ef6.async.js"
+    "revision": "e23dd14c72a449c57057",
+    "url": "/home/p__docs__tour__thailand-tour:koh-samui-bb.mdx.db547abe.async.js"
   },
   {
-    "revision": "19be7d047175b9565602",
-    "url": "/home/p__docs__tour__thailand-tour:koh-samui-bb.mdx.35291cd8.async.js"
+    "revision": "86b30ec02003bf859886",
+    "url": "/home/p__docs__tour__thailand-tour:kou-samui-songkran.mdx.68fc8ebe.async.js"
   },
   {
-    "revision": "efe4fa69033630ec0bc6",
-    "url": "/home/p__docs__tour__thailand-tour:kou-samui-songkran.mdx.96067b34.async.js"
+    "revision": "b260a79cbf2578496266",
+    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.129c26f8.async.js"
   },
   {
-    "revision": "f411390546f0836e4d3e",
-    "url": "/home/p__docs__tour__thailand-tour:similan-deflate.mdx.3179d3e2.async.js"
+    "revision": "cd4387906e7bb05b926b",
+    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.c99149c3.async.js"
   },
   {
-    "revision": "1d2f421983c1ce1faa02",
-    "url": "/home/p__docs__tour__thailand-tour:similan-great-escape.mdx.b271f25b.async.js"
+    "revision": "59907c978df9d32fb893",
+    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.8d806c68.async.js"
   },
   {
-    "revision": "43156332dd1a3e58deea",
-    "url": "/home/p__docs__typescript__Public,-private,-and-protected-modifiers.mdx.b1f8d139.async.js"
+    "revision": "5861c547adf6fc1f6276",
+    "url": "/home/p__docs__typescript__Types.mdx.009dd3e8.async.js"
   },
   {
-    "revision": "94dd06bbaaf52c62980b",
-    "url": "/home/p__docs__typescript__Types.mdx.96b1c481.async.js"
+    "revision": "1dbe126fadcc8c4d7274",
+    "url": "/home/p__docs__util__encoder.mdx.c56ad790.async.js"
   },
   {
-    "revision": "3ce882bd715b77250352",
-    "url": "/home/p__docs__util__encoder.mdx.1836092e.async.js"
+    "revision": "7ee4b9c885b7fb315d4b",
+    "url": "/home/p__docs__util__register.mdx.35516a11.async.js"
   },
   {
-    "revision": "31c49ee6af38ffa5739c",
-    "url": "/home/p__docs__util__register.mdx.0c0a5eab.async.js"
+    "revision": "39fe2626ed1063532f1a",
+    "url": "/home/p__docs__video__cinematic.mdx.9a7bc307.async.js"
   },
   {
-    "revision": "5bda8aa239a2b6133bc4",
-    "url": "/home/p__docs__video__cinematic.mdx.f9f903e6.async.js"
+    "revision": "3c632ca08c8a1056259b",
+    "url": "/home/p__docs__video__color-grading.mdx.7de7f573.async.js"
   },
   {
-    "revision": "e94557e8fdf937d9f92a",
-    "url": "/home/p__docs__video__color-grading.mdx.2e673349.async.js"
+    "revision": "e0469ec858f16657380d",
+    "url": "/home/p__docs__video__composition.mdx.4e4cc9c1.async.js"
   },
   {
-    "revision": "ca5bee37a9403e232442",
-    "url": "/home/p__docs__video__composition.mdx.745d90c8.async.js"
+    "revision": "5ab8b8213ea2ff932760",
+    "url": "/home/p__docs__video__edting.mdx.c966cf98.async.js"
   },
   {
-    "revision": "27ad87b7f1ec30894d62",
-    "url": "/home/p__docs__video__edting.mdx.b08b4189.async.js"
+    "revision": "e0bec146d3a3a6bfbb36",
+    "url": "/home/p__docs__video__ffmpeg.mdx.c824d7ca.async.js"
   },
   {
-    "revision": "fbe41e55a82fe5a8ebe4",
-    "url": "/home/p__docs__video__ffmpeg.mdx.63f1c898.async.js"
+    "revision": "8edc8d27773fd9b554a4",
+    "url": "/home/p__docs__video__gopro.mdx.bd482f04.async.js"
   },
   {
-    "revision": "de57dae57a3f0887ed0e",
-    "url": "/home/p__docs__video__gopro.mdx.fb8b5cda.async.js"
+    "revision": "11bc2d53fc6d5d62bdd7",
+    "url": "/home/p__index.0a905c3d.async.js"
   },
   {
-    "revision": "66f8b791fb439cdc61ff",
-    "url": "/home/p__index.9254d08c.async.js"
-  },
-  {
-    "revision": "37055ad1835fbaa1bfd0",
+    "revision": "e14fb252246bdd7898c2",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "37055ad1835fbaa1bfd0",
-    "url": "/home/umi.78c22eda.js"
+    "revision": "e14fb252246bdd7898c2",
+    "url": "/home/umi.7a3013ce.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
     "url": "/home/static/b737-pubket-airport.e7dffb51.jpg"
   },
   {
-    "revision": "b00c22991b78317e1da4426c53d1c614",
-    "url": "/home/static/sara.b00c2299.jpg"
-  },
-  {
     "revision": "a403d602b044a710e7fe33e1c0a60f82",
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "e84a16e467280769b747f8846de21ca2",
-    "url": "/home/static/The.Beach.2000.e84a16e4.png"
-  },
-  {
-    "revision": "2f27dc8c6074143d7f15ba9a4c1fd241",
+    "revision": "74a7863f4a0e265c92ce47c83d378abe",
     "url": "/home/index.html"
   },
   {
