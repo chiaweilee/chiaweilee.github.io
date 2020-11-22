@@ -4,13 +4,13 @@ import moment from 'moment';
 export default function(props: { date: any; nights?: number }) {
   const [detail, setDetail] = useState(false);
   const { date, nights } = props;
+
+  function switchDetail() {
+    setDetail(!detail);
+  }
+
   return (
-    <div
-      onClick={() => {
-        setDetail(!detail);
-      }}
-      style={{ marginBottom: '16px' }}
-    >
+    <div onClick={switchDetail} style={{ marginBottom: '16px' }}>
       <i>{moment(date).format('Do MMM, YYYY')}</i>
       {detail && typeof nights === 'number' && (
         <i>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// @ts-ignore
 import { Input, Typography } from 'antd';
 import Confidential from '@/components/confidential';
 const Cryptor = require('cryptorjs');
@@ -7,6 +8,12 @@ const { TextArea } = Input;
 const { Text, Paragraph } = Typography;
 
 const secretKey = 'secretKey';
+
+function onChange(setter: (e: any) => void) {
+  return function(e) {
+    setter(e.target.value);
+  };
+}
 
 export default function(props: any) {
   if (localStorage.getItem(secretKey)) {
@@ -20,14 +27,7 @@ export function SecretRegister() {
   useEffect(() => {
     localStorage.setItem(secretKey, password);
   }, [password]);
-  return (
-    <Input.Password
-      placeholder="input password"
-      onChange={e => {
-        setPassword(e.target.value);
-      }}
-    />
-  );
+  return <Input.Password placeholder="input password" onChange={onChange(setPassword)} />;
 }
 
 export function Encoder() {
@@ -45,28 +45,17 @@ export function Encoder() {
 
   return (
     <div>
-      <Input.Password
-        placeholder="input password"
-        onChange={e => {
-          setPassword(e.target.value);
-        }}
-      />
-      <TextArea
-        rows={4}
-        placeholder="input text"
-        onChange={e => {
-          setText(e.target.value);
-        }}
-      />
-      {code && [
+      <Input.Password placeholder="input password" onChange={onChange(setPassword)} />
+      <TextArea rows={4} placeholder="input text" onChange={onChange(setText)} />
+      {code && (
         <Paragraph
           copyable={{
             text: `<Cryptor>${code}</Cryptor>`,
           }}
         >
-          <Text code>{code}</Text>
-        </Paragraph>,
-      ]}
+          <Text code={true}>{code}</Text>
+        </Paragraph>
+      )}
     </div>
   );
 }

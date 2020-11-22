@@ -28,12 +28,14 @@ export default class extends React.PureComponent<any, any> {
   }
 
   public render() {
-    return [
-      <WhiteSpace size="lg" />,
-      <WingBlank size="md">{this.renderRoutes}</WingBlank>,
-      this.props.children,
-      <ul>{this.renderRelative}</ul>,
-    ];
+    return (
+      <>
+        <WhiteSpace size="lg" />
+        <WingBlank size="md">{this.renderRoutes}</WingBlank>
+        {this.props.children}
+        <ul>{this.renderRelative}</ul>
+      </>
+    );
   }
 
   private get currentRoute() {
