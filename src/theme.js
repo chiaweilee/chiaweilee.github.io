@@ -1,4 +1,4 @@
-const manifest = require('./manifest');
+// const manifest = require('./manifest');
 
 // https://github.com/ant-design/ant-design-mobile/blob/master/components/style/themes/default.less
 module.exports = {
