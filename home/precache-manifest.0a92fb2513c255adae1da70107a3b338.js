@@ -176,8 +176,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__TOUR-FOUR-SOUL.mdx.25dd5da6.async.js"
   },
   {
-    "revision": "911eb42bd71fa8f51e02",
-    "url": "/home/p__docs__t7__TOUR-ONE-SOLITARY.mdx.bbcd7e84.async.js"
+    "revision": "10c6d4ebe3ad305d0c73",
+    "url": "/home/p__docs__t7__TOUR-ONE-SOLITARY.mdx.54d136af.async.js"
   },
   {
     "revision": "020d646b5f0258b72ec7",
@@ -288,12 +288,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.9800a427.async.js"
   },
   {
-    "revision": "08a2171ad33ce145a744",
+    "revision": "6621c8148b327dc23b77",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "08a2171ad33ce145a744",
-    "url": "/home/umi.e13ce1ee.js"
+    "revision": "6621c8148b327dc23b77",
+    "url": "/home/umi.5757381a.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -302,6 +302,10 @@ self.__precacheManifest = [
   {
     "revision": "e84a16e467280769b747f8846de21ca2",
     "url": "/home/static/beach.e84a16e4.png"
+  },
+  {
+    "revision": "91c1095fc2148e2d77bae992fdbfeeb7",
+    "url": "/home/static/latu.91c1095f.jpg"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -320,7 +324,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "dbd4b1be8d96d56312c786fc48fc96e4",
+    "revision": "529a04e7aee1bf3839ed4e4d161be488",
     "url": "/home/index.html"
   },
   {
