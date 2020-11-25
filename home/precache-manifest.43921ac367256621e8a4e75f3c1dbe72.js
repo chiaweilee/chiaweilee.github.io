@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/home/vendors.413dceb5.async.js"
   },
   {
-    "revision": "698a09a2220fc37ce52d",
-    "url": "/home/p__docs__1-tour.mdx.2af853df.async.js"
+    "revision": "ee81f628bd85df968074",
+    "url": "/home/p__docs__1-tour.mdx.afb4b679.async.js"
   },
   {
     "revision": "49efc58187a7c60e9433",
@@ -288,12 +288,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.9800a427.async.js"
   },
   {
-    "revision": "5f8e2af4903da088b4a1",
+    "revision": "2f8d9b8fecbf28b2d2ea",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "5f8e2af4903da088b4a1",
-    "url": "/home/umi.0dc39338.js"
+    "revision": "2f8d9b8fecbf28b2d2ea",
+    "url": "/home/umi.18f34a37.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -324,7 +324,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "778f58d2fa911c2882e8833ded13f740",
+    "revision": "de350fc76cd027d8cbd42250158a96fb",
     "url": "/home/index.html"
   },
   {
