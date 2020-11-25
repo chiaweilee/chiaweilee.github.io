@@ -14,5 +14,4 @@ jobs:
             - node/with-cache:
                 steps:
                   - run: yarn
-                  - run: yarn lint
                   - run: sh deploy-circleci.sh
