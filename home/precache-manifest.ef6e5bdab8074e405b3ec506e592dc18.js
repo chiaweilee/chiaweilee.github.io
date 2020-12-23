@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fb70f59687a2e66edb83",
+    "revision": "f03a1835ca45ad04e2f6",
     "url": "/home/vendors.c92b0287.chunk.css"
   },
   {
-    "revision": "fb70f59687a2e66edb83",
-    "url": "/home/vendors.80bc7d4c.async.js"
+    "revision": "f03a1835ca45ad04e2f6",
+    "url": "/home/vendors.651aa5a5.async.js"
   },
   {
     "revision": "5d30e729ff2a1813f221",
@@ -192,8 +192,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__5-tour.mdx.27adb486.async.js"
   },
   {
-    "revision": "a7aeb16047127ff1ce38",
-    "url": "/home/p__docs__t7__6-tour.mdx.f6d535fa.async.js"
+    "revision": "2745a749904fbe127f81",
+    "url": "/home/p__docs__t7__6-tour.mdx.361675d2.async.js"
   },
   {
     "revision": "8d0bbdfe4a2ab21a2bb9",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "36445ee45e1dc58d38f2",
+    "revision": "cb966e3c56c6ca68ec69",
     "url": "/home/umi.a7d66906.css"
   },
   {
-    "revision": "36445ee45e1dc58d38f2",
-    "url": "/home/umi.2a52d8a8.js"
+    "revision": "cb966e3c56c6ca68ec69",
+    "url": "/home/umi.49d361f5.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -336,7 +336,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "36b60a4aaca6f6466b3cde849b8276cc",
+    "revision": "ef7d9d6f4d8c75db23b8b86a4bbc9bc4",
     "url": "/home/index.html"
   },
   {
