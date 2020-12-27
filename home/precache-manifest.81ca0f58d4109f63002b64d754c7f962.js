@@ -180,8 +180,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__2-tour.mdx.a8d72aa9.async.js"
   },
   {
-    "revision": "bdd0688a143b2fe9cf4a",
-    "url": "/home/p__docs__t7__3-tour.mdx.40c178c3.async.js"
+    "revision": "f85fdf578aa958aac399",
+    "url": "/home/p__docs__t7__3-tour.mdx.64e19e91.async.js"
   },
   {
     "revision": "77a6f25595709364a4b9",
@@ -292,16 +292,20 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "ecad209bc4a532f474ba",
+    "revision": "d28a725c7f98b4537cf5",
     "url": "/home/umi.586f5d7b.css"
   },
   {
-    "revision": "ecad209bc4a532f474ba",
-    "url": "/home/umi.78887f7d.js"
+    "revision": "d28a725c7f98b4537cf5",
+    "url": "/home/umi.59f97d10.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
     "url": "/home/static/fullmoon-1.b4166e68.jpg"
+  },
+  {
+    "revision": "e84a16e467280769b747f8846de21ca2",
+    "url": "/home/static/beach.e84a16e4.png"
   },
   {
     "revision": "91c1095fc2148e2d77bae992fdbfeeb7",
@@ -336,7 +340,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "d46e67963bb77af1b5d9d5b7e8402abc",
+    "revision": "eb4292923c4ddcbd61a0cb1a2cd171ce",
     "url": "/home/index.html"
   },
   {
