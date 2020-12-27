@@ -180,8 +180,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__2-tour.mdx.a8d72aa9.async.js"
   },
   {
-    "revision": "2d730cdab1b7120bf0c8",
-    "url": "/home/p__docs__t7__3-tour.mdx.ee516a34.async.js"
+    "revision": "77f874de6230781e3ea2",
+    "url": "/home/p__docs__t7__3-tour.mdx.ed0a908f.async.js"
   },
   {
     "revision": "77a6f25595709364a4b9",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "f1eae3d3174dd5fbded0",
+    "revision": "3f00bad73d6ddd2e0bb3",
     "url": "/home/umi.586f5d7b.css"
   },
   {
-    "revision": "f1eae3d3174dd5fbded0",
-    "url": "/home/umi.2bca84b0.js"
+    "revision": "3f00bad73d6ddd2e0bb3",
+    "url": "/home/umi.8e45f00c.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -340,7 +340,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "a6fc141cf0c05083e581afb706e9480f",
+    "revision": "99560c81f28487bab93d554f30ed0a86",
     "url": "/home/index.html"
   },
   {
