@@ -156,8 +156,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__food__hotpot.mdx.f6e56ff8.async.js"
   },
   {
-    "revision": "4698009273530be01cbe",
-    "url": "/home/p__docs__index.mdx.c53702df.async.js"
+    "revision": "526002d68a5a52dcd286",
+    "url": "/home/p__docs__index.mdx.3065edad.async.js"
   },
   {
     "revision": "11e379d013edad7d390a",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "ad27a4e6fd490a5fa8e7",
-    "url": "/home/umi.a7d66906.css"
+    "revision": "fe1dd82b8cb7ca7fada2",
+    "url": "/home/umi.586f5d7b.css"
   },
   {
-    "revision": "ad27a4e6fd490a5fa8e7",
-    "url": "/home/umi.628e428a.js"
+    "revision": "fe1dd82b8cb7ca7fada2",
+    "url": "/home/umi.35b5c07a.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -328,6 +328,10 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-1.d26c3845.jpg"
   },
   {
+    "revision": "b8c5da45f21e815b10fc8fbebf048e0a",
+    "url": "/home/static/Career.b8c5da45.ttf"
+  },
+  {
     "revision": "a403d602b044a710e7fe33e1c0a60f82",
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
@@ -336,7 +340,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "e96394114fd989414bbe5017e60e1530",
+    "revision": "45299b363bbbbc32a27b115f9d2da8f6",
     "url": "/home/index.html"
   },
   {
