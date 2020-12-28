@@ -180,8 +180,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__2-tour.mdx.a8d72aa9.async.js"
   },
   {
-    "revision": "5dff3232c3706bab0c18",
-    "url": "/home/p__docs__t7__3-tour.mdx.b0f5836b.async.js"
+    "revision": "e0ee9057024f9b5530e0",
+    "url": "/home/p__docs__t7__3-tour.mdx.ebb0d715.async.js"
   },
   {
     "revision": "ab15d76e21d957365130",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "cdc96a555c6f3deeefe4",
+    "revision": "a4ac621a46bd929156a1",
     "url": "/home/umi.586f5d7b.css"
   },
   {
-    "revision": "cdc96a555c6f3deeefe4",
-    "url": "/home/umi.4cabd3fd.js"
+    "revision": "a4ac621a46bd929156a1",
+    "url": "/home/umi.a2cebe4e.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -306,6 +306,10 @@ self.__precacheManifest = [
   {
     "revision": "e84a16e467280769b747f8846de21ca2",
     "url": "/home/static/beach.e84a16e4.png"
+  },
+  {
+    "revision": "3490762ff28016460056a7bda9311d93",
+    "url": "/home/static/moondance.3490762f.jpg"
   },
   {
     "revision": "91c1095fc2148e2d77bae992fdbfeeb7",
@@ -340,7 +344,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "543e54899420fba9c119fdce96b3a900",
+    "revision": "fb612b167e130f7c57d0cd6e51b8ec79",
     "url": "/home/index.html"
   },
   {
