@@ -172,8 +172,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5e31eb12.async.js"
   },
   {
-    "revision": "d69791efa5cf83fd61ef",
-    "url": "/home/p__docs__t7__1-tour.mdx.25271f75.async.js"
+    "revision": "6fa0a0915cd20a221d66",
+    "url": "/home/p__docs__t7__1-tour.mdx.f9af8dc6.async.js"
   },
   {
     "revision": "5b4bd1e0037df6a3705f",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "a4ac621a46bd929156a1",
+    "revision": "d11d6c7747245bc50738",
     "url": "/home/umi.586f5d7b.css"
   },
   {
-    "revision": "a4ac621a46bd929156a1",
-    "url": "/home/umi.a2cebe4e.js"
+    "revision": "d11d6c7747245bc50738",
+    "url": "/home/umi.4cfdbbd7.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -312,8 +312,8 @@ self.__precacheManifest = [
     "url": "/home/static/moondance.3490762f.jpg"
   },
   {
-    "revision": "91c1095fc2148e2d77bae992fdbfeeb7",
-    "url": "/home/static/latu.91c1095f.jpg"
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/static/latu.2bd32caa.jpg"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -344,7 +344,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "fb612b167e130f7c57d0cd6e51b8ec79",
+    "revision": "3b3c2317a3b41bab922a74399c9acaf2",
     "url": "/home/index.html"
   },
   {
