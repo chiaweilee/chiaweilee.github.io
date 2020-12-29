@@ -172,16 +172,16 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5e31eb12.async.js"
   },
   {
-    "revision": "f7d3f08d645e1a4c2e32",
-    "url": "/home/p__docs__t7__1-tour.mdx.84f4722c.async.js"
+    "revision": "5d6bca84a676d4c3f4f7",
+    "url": "/home/p__docs__t7__1-tour.mdx.4efe9c6a.async.js"
   },
   {
     "revision": "5b4bd1e0037df6a3705f",
     "url": "/home/p__docs__t7__2-tour.mdx.a8d72aa9.async.js"
   },
   {
-    "revision": "9e868772601700f2b48c",
-    "url": "/home/p__docs__t7__3-tour.mdx.dd5e54cd.async.js"
+    "revision": "8ea877de3fe342e23799",
+    "url": "/home/p__docs__t7__3-tour.mdx.b864cc7d.async.js"
   },
   {
     "revision": "ab15d76e21d957365130",
@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "c067316984cd788f0a3b",
+    "revision": "31d36f9e4b7b0cade69d",
     "url": "/home/umi.586f5d7b.css"
   },
   {
-    "revision": "c067316984cd788f0a3b",
-    "url": "/home/umi.078f527d.js"
+    "revision": "31d36f9e4b7b0cade69d",
+    "url": "/home/umi.7415f269.js"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -344,7 +344,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "7a37ccb7a0ef5cd024d6f1e65569a531",
+    "revision": "d06bce32efe17a241780250a183cdc23",
     "url": "/home/index.html"
   },
   {
