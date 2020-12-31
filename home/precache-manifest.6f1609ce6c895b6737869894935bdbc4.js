@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "13911f53d6e293c59f5c",
+    "revision": "029f461c9f03b64fd9c6",
     "url": "/home/vendors.c92b0287.chunk.css"
   },
   {
-    "revision": "13911f53d6e293c59f5c",
-    "url": "/home/vendors.056907e8.async.js"
+    "revision": "029f461c9f03b64fd9c6",
+    "url": "/home/vendors.792d4cda.async.js"
   },
   {
     "revision": "5d30e729ff2a1813f221",
@@ -352,7 +352,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "a578b6d74d7babb0d3233e60d9430e22",
+    "revision": "634034c795e46b486655486bed74d5d0",
     "url": "/home/index.html"
   },
   {
