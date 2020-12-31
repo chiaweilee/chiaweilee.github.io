@@ -1,19 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "91add65d0bb8ab8f2c3c",
-    "url": "/home/vendors.bec83434.chunk.css"
+    "revision": "7c32b6c96528c4d00fc2",
+    "url": "/home/vendors.31b6d974.chunk.css"
   },
   {
-    "revision": "91add65d0bb8ab8f2c3c",
-    "url": "/home/vendors.792d4cda.async.js"
+    "revision": "7c32b6c96528c4d00fc2",
+    "url": "/home/vendors.e4329a5e.async.js"
   },
   {
-    "revision": "5d30e729ff2a1813f221",
-    "url": "/home/p__docs___layout.c587d382.chunk.css"
-  },
-  {
-    "revision": "5d30e729ff2a1813f221",
-    "url": "/home/p__docs___layout.1164d768.async.js"
+    "revision": "4c3827eb4ca6ca967149",
+    "url": "/home/p__docs___layout.94b09606.async.js"
   },
   {
     "revision": "68080bac14652799a414",
@@ -168,20 +164,20 @@ self.__precacheManifest = [
     "url": "/home/p__docs__movie__lines.mdx.b29a3f88.async.js"
   },
   {
-    "revision": "703eb41ca482ddaf50c3",
-    "url": "/home/p__docs__t7__0-preface.mdx.5e31eb12.async.js"
+    "revision": "8ad0b45bdc07171c80b4",
+    "url": "/home/p__docs__t7__0-preface.mdx.e47a936b.async.js"
   },
   {
-    "revision": "924d509f73227a79f1f1",
-    "url": "/home/p__docs__t7__1-tour.mdx.b609326c.async.js"
+    "revision": "e6b4e6540ce84999f6f7",
+    "url": "/home/p__docs__t7__1-tour.mdx.7b237192.async.js"
   },
   {
     "revision": "5b4bd1e0037df6a3705f",
     "url": "/home/p__docs__t7__2-tour.mdx.a8d72aa9.async.js"
   },
   {
-    "revision": "b7ed593d3c90aabd4671",
-    "url": "/home/p__docs__t7__3-tour.mdx.125c0dfd.async.js"
+    "revision": "09b0a7235fd968f0ec13",
+    "url": "/home/p__docs__t7__3-tour.mdx.29daf073.async.js"
   },
   {
     "revision": "ab15d76e21d957365130",
@@ -192,8 +188,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__5-tour.mdx.27adb486.async.js"
   },
   {
-    "revision": "6ccb0ed1f842dc7af7dc",
-    "url": "/home/p__docs__t7__6-tour.mdx.d977ae2c.async.js"
+    "revision": "fa655b4413dc40edd7d7",
+    "url": "/home/p__docs__t7__6-tour.mdx.da960d84.async.js"
   },
   {
     "revision": "8d0bbdfe4a2ab21a2bb9",
@@ -256,48 +252,44 @@ self.__precacheManifest = [
     "url": "/home/p__docs__typescript__Types.mdx.bc90910f.async.js"
   },
   {
-    "revision": "7e87aa9b2a2bdbcdbb1f",
-    "url": "/home/p__docs__util__encoder.mdx.993920f9.async.js"
+    "revision": "cb6312ae0cb9af534ae7",
+    "url": "/home/p__docs__util__encoder.mdx.8a1a993c.async.js"
   },
   {
-    "revision": "4237494a023837e3a303",
-    "url": "/home/p__docs__util__register.mdx.9bca6dfc.async.js"
+    "revision": "0cecf9e209a015d0288e",
+    "url": "/home/p__docs__video__cinematic.mdx.2e6f106d.async.js"
   },
   {
-    "revision": "82e4607e86ff4aa4334f",
-    "url": "/home/p__docs__video__cinematic.mdx.0cfe63d8.async.js"
+    "revision": "99648c0fe8b6674172ee",
+    "url": "/home/p__docs__video__color-grading.mdx.1c9061e9.async.js"
   },
   {
-    "revision": "9c4695c44eea73348310",
-    "url": "/home/p__docs__video__color-grading.mdx.986cde46.async.js"
+    "revision": "72a7474f0798a12c092a",
+    "url": "/home/p__docs__video__composition.mdx.3258ac92.async.js"
   },
   {
-    "revision": "f2addf668ba75d070514",
-    "url": "/home/p__docs__video__composition.mdx.6f76be8c.async.js"
+    "revision": "91424184c457ea7a92b3",
+    "url": "/home/p__docs__video__edting.mdx.c8662cb1.async.js"
   },
   {
-    "revision": "99be15e59deeb503dee6",
-    "url": "/home/p__docs__video__edting.mdx.ca7490fd.async.js"
+    "revision": "b85831b3d508b57ae6d8",
+    "url": "/home/p__docs__video__ffmpeg.mdx.e5f6e44b.async.js"
   },
   {
-    "revision": "e33fede849173e882e46",
-    "url": "/home/p__docs__video__ffmpeg.mdx.b45180f5.async.js"
+    "revision": "8b2663fa68b5b44c2eea",
+    "url": "/home/p__docs__video__gopro.mdx.6815a961.async.js"
   },
   {
-    "revision": "8ed820c08e1201f75183",
-    "url": "/home/p__docs__video__gopro.mdx.b78ede8a.async.js"
+    "revision": "a171ae90e5ae303d3998",
+    "url": "/home/p__index.9800a427.async.js"
   },
   {
-    "revision": "5d63a273144d904691c3",
-    "url": "/home/p__index.7c17dfa2.async.js"
-  },
-  {
-    "revision": "b51790a0e44bf718f41b",
+    "revision": "13dc211c6e1cdcf3a37a",
     "url": "/home/umi.a9bfe3ff.css"
   },
   {
-    "revision": "b51790a0e44bf718f41b",
-    "url": "/home/umi.84d070e0.js"
+    "revision": "13dc211c6e1cdcf3a37a",
+    "url": "/home/umi.10a8c9b6.js"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
@@ -352,7 +344,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "26640cfdb73c50a06dcb2f09ac806330",
+    "revision": "6053192cb9f33dcbd5d48e70c1e141ee",
     "url": "/home/index.html"
   },
   {
