@@ -7,7 +7,7 @@ const Cryptor = require('cryptorjs');
 const { TextArea } = Input;
 const { Text, Paragraph } = Typography;
 
-const secretKey = 'secretKey';
+export const secretKey = 'secretKey';
 
 function onChange(setter: (e: any) => void) {
   return function(e) {
@@ -21,14 +21,6 @@ export default function(props: any) {
     return new Cryptor(localStorage.getItem(secretKey)).decode(props.children);
   }
   return <Confidential onClick={() => { setHidden(false); }}>{props.children}</Confidential>;
-}
-
-export function SecretRegister() {
-  const [password, setPassword] = useState('');
-  useEffect(() => {
-    localStorage.setItem(secretKey, password);
-  }, [password]);
-  return <Input.Password placeholder="input password" onChange={onChange(setPassword)} />;
 }
 
 export function Encoder() {
@@ -51,7 +43,7 @@ export function Encoder() {
       {code && (
         <Paragraph
           copyable={{
-            text: `<Cryptor>${code}</Cryptor>`,
+            text: `<C.Cryptor>${code}</C.Cryptor>`,
           }}
         >
           <Text code={true}>{code}</Text>

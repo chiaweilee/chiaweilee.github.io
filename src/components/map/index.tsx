@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Map from './Map';
 import styles from './index.less';
 
@@ -8,6 +8,7 @@ const apiKey =
     : 'AvHBgtLyf4zbDhXESAuvFMSqIg1GgomX6DnDgw-CaXFeRmWVzvXPC55WveE4pJla';
 
 export default (props: any) => {
+  const [mask, setMask] = useState(true);
   // @ts-ignore
   const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
   const points = Array.isArray(props.points)
@@ -38,15 +39,25 @@ export default (props: any) => {
     : [];
 
   return (
-    <Map
-      className={styles.map}
-      apiKey={apiKey}
-      center={center}
-      points={points}
-      walking={walking}
-      driving={driving}
-      zoom={props.zoom}
-      aerial={props.aerial}
-    />
+    <div style={{ position: 'relative' }}>
+      {mask && (
+        <div
+          style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 9999 }}
+          onClick={() => {
+            setMask(false);
+          }}
+        />
+      )}
+      <Map
+        className={styles.map}
+        apiKey={apiKey}
+        center={center}
+        points={points}
+        walking={walking}
+        driving={driving}
+        zoom={props.zoom}
+        aerial={props.aerial}
+      />
+    </div>
   );
 };
