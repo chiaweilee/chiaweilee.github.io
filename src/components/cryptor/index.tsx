@@ -17,11 +17,10 @@ function onChange(setter: (e: any) => void) {
 
 export default function(props: any) {
   const [hidden, setHidden] = useState(true);
-  const onClick = () => { setHidden(!hidden); };
   if (!hidden && localStorage.getItem(secretKey)) {
-    return <span onClick={onClick}>{new Cryptor(localStorage.getItem(secretKey)).decode(props.children)}</span>;
+    return new Cryptor(localStorage.getItem(secretKey)).decode(props.children);
   }
-  return <Confidential onClick={onClick}>{props.children}</Confidential>;
+  return <Confidential onClick={() => { setHidden(false); }}>{props.children}</Confidential>;
 }
 
 export function SecretRegister() {
