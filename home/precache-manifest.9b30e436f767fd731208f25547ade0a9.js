@@ -376,12 +376,12 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-2.JPG"
   },
   {
-    "revision": "c731b16741677f44b313178a3cc34886",
-    "url": "/home/assets/klcc.jpg"
-  },
-  {
     "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
     "url": "/home/assets/treehouse-all.jpg"
+  },
+  {
+    "revision": "c731b16741677f44b313178a3cc34886",
+    "url": "/home/assets/klcc.jpg"
   },
   {
     "revision": "1e0cbe8200536e8af81b5099d4418058",
