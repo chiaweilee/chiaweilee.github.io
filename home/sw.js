@@ -1,4 +1,4 @@
-importScripts("/home/precache-manifest.dcf402c80c9cb9cec50f6fb1a6389550.js", "/home/workbox-v3.6.3/workbox-sw.js");
+importScripts("/home/precache-manifest.fd34bd2dfffa8d10123469db35ef87fe.js", "/home/workbox-v3.6.3/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/home/workbox-v3.6.3"});
 /* eslint-env worker */
 /* global workbox */
