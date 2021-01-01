@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // @ts-ignore
+import { WhiteSpace } from 'antd-mobile';
 import { Input, Typography } from 'antd';
 import Confidential from '@/components/confidential';
 const Cryptor = require('cryptorjs');
@@ -23,8 +24,8 @@ export default function(props: any) {
   return <Confidential onClick={() => { setHidden(false); }}>{props.children}</Confidential>;
 }
 
-export function Encoder() {
-  const [password, setPassword] = useState(localStorage.getItem(secretKey) || '');
+export function Encoder(props) {
+  const password = localStorage.getItem(secretKey);
   const [text, setText] = useState('');
   const [code, setCode] = useState('');
 
@@ -38,12 +39,13 @@ export function Encoder() {
 
   return (
     <div>
-      <Input.Password placeholder="input password" onChange={onChange(setPassword)} />
       <TextArea rows={4} placeholder="input text" onChange={onChange(setText)} />
+      <WhiteSpace />
       {code && (
         <Paragraph
           copyable={{
             text: `<C.Cryptor>${code}</C.Cryptor>`,
+            onCopy: props.onCopy,
           }}
         >
           <Text code={true}>{code}</Text>

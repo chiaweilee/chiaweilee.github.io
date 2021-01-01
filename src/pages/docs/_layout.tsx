@@ -1,5 +1,4 @@
 import React from 'react';
-import history from '@tmp/history';
 import { ActionSheet, NavBar, Popover, Modal } from 'antd-mobile';
 import Icon from '@/components/icon';
 import Navigation from '@/components/navigation';
@@ -45,7 +44,7 @@ export default class extends React.PureComponent<any, State> {
                       },
                       buttonIndex => {
                         if (typeof actions[buttonIndex] === 'string') {
-                          history.push({
+                          this.props.history.push({
                             pathname: `/constructor/${actions[buttonIndex].toLowerCase()}`,
                             state: {
                               refer: this.props.location.pathname,
@@ -64,7 +63,12 @@ export default class extends React.PureComponent<any, State> {
                   Github
                 </Popover.Item>,
                 // @ts-ignore
-                <Popover.Item key="2" value="construct" icon={<Icon type="iconsettings" />}>
+                <Popover.Item
+                  key="2"
+                  value="construct"
+                  icon={<Icon type="iconsettings" />}
+                  disabled={this.constructDisable}
+                >
                   Construct
                 </Popover.Item>,
                 // @ts-ignore
@@ -82,6 +86,10 @@ export default class extends React.PureComponent<any, State> {
         </Navigation>
       </>
     );
+  }
+
+  private get constructDisable(): boolean {
+    return !localStorage.getItem(secretKey);
   }
 
   private get githubPage(): string {
