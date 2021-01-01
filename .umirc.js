@@ -71,4 +71,10 @@ export default {
     ],
     ['umi-plugin-pwa', {}],
   ],
+  copy: [
+    {
+      from: 'src/assets',
+      to: 'assets',
+    },
+  ],
 };
