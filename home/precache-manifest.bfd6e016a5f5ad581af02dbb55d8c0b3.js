@@ -168,8 +168,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.e47a936b.async.js"
   },
   {
-    "revision": "be1b6949eace0cf97506",
-    "url": "/home/p__docs__t7__1-tour.mdx.76585629.async.js"
+    "revision": "d3c4c092e1f5465d4c82",
+    "url": "/home/p__docs__t7__1-tour.mdx.b8c106f1.async.js"
   },
   {
     "revision": "5b4bd1e0037df6a3705f",
@@ -284,12 +284,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.9800a427.async.js"
   },
   {
-    "revision": "ee0424b0243f0bd3ffea",
+    "revision": "4cdd3a427c06ae0f0c89",
     "url": "/home/umi.a9bfe3ff.css"
   },
   {
-    "revision": "ee0424b0243f0bd3ffea",
-    "url": "/home/umi.26b10953.js"
+    "revision": "4cdd3a427c06ae0f0c89",
+    "url": "/home/umi.a017902c.js"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
@@ -324,8 +324,8 @@ self.__precacheManifest = [
     "url": "/home/static/vicky-fish.7ca817d2.png"
   },
   {
-    "revision": "b00c22991b78317e1da4426c53d1c614",
-    "url": "/home/static/sara.b00c2299.jpg"
+    "revision": "3381074177bc97d3daac86ea18b2c85c",
+    "url": "/home/static/sara.33810741.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
@@ -344,7 +344,7 @@ self.__precacheManifest = [
     "url": "/home/static/mabul-2.65cd94f1.jpg"
   },
   {
-    "revision": "f99fbc2169b3532af2001fdbbad3961e",
+    "revision": "f01fc717de96b313be14e033cb73dfe4",
     "url": "/home/index.html"
   },
   {
