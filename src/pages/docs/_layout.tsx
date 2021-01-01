@@ -5,7 +5,7 @@ import Navigation from '@/components/navigation';
 import { secretKey } from '@/components/cryptor';
 import utils from '@/utils';
 
-const actions = ['Cryptor'];
+const actions = ['Cryptor', 'Base64'];
 
 interface State {
   drawer: boolean;
