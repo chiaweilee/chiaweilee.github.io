@@ -1,9 +1,12 @@
 import React from 'react';
-import { NavBar, Popover, Modal } from 'antd-mobile';
+import history from '@tmp/history';
+import { ActionSheet, NavBar, Popover, Modal } from 'antd-mobile';
 import Icon from '@/components/icon';
 import Navigation from '@/components/navigation';
 import { secretKey } from '@/components/cryptor';
-import utils from '@/utils/index';
+import utils from '@/utils';
+
+const actions = ['Cryptor'];
 
 interface State {
   drawer: boolean;
@@ -16,7 +19,7 @@ export default class extends React.PureComponent<any, State> {
         <NavBar
           mode="light"
           icon={<Icon type="iconback" />}
-          onLeftClick={utils.historyGoBack}
+          onLeftClick={utils.historyGoBack.bind(this)}
           rightContent={
             <Popover
               onSelect={opt => {
@@ -34,6 +37,24 @@ export default class extends React.PureComponent<any, State> {
                       'secure-text',
                     );
                     break;
+                  case 'construct':
+                    ActionSheet.showActionSheetWithOptions(
+                      {
+                        options: actions,
+                        maskClosable: true,
+                      },
+                      buttonIndex => {
+                        if (typeof actions[buttonIndex] === 'string') {
+                          history.push({
+                            pathname: `/constructor/${actions[buttonIndex].toLowerCase()}`,
+                            state: {
+                              refer: this.props.location.pathname,
+                            },
+                          });
+                        }
+                      },
+                    );
+                    break;
                   default:
                 }
               }}
@@ -43,7 +64,11 @@ export default class extends React.PureComponent<any, State> {
                   Github
                 </Popover.Item>,
                 // @ts-ignore
-                <Popover.Item key="2" value="big" icon={<Icon type="iconbig" />}>
+                <Popover.Item key="2" value="construct" icon={<Icon type="iconsettings" />}>
+                  Construct
+                </Popover.Item>,
+                // @ts-ignore
+                <Popover.Item key="3" value="big" icon={<Icon type="iconbig" />}>
                   Big
                 </Popover.Item>,
               ]}
