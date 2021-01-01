@@ -368,12 +368,12 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
-    "revision": "86def96f95ef7421062fcf10f36956b1",
-    "url": "/home/assets/mn-1.JPG"
-  },
-  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
+  },
+  {
+    "revision": "86def96f95ef7421062fcf10f36956b1",
+    "url": "/home/assets/mn-1.JPG"
   },
   {
     "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
@@ -384,12 +384,12 @@ self.__precacheManifest = [
     "url": "/home/assets/klcc.jpg"
   },
   {
-    "revision": "1e0cbe8200536e8af81b5099d4418058",
-    "url": "/home/assets/t.jpg"
-  },
-  {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
     "url": "/home/assets/bkk.jpg"
+  },
+  {
+    "revision": "1e0cbe8200536e8af81b5099d4418058",
+    "url": "/home/assets/t.jpg"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
