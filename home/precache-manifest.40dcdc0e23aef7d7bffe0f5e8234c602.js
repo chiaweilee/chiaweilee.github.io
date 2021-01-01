@@ -312,12 +312,12 @@ self.__precacheManifest = [
     "url": "/home/index.html"
   },
   {
-    "revision": "d9b51a38aee008811822ac5ddd618a38",
-    "url": "/home/assets/gt-2.jpg"
-  },
-  {
     "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
     "url": "/home/assets/latu.jpg"
+  },
+  {
+    "revision": "d9b51a38aee008811822ac5ddd618a38",
+    "url": "/home/assets/gt-2.jpg"
   },
   {
     "revision": "3490762ff28016460056a7bda9311d93",
