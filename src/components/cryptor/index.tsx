@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
 const Cryptor = require('cryptorjs');
@@ -11,8 +11,16 @@ export const decoder = (code: string) => new Cryptor(localStorage.getItem(secret
 
 export default function(props: any) {
   const [hidden, setHidden] = useState(true);
-  if (!hidden && localStorage.getItem(secretKey)) {
-    return decoder(props.children);
+  const [text, setText] = useState(undefined);
+
+  useEffect(() => {
+    if (typeof props.children === 'string' && localStorage.getItem(secretKey)) {
+      setText(decoder(props.children));
+    }
+  }, [hidden]);
+
+  if (!hidden && text) {
+    return text;
   }
   return (
     <Confidential
