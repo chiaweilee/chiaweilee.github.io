@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Upload, Button, Input } from 'antd';
-import { WhiteSpace } from 'antd-mobile';
+import { Upload } from 'antd';
+import { Button, WhiteSpace, InputItem } from 'antd-mobile';
 import { Encoder } from '@/components/cryptor';
+import styles from './base64.less';
 
 function getBase64(file) {
   return new Promise((resolve, reject) => {
@@ -14,23 +15,29 @@ function getBase64(file) {
 
 export default function() {
   const [img, setImg] = useState(undefined);
+  const [loading, setLoading] = useState(false);
 
   return (
-    <div>
+    <div className={styles.uploader}>
       <Upload
         accept={'image/*'}
         name={'file'}
         fileList={[]}
+        disabled={loading}
         onChange={async info => {
+          setLoading(true);
           setImg(await getBase64(info.file.originFileObj));
+          setLoading(false);
         }}
       >
-        <Button>Click to Upload</Button>
+        <Button loading={loading} disabled={loading}>Click to Upload</Button>
       </Upload>
       {img && (
         <div>
           <WhiteSpace />
           <img src={img} width="100%" alt="" />
+          <WhiteSpace />
+          <InputItem value={img} readOnly />
           <WhiteSpace />
           <Encoder head={"<C.CryptorImg src={'"} text={img} end={'\'} alt="" />'} />
         </div>
