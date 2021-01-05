@@ -30,7 +30,9 @@ export default function() {
           setLoading(false);
         }}
       >
-        <Button loading={loading} disabled={loading}>Click to Upload</Button>
+        <Button loading={loading} disabled={loading}>
+          Click to Upload
+        </Button>
       </Upload>
       {img && (
         <div>
@@ -39,7 +41,7 @@ export default function() {
           <WhiteSpace />
           <InputItem value={img} readOnly />
           <WhiteSpace />
-          <Encoder head={"<C.CryptorImg src={'"} text={img} end={'\'} alt="" />'} />
+          <Encoder compress head={"<C.CryptorImg src={'"} text={img} end={'\'} alt="" />'} />
         </div>
       )}
     </div>

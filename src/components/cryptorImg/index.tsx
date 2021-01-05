@@ -24,5 +24,5 @@ export default function(props) {
     );
   }
 
-  return <img src={decoder(src)} alt="" />;
+  return <img src={decoder(src, true)} alt="" />;
 }

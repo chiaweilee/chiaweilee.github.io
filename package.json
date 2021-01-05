@@ -4,6 +4,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "test": "umi test",
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:sty",
     "lint:es": "eslint --ext .js --ext .jsx . --fix",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
