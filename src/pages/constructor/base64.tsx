@@ -41,7 +41,7 @@ export default function() {
           <WhiteSpace />
           <InputItem value={img} readOnly />
           <WhiteSpace />
-          <Encoder compress head={'<C.CryptorImg>'} text={img} end={'</C.CryptorImg>'} />
+          <Encoder compress head={'<C.CryptorImg src={`'} text={img} end={'`} />'} />
         </div>
       )}
     </div>
