@@ -14,7 +14,6 @@ function getBase64(file) {
 
 export default function() {
   const [img, setImg] = useState(undefined);
-  const [source, setSource] = useState(undefined);
 
   return (
     <div>
@@ -33,9 +32,7 @@ export default function() {
           <WhiteSpace />
           <img src={img} width="100%" alt="" />
           <WhiteSpace />
-          <Encoder head={"<C.CryptorImg src={'"} text={img} end={'\'} alt="" onRender={(code) => { setSource(code); }} />'} />
-          <WhiteSpace />
-          { source && <Input value={source} />}
+          <Encoder head={"<C.CryptorImg src={'"} text={img} end={'\'} alt="" />'} />
         </div>
       )}
     </div>
