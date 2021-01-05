@@ -44,10 +44,16 @@ export function Encoder(props) {
   const end = props.end || '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
 
+  const text = `${head}${code}${end}`;
+
+  if (typeof props.onRender === 'function') {
+    props.onRender(text);
+  }
+
   return (
     <Paragraph
       copyable={{
-        text: `${head}${code}${end}`,
+        text,
         onCopy: props.onCopy,
       }}
       style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
