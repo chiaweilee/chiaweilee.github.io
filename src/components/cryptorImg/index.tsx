@@ -3,8 +3,8 @@ import { decoder, secretKey } from '@/components/cryptor';
 
 export default function(props) {
   const [hidden, setHidden] = useState(true);
-  const { src } = props;
-  if (!src) {
+  const { children } = props;
+  if (!children) {
     return null;
   }
 
@@ -24,5 +24,5 @@ export default function(props) {
     );
   }
 
-  return <img src={decoder(src, true)} alt="" />;
+  return <img src={decoder(children, true)} alt="" />;
 }
