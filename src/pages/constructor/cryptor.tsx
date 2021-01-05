@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Input } from 'antd';
+import { WhiteSpace, TextareaItem } from 'antd-mobile';
 import { Encoder } from '@/components/cryptor';
 
-const { TextArea } = Input;
-
 function onChange(setter: (e: any) => void) {
-  return function(e) {
-    setter(e.target.value);
+  return function(value) {
+    setter(value);
   };
 }
 
@@ -14,7 +12,8 @@ export default function() {
   const [text, setText] = useState('');
   return (
     <div>
-      <TextArea rows={4} placeholder="input text" onChange={onChange(setText)} />
+      <TextareaItem rows={4} count={1000} onChange={onChange(setText)} />
+      <WhiteSpace />
       <Encoder text={text} />
     </div>
   );

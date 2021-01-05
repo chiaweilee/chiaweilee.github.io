@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Input } from 'antd';
+import { WhiteSpace, InputItem } from 'antd-mobile';
+import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
+
 const Cryptor = require('cryptorjs');
 
 const { Text, Paragraph } = Typography;
@@ -46,14 +48,18 @@ export function Encoder(props) {
   const text = `${head}${code}${end}`;
 
   return (
-    <Paragraph
-      copyable={{
-        text,
-        onCopy: props.onCopy,
-      }}
-      style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
-    >
-      <Input value={text} />
-    </Paragraph>
+    <div>
+      <InputItem value={text} readOnly />
+      <WhiteSpace />
+      <Paragraph
+        copyable={{
+          text,
+          onCopy: props.onCopy,
+        }}
+        style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
+      >
+        <Text code={true}>{code}</Text>
+      </Paragraph>
+    </div>
   );
 }
