@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography } from 'antd';
+import { Typography, Input } from 'antd';
 import Confidential from '@/components/confidential';
 const Cryptor = require('cryptorjs');
 
