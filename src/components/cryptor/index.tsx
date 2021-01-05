@@ -43,12 +43,7 @@ export function Encoder(props) {
   const head = props.head || '<C.Cryptor>';
   const end = props.end || '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
-
   const text = `${head}${code}${end}`;
-
-  if (typeof props.onRender === 'function') {
-    props.onRender(text);
-  }
 
   return (
     <Paragraph
@@ -58,7 +53,7 @@ export function Encoder(props) {
       }}
       style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
     >
-      <Text code={true}>{code}</Text>
+      <Input value={text} />
     </Paragraph>
   );
 }
