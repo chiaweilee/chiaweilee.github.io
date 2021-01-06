@@ -324,16 +324,16 @@ self.__precacheManifest = [
     "url": "/home/assets/gt-2.jpg"
   },
   {
-    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
-    "url": "/home/assets/latu.jpg"
-  },
-  {
     "revision": "3490762ff28016460056a7bda9311d93",
     "url": "/home/assets/moondance.jpg"
   },
   {
     "revision": "3381074177bc97d3daac86ea18b2c85c",
     "url": "/home/assets/sara.jpg"
+  },
+  {
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/assets/latu.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
