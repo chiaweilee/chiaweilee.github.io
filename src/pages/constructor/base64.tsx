@@ -37,7 +37,7 @@ export default function() {
           <WhiteSpace />
           <img src={img} width="100%" alt="" />
           <WhiteSpace />
-          <Encoder name={name} head="" end="" text={img} />
+          <Encoder img name={name} text={img} />
         </div>
       )}
     </div>
