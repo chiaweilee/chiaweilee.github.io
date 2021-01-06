@@ -320,12 +320,12 @@ self.__precacheManifest = [
     "url": "/home/index.html"
   },
   {
-    "revision": "d9b51a38aee008811822ac5ddd618a38",
-    "url": "/home/assets/gt-2.jpg"
-  },
-  {
     "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
     "url": "/home/assets/latu.jpg"
+  },
+  {
+    "revision": "d9b51a38aee008811822ac5ddd618a38",
+    "url": "/home/assets/gt-2.jpg"
   },
   {
     "revision": "3490762ff28016460056a7bda9311d93",
@@ -352,20 +352,20 @@ self.__precacheManifest = [
     "url": "/home/assets/mabul-2.jpg"
   },
   {
-    "revision": "b4166e6891677abd3118e8289b185d5d",
-    "url": "/home/assets/fullmoon-1.jpg"
-  },
-  {
     "revision": "8a08e3526b9dc02c1d926f63592af448",
     "url": "/home/assets/snake.jpg"
   },
   {
-    "revision": "19541abd0c73e5e4bb56f2459315079a",
-    "url": "/home/assets/qin.jpg"
+    "revision": "b4166e6891677abd3118e8289b185d5d",
+    "url": "/home/assets/fullmoon-1.jpg"
   },
   {
     "revision": "d2536da10dce8f5ae62993e34e2179ce",
     "url": "/home/assets/gt-1.JPG"
+  },
+  {
+    "revision": "19541abd0c73e5e4bb56f2459315079a",
+    "url": "/home/assets/qin.jpg"
   },
   {
     "revision": "7ca817d26e9fb4348ca9b03d7ed7935e",
@@ -376,16 +376,16 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
+    "revision": "86def96f95ef7421062fcf10f36956b1",
+    "url": "/home/assets/mn-1.JPG"
+  },
+  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
   },
   {
     "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
     "url": "/home/assets/treehouse-all.jpg"
-  },
-  {
-    "revision": "86def96f95ef7421062fcf10f36956b1",
-    "url": "/home/assets/mn-1.JPG"
   },
   {
     "revision": "c731b16741677f44b313178a3cc34886",
