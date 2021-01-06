@@ -38,7 +38,7 @@ export default function(props) {
         }}
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWP4////fwAJ+wP9CNHoHgAAAABJRU5ErkJggg=="
         alt=""
-        style={{ height: '15vh' }}
+        style={{ height: '56vw' }}
       />
     );
   }
