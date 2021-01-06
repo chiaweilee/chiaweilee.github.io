@@ -7,7 +7,7 @@ import Img from '@/components/img';
 export default {
   Map,
   Cryptor,
-  CryptorImg,
+  CImg: CryptorImg,
   HotelNights,
   Img,
 }

@@ -1,14 +1,47 @@
 import React, { useState, useEffect } from 'react';
-import { WhiteSpace, InputItem } from 'antd-mobile';
+import { WhiteSpace, InputItem, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
 import { compress, decompress } from '@/utils/hash2unicode';
+import styles from './index.less';
 
 const Cryptor = require('cryptorjs');
 
 const { Text, Paragraph } = Typography;
 
 export const secretKey = 'secretKey';
+
+const automaticClick = obj => {
+  var ev = document.createEvent('MouseEvents');
+  ev.initMouseEvent(
+    'click',
+    true,
+    false,
+    window,
+    0,
+    0,
+    0,
+    0,
+    0,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null,
+  );
+  obj.dispatchEvent(ev);
+};
+
+const exportJson = (name, data) => {
+  // @ts-ignore
+  const urlObject = window.URL || window.webkitURL || window;
+  const export_blob = new Blob([data]);
+  const a: any = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+  a.href = urlObject.createObjectURL(export_blob);
+  a.download = name;
+  automaticClick(a);
+};
 
 export const decoder = (code: string, compressed = false as boolean) =>
   new Cryptor(localStorage.getItem(secretKey)).decode(compressed ? decompress(code) : code);
@@ -44,8 +77,8 @@ export function Encoder(props) {
     return null;
   }
 
-  const head = props.head || '<C.Cryptor>';
-  const end = props.end || '</C.Cryptor>';
+  const head = typeof props.head !== 'undefined' ? props.head : '<C.Cryptor>';
+  const end = typeof props.end !== 'undefined' ? props.end : '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
   const text = `${head}${props.compress ? compress(code) : code}${end}`;
 
@@ -53,15 +86,25 @@ export function Encoder(props) {
     <div>
       <InputItem value={text} readOnly />
       <WhiteSpace />
-      <Paragraph
-        copyable={{
-          text,
-          onCopy: props.onCopy,
+      <div className={styles.typography}>
+        <Paragraph
+          copyable={{
+            text,
+            onCopy: props.onCopy,
+          }}
+          style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
+        >
+          <Text code={true}>{code}</Text>
+        </Paragraph>
+      </div>
+      <WhiteSpace />
+      <Button
+        onClick={() => {
+          exportJson(`${props.name}.json` || new Date().valueOf(), `"${text}"`);
         }}
-        style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
       >
-        <Text code={true}>{code}</Text>
-      </Paragraph>
+        export
+      </Button>
     </div>
   );
 }
