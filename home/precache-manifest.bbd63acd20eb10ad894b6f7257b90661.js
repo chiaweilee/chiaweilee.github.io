@@ -356,12 +356,12 @@ self.__precacheManifest = [
     "url": "/home/assets/snake.jpg"
   },
   {
-    "revision": "b4166e6891677abd3118e8289b185d5d",
-    "url": "/home/assets/fullmoon-1.jpg"
-  },
-  {
     "revision": "19541abd0c73e5e4bb56f2459315079a",
     "url": "/home/assets/qin.jpg"
+  },
+  {
+    "revision": "b4166e6891677abd3118e8289b185d5d",
+    "url": "/home/assets/fullmoon-1.jpg"
   },
   {
     "revision": "d2536da10dce8f5ae62993e34e2179ce",
@@ -384,12 +384,12 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-1.JPG"
   },
   {
-    "revision": "c731b16741677f44b313178a3cc34886",
-    "url": "/home/assets/klcc.jpg"
-  },
-  {
     "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
     "url": "/home/assets/treehouse-all.jpg"
+  },
+  {
+    "revision": "c731b16741677f44b313178a3cc34886",
+    "url": "/home/assets/klcc.jpg"
   },
   {
     "revision": "1e0cbe8200536e8af81b5099d4418058",
