@@ -79,7 +79,7 @@ export function Encoder(props) {
   const head = typeof props.img ? '<C.CImg src="' : '<C.Cryptor>';
   const end = typeof props.img ? '" />' : '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
-  const text = `${head}${code}${end}`;
+  const text = `${head}${props.img ? name : code}${end}`;
 
   return (
     <div>
@@ -93,16 +93,16 @@ export function Encoder(props) {
           }}
           style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
         >
-          <Text code={true}>{code}</Text>
+          <Text code={true}>{text}</Text>
         </Paragraph>
       </div>
       <WhiteSpace />
       { props.img && <Button
         onClick={() => {
-          exportJson(`${props.name}.json` || new Date().valueOf(), `"${text}"`);
+          exportJson(`${props.name}.json` || new Date().valueOf(), JSON.stringify(code));
         }}
       >
-        export
+        Export
       </Button> }
     </div>
   );
