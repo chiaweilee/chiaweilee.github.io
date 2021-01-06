@@ -3,7 +3,6 @@ import { WhiteSpace, InputItem, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
 import { compress, decompress } from '@/utils/hash2unicode';
-import styles from './index.less';
 
 const Cryptor = require('cryptorjs');
 
@@ -77,16 +76,16 @@ export function Encoder(props) {
     return null;
   }
 
-  const head = typeof props.head !== 'undefined' ? props.head : '<C.Cryptor>';
-  const end = typeof props.end !== 'undefined' ? props.end : '</C.Cryptor>';
+  const head = typeof props.img ? '<C.CImg src="' : '<C.Cryptor>';
+  const end = typeof props.img ? '" />' : '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
-  const text = `${head}${props.compress ? compress(code) : code}${end}`;
+  const text = `${head}${code}${end}`;
 
   return (
     <div>
       <InputItem value={text} readOnly />
       <WhiteSpace />
-      <div className={styles.typography}>
+      <div>
         <Paragraph
           copyable={{
             text,
@@ -98,13 +97,13 @@ export function Encoder(props) {
         </Paragraph>
       </div>
       <WhiteSpace />
-      <Button
+      { props.img && <Button
         onClick={() => {
           exportJson(`${props.name}.json` || new Date().valueOf(), `"${text}"`);
         }}
       >
         export
-      </Button>
+      </Button> }
     </div>
   );
 }
