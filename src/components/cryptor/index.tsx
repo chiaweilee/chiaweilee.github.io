@@ -79,13 +79,10 @@ export function Encoder(props) {
   const head = typeof props.img ? '<C.CImg src="' : '<C.Cryptor>';
   const end = typeof props.img ? '" />' : '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
-  const text = `${head}${props.img ? name : code}${end}`;
+  const text = `${head}${props.img ? props.name : code}${end}`;
 
   return (
     <div>
-      <InputItem value={text} readOnly />
-      <WhiteSpace />
-      <div>
         <Paragraph
           copyable={{
             text,
@@ -95,7 +92,6 @@ export function Encoder(props) {
         >
           <Text code={true}>{text}</Text>
         </Paragraph>
-      </div>
       <WhiteSpace />
       { props.img && <Button
         onClick={() => {
