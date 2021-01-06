@@ -400,12 +400,12 @@ self.__precacheManifest = [
     "url": "/home/assets/t.jpg"
   },
   {
-    "revision": "7d64d0308e2cad3c249a95ce90c6330a",
-    "url": "/home/assets/bkk.jpg"
-  },
-  {
     "revision": "ffc0041a200c906f93b91906be325df6",
     "url": "/home/assets/IMG_20170413_234141.jpg.json"
+  },
+  {
+    "revision": "7d64d0308e2cad3c249a95ce90c6330a",
+    "url": "/home/assets/bkk.jpg"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
