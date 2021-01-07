@@ -352,12 +352,12 @@ self.__precacheManifest = [
     "url": "/home/assets/beach.png"
   },
   {
-    "revision": "8a08e3526b9dc02c1d926f63592af448",
-    "url": "/home/assets/snake.jpg"
-  },
-  {
     "revision": "65cd94f1c00fc93664e03ef1dbf456bb",
     "url": "/home/assets/mabul-2.jpg"
+  },
+  {
+    "revision": "8a08e3526b9dc02c1d926f63592af448",
+    "url": "/home/assets/snake.jpg"
   },
   {
     "revision": "b4166e6891677abd3118e8289b185d5d",
@@ -380,12 +380,12 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
-    "revision": "86def96f95ef7421062fcf10f36956b1",
-    "url": "/home/assets/mn-1.JPG"
-  },
-  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
+  },
+  {
+    "revision": "86def96f95ef7421062fcf10f36956b1",
+    "url": "/home/assets/mn-1.JPG"
   },
   {
     "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
@@ -404,12 +404,12 @@ self.__precacheManifest = [
     "url": "/home/assets/t.jpg"
   },
   {
-    "revision": "ffc0041a200c906f93b91906be325df6",
-    "url": "/home/assets/IMG_20170413_234141.jpg.json"
-  },
-  {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
     "url": "/home/assets/bkk.jpg"
+  },
+  {
+    "revision": "ffc0041a200c906f93b91906be325df6",
+    "url": "/home/assets/IMG_20170413_234141.jpg.json"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
