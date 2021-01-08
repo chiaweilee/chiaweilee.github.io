@@ -344,12 +344,12 @@ self.__precacheManifest = [
     "url": "/home/assets/mabul-1.jpg"
   },
   {
-    "revision": "1275b7c5d17e872da0fa3469bbe21127",
-    "url": "/home/assets/cry.jpg"
-  },
-  {
     "revision": "e84a16e467280769b747f8846de21ca2",
     "url": "/home/assets/beach.png"
+  },
+  {
+    "revision": "1275b7c5d17e872da0fa3469bbe21127",
+    "url": "/home/assets/cry.jpg"
   },
   {
     "revision": "65cd94f1c00fc93664e03ef1dbf456bb",
@@ -384,6 +384,10 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-1.JPG"
   },
   {
+    "revision": "c731b16741677f44b313178a3cc34886",
+    "url": "/home/assets/klcc.jpg"
+  },
+  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
   },
@@ -396,20 +400,16 @@ self.__precacheManifest = [
     "url": "/home/assets/kohtao1.jpg.json"
   },
   {
-    "revision": "c731b16741677f44b313178a3cc34886",
-    "url": "/home/assets/klcc.jpg"
-  },
-  {
     "revision": "1e0cbe8200536e8af81b5099d4418058",
     "url": "/home/assets/t.jpg"
   },
   {
-    "revision": "ffc0041a200c906f93b91906be325df6",
-    "url": "/home/assets/IMG_20170413_234141.jpg.json"
-  },
-  {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
     "url": "/home/assets/bkk.jpg"
+  },
+  {
+    "revision": "ffc0041a200c906f93b91906be325df6",
+    "url": "/home/assets/IMG_20170413_234141.jpg.json"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
