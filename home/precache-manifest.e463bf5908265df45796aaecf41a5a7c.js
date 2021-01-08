@@ -380,6 +380,10 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
+    "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
+    "url": "/home/assets/mn-2.JPG"
+  },
+  {
     "revision": "86def96f95ef7421062fcf10f36956b1",
     "url": "/home/assets/mn-1.JPG"
   },
@@ -388,16 +392,12 @@ self.__precacheManifest = [
     "url": "/home/assets/treehouse-all.jpg"
   },
   {
-    "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
-    "url": "/home/assets/mn-2.JPG"
+    "revision": "c731b16741677f44b313178a3cc34886",
+    "url": "/home/assets/klcc.jpg"
   },
   {
     "revision": "8341c6934442df17460159b03efdbc98",
     "url": "/home/assets/kohtao1.jpg.json"
-  },
-  {
-    "revision": "c731b16741677f44b313178a3cc34886",
-    "url": "/home/assets/klcc.jpg"
   },
   {
     "revision": "1e0cbe8200536e8af81b5099d4418058",
