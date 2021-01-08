@@ -356,12 +356,12 @@ self.__precacheManifest = [
     "url": "/home/assets/mabul-2.jpg"
   },
   {
-    "revision": "8a08e3526b9dc02c1d926f63592af448",
-    "url": "/home/assets/snake.jpg"
-  },
-  {
     "revision": "b4166e6891677abd3118e8289b185d5d",
     "url": "/home/assets/fullmoon-1.jpg"
+  },
+  {
+    "revision": "8a08e3526b9dc02c1d926f63592af448",
+    "url": "/home/assets/snake.jpg"
   },
   {
     "revision": "19541abd0c73e5e4bb56f2459315079a",
