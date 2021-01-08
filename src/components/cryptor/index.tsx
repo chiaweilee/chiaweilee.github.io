@@ -76,8 +76,8 @@ export function Encoder(props) {
     return null;
   }
 
-  const head = typeof props.img ? '<C.CImg src="' : '<C.Cryptor>';
-  const end = typeof props.img ? '" />' : '</C.Cryptor>';
+  const head = props.img ? '<C.CImg src="' : '<C.Cryptor>';
+  const end = props.img ? '" />' : '</C.Cryptor>';
   const code = new Cryptor(password).encode(props.text);
   const text = `${head}${props.img ? props.name : code}${end}`;
 
