@@ -328,12 +328,12 @@ self.__precacheManifest = [
     "url": "/home/assets/latu.jpg"
   },
   {
-    "revision": "faddd726fae6b85a013ac86bc7c1df99",
-    "url": "/home/assets/mob.jpg.json"
-  },
-  {
     "revision": "3490762ff28016460056a7bda9311d93",
     "url": "/home/assets/moondance.jpg"
+  },
+  {
+    "revision": "faddd726fae6b85a013ac86bc7c1df99",
+    "url": "/home/assets/mob.jpg.json"
   },
   {
     "revision": "3381074177bc97d3daac86ea18b2c85c",
