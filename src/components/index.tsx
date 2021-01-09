@@ -10,4 +10,4 @@ export default {
   CImg: CryptorImg,
   HotelNights,
   Img,
-}
+};

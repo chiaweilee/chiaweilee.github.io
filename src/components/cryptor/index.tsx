@@ -60,7 +60,9 @@ export default function(props: any) {
   }
   return (
     <Confidential
-      onClick={() => { setHidden(false); }}
+      onClick={() => {
+        setHidden(false);
+      }}
     >
       {props.children}
     </Confidential>
@@ -81,23 +83,25 @@ export function Encoder(props) {
 
   return (
     <div>
-        <Paragraph
-          copyable={{
-            text,
-            onCopy: props.onCopy,
-          }}
-          style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
-        >
-          <Text code={true}>{text}</Text>
-        </Paragraph>
-      <WhiteSpace />
-      { props.img && <Button
-        onClick={() => {
-          exportJson(`${props.name}.json` || new Date().valueOf(), JSON.stringify(code));
+      <Paragraph
+        copyable={{
+          text,
+          onCopy: props.onCopy,
         }}
+        style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
       >
-        Export
-      </Button> }
+        <Text code={true}>{text}</Text>
+      </Paragraph>
+      <WhiteSpace />
+      {props.img && (
+        <Button
+          onClick={() => {
+            exportJson(`${props.name}.json` || new Date().valueOf(), JSON.stringify(code));
+          }}
+        >
+          Export
+        </Button>
+      )}
     </div>
   );
 }

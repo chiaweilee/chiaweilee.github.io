@@ -1,19 +1,20 @@
 export const onTouch = (opt = {}) => {
+  // @ts-ignore
   const { longTouchTimeout, onLongPress, onClick } = {
     longTouchTimeout: 1000,
     ...opt,
   };
   let originEvent;
-  let timeOutEvent = 0;
+  let timeOutEvent: any = 0;
   let isLongTouch;
   return {
     onContextMenu: function(e) {
       e.preventDefault();
     },
-    onTouchStart: function(e){
+    onTouchStart: function(e) {
       isLongTouch = false;
-      originEvent = e; 
-      timeOutEvent = setTimeout(function(){
+      originEvent = e;
+      timeOutEvent = setTimeout(function() {
         isLongTouch = true;
         if (typeof onLongPress === 'function') {
           onLongPress(originEvent);
@@ -21,14 +22,14 @@ export const onTouch = (opt = {}) => {
       }, longTouchTimeout);
       e.preventDefault();
     },
-    onTouchMove: function(e){
-      var touch = e.touches[0]
-      if(Math.abs(touch.clientY - originEvent.touches[0].touchY) < 10){
+    onTouchMove: function(e) {
+      var touch = e.touches[0];
+      if (Math.abs(touch.clientY - originEvent.touches[0].touchY) < 10) {
         e.preventDefault();
       }
     },
-    onTouchEnd: function(e){
-      if(timeOutEvent && !isLongTouch){
+    onTouchEnd: function(e) {
+      if (timeOutEvent && !isLongTouch) {
         clearTimeout(timeOutEvent);
         timeOutEvent = 0;
         if (typeof onClick === 'function') {
@@ -36,6 +37,6 @@ export const onTouch = (opt = {}) => {
         }
       }
       return false;
-    }
+    },
   };
 };

@@ -34,12 +34,12 @@ export default function(props) {
   if (hidden) {
     return (
       <img
-        { ...onTouch({
+        {...onTouch({
           longTouchTimeout: 3000,
           onLongPress: () => {
             setHidden(false);
-          }
-        }) }
+          },
+        })}
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWP4////fwAJ+wP9CNHoHgAAAABJRU5ErkJggg=="
         alt=""
         style={{ height: '56vw' }}

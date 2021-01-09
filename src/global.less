@@ -12,15 +12,19 @@ body,
 .markdown-body.markdown-body {
   user-select: text;
   padding: 8%;
-  h1,h2,h3,h4,h5 {
-    .font(Career)
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    .font(Career);
   }
   img {
     user-select: none;
     width: 100%;
     height: auto;
-      &+img {
-        margin-top: 8px;
-      }
+    & + img {
+      margin-top: 8px;
+    }
   }
 }
