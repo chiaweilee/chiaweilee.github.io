@@ -1,16 +1,7 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
-jobs:
-  build-and-deploy:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
+  node: circleci/node@3.0.0
 workflows:
-    build-and-deploy:
-      jobs:
-        - build-and-deploy
+  node-tests:
+    jobs:
+      - node/test
