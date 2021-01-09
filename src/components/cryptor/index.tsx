@@ -3,6 +3,7 @@ import { WhiteSpace, InputItem, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
 import { compress, decompress } from '@/utils/hash2unicode';
+import { onTouch } from '@/utils/e';
 
 const Cryptor = require('cryptorjs');
 
