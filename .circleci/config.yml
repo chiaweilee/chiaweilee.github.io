@@ -19,7 +19,7 @@ jobs:
           key: v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
-      - run: mom run build
+      - run: yarn build
 
 workflows:
   build_deploy:
