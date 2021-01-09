@@ -1,12 +1,16 @@
 export const onTouch = (opt = {}) => {
   const { longTouchTimeout, onLongPress, onClick } = {
     longTouchTimeout: 1000,
+    disableContextMenu: true,
     ...opt,
   };
   let originEvent;
   let timeOutEvent;
   let isLongTouch;
   return {
+    onContextMenu: function() {
+      return disableContextMenu;
+    },
     onTouchStart: function(e){
       isLongTouch = false;
       timeOutEvent = setTimeout(function(){
