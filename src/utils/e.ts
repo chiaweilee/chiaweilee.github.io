@@ -24,6 +24,7 @@ export const onTouch = (opt = {}) => {
       }
     },
     onTouchEnd: function(e){
+      alert('onTouchEnd' + timeOutEvent + isLongTouch);;
       if(timeOutEvent && !isLongTouch){
         clearTimeout(timeOutEvent);
         timeOutEvent = 0;
