@@ -25,7 +25,7 @@ export const onTouch = (opt = {}) => {
       clearTimeout(timeOutEvent);
       timeOutEvent = null;
       var touch = e.touches[0]
-      if(Math.abs(touch.clientY - originEven.touches[0].touchY) < 10){
+      if(Math.abs(touch.clientY - originEvent.touches[0].touchY) < 10){
         e.preventDefault();
       }
     },
