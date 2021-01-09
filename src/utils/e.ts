@@ -16,6 +16,7 @@ export const onTouch = (opt = {}) => {
           onLongPress(originEvent);
         }
       }, longTouchTimeout);
+      e.preventDefault();
     },
     onTouchMove: function(e){
       var touch = e.touches[0]
