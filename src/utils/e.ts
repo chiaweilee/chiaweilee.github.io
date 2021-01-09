@@ -1,5 +1,5 @@
 export const onTouch = (opt = {}) => {
-  const { longTouchTimeout, onLongPress, onClick } = {
+  const { longTouchTimeout, disableContextMenu, onLongPress, onClick } = {
     longTouchTimeout: 1000,
     disableContextMenu: true,
     ...opt,
@@ -21,7 +21,7 @@ export const onTouch = (opt = {}) => {
       }, longTouchTimeout);
       originEvent = e; 
     },
-    onTouchMove: function(){
+    onTouchMove: function(e){
       clearTimeout(timeOutEvent);
       timeOutEvent = null;
       var touch = e.touches[0]
