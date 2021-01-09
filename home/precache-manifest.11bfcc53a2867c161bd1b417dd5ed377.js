@@ -360,12 +360,12 @@ self.__precacheManifest = [
     "url": "/home/assets/snake.jpg"
   },
   {
-    "revision": "b4166e6891677abd3118e8289b185d5d",
-    "url": "/home/assets/fullmoon-1.jpg"
-  },
-  {
     "revision": "19541abd0c73e5e4bb56f2459315079a",
     "url": "/home/assets/qin.jpg"
+  },
+  {
+    "revision": "b4166e6891677abd3118e8289b185d5d",
+    "url": "/home/assets/fullmoon-1.jpg"
   },
   {
     "revision": "d2536da10dce8f5ae62993e34e2179ce",
@@ -388,12 +388,12 @@ self.__precacheManifest = [
     "url": "/home/assets/treehouse-all.jpg"
   },
   {
-    "revision": "8341c6934442df17460159b03efdbc98",
-    "url": "/home/assets/kohtao1.jpg.json"
-  },
-  {
     "revision": "86def96f95ef7421062fcf10f36956b1",
     "url": "/home/assets/mn-1.JPG"
+  },
+  {
+    "revision": "8341c6934442df17460159b03efdbc98",
+    "url": "/home/assets/kohtao1.jpg.json"
   },
   {
     "revision": "c731b16741677f44b313178a3cc34886",
@@ -404,12 +404,12 @@ self.__precacheManifest = [
     "url": "/home/assets/t.jpg"
   },
   {
-    "revision": "7d64d0308e2cad3c249a95ce90c6330a",
-    "url": "/home/assets/bkk.jpg"
-  },
-  {
     "revision": "ffc0041a200c906f93b91906be325df6",
     "url": "/home/assets/IMG_20170413_234141.jpg.json"
+  },
+  {
+    "revision": "7d64d0308e2cad3c249a95ce90c6330a",
+    "url": "/home/assets/bkk.jpg"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
