@@ -3,7 +3,6 @@ import { WhiteSpace, InputItem, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
 import { compress, decompress } from '@/utils/hash2unicode';
-import { onTouch } from '@/utils/e';
 
 const Cryptor = require('cryptorjs');
 
@@ -61,12 +60,9 @@ export default function(props: any) {
   }
   return (
     <Confidential
-      { ...onTouch({
-          longTouchTimeout: 10000,
-          onLongPress: () => {
-            setHidden(false);
-          }
-        }) }
+      onClick={() => {
+        setHidden(false);
+      }}
     >
       {props.children}
     </Confidential>
