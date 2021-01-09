@@ -9,7 +9,11 @@ export const onTouch = (opt = {}) => {
   let isLongTouch;
   return {
     onContextMenu: function() {
-      return disableContextMenu;
+      if (disableContextMenu) {
+        event.cancelBubble = true;
+        event.returnvalue = false;
+        return false;
+      }
     },
     onTouchStart: function(e){
       isLongTouch = false;
