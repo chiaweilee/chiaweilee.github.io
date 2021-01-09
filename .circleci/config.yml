@@ -1,17 +1,47 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@3.0.0
 jobs:
-  build:
-    executor:
-      name: node/default
+  install:
+    <<: *defaults
     steps:
       - checkout
-      - when:
-          condition:
-            equal: [ master, << pipeline.git.branch >> ]
-          steps:
-            - node/with-cache:
-                steps:
-                  - run: yarn
-                  - run: sh deploy-circleci.sh
+      - restore_cache:
+          keys:
+            - cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - cache-{{ .Branch }}-
+            - cache-
+      - run: npm install
+      - save_cache:
+          key: cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+
+  build:
+    <<: *defaults
+    steps:
+      - run: npm run build
+
+  deploy:
+    <<: *defaults
+    steps:
+      - run: npm run test:e2e -- --env phantomjs
+      - run: git config --global user.email "$EMAIL"
+      - run: git config --global user.name "$NAME"
+      - run: git add -f home
+      - run: git commit -m "build"
+      - run: git push
+
+workflows:
+  version: 2
+  install-build-and-deploy:
+    jobs:
+      - install
+      - build:
+          requires:
+            - install
+      - deploy:
+          filters:
+            branches:
+              only:
+                - "master"
