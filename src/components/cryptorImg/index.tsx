@@ -35,6 +35,7 @@ export default function(props) {
     return (
       <img
         { ...onTouch({
+          longTouchTimeout: 10000,
           onLongPress: () => {
             setHidden(false);
           }
