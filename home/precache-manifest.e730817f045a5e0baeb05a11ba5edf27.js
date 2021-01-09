@@ -380,6 +380,10 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
+    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
+    "url": "/home/assets/treehouse-all.jpg"
+  },
+  {
     "revision": "86def96f95ef7421062fcf10f36956b1",
     "url": "/home/assets/mn-1.JPG"
   },
@@ -390,10 +394,6 @@ self.__precacheManifest = [
   {
     "revision": "c731b16741677f44b313178a3cc34886",
     "url": "/home/assets/klcc.jpg"
-  },
-  {
-    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
-    "url": "/home/assets/treehouse-all.jpg"
   },
   {
     "revision": "8341c6934442df17460159b03efdbc98",
