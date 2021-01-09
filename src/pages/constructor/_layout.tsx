@@ -18,7 +18,7 @@ export default class extends React.PureComponent<any, State> {
             if (this.refer) {
               this.props.history.push(this.refer);
             } else {
-              utils.historyGoBack.call(this);
+              utils.historyGoBack();
             }
           }}
           rightContent={

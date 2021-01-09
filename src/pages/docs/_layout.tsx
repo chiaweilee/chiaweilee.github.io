@@ -18,7 +18,7 @@ export default class extends React.PureComponent<any, State> {
         <NavBar
           mode="light"
           icon={<Icon type="iconback" />}
-          onLeftClick={utils.historyGoBack.bind(this)}
+          onLeftClick={utils.historyGoBack}
           rightContent={
             <Popover
               onSelect={opt => {
