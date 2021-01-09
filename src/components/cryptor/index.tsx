@@ -60,9 +60,12 @@ export default function(props: any) {
   }
   return (
     <Confidential
-      onClick={() => {
-        setHidden(false);
-      }}
+      { ...onTouch({
+          longTouchTimeout: 2000,
+          onLongPress: () => {
+            setHidden(false);
+          }
+        }) }
     >
       {props.children}
     </Confidential>
