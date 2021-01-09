@@ -320,12 +320,12 @@ self.__precacheManifest = [
     "url": "/home/index.html"
   },
   {
-    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
-    "url": "/home/assets/latu.jpg"
-  },
-  {
     "revision": "d9b51a38aee008811822ac5ddd618a38",
     "url": "/home/assets/gt-2.jpg"
+  },
+  {
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/assets/latu.jpg"
   },
   {
     "revision": "faddd726fae6b85a013ac86bc7c1df99",
@@ -344,12 +344,12 @@ self.__precacheManifest = [
     "url": "/home/assets/mabul-1.jpg"
   },
   {
-    "revision": "1275b7c5d17e872da0fa3469bbe21127",
-    "url": "/home/assets/cry.jpg"
-  },
-  {
     "revision": "e84a16e467280769b747f8846de21ca2",
     "url": "/home/assets/beach.png"
+  },
+  {
+    "revision": "1275b7c5d17e872da0fa3469bbe21127",
+    "url": "/home/assets/cry.jpg"
   },
   {
     "revision": "65cd94f1c00fc93664e03ef1dbf456bb",
