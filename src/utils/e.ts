@@ -7,6 +7,9 @@ export const onTouch = (opt = {}) => {
   let timeOutEvent = 0;
   let isLongTouch;
   return {
+    onContextMenu: function() {
+      e.preventDefault();
+    },
     onTouchStart: function(e){
       isLongTouch = false;
       originEvent = e; 
