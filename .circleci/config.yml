@@ -1,8 +1,6 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
 jobs:
-  install:
+  build-deploy:
     steps:
       - checkout
       - restore_cache:
@@ -15,14 +13,7 @@ jobs:
           key: cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
-
-  umi-build:
-    steps:
       - run: npm run build
-
-  git-deploy:
-    steps:
-      - run: npm run test:e2e -- --env phantomjs
       - run: git config --global user.email "$EMAIL"
       - run: git config --global user.name "$NAME"
       - run: git add -f home
@@ -31,13 +22,9 @@ jobs:
 
 workflows:
   version: 2
-  install-build-and-deploy:
+  build_and_deploy:
     jobs:
-      - install
-      - umi-build:
-          requires:
-            - install
-      - git-deploy:
+      - build-deploy:
           filters:
             branches:
               only:
