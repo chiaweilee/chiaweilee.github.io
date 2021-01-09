@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { decoder, secretKey } from '@/components/cryptor';
+import { onTouch } from '@/utils/e';
 
 export default function(props) {
   const [hidden, setHidden] = useState(true);
@@ -33,9 +34,11 @@ export default function(props) {
   if (hidden) {
     return (
       <img
-        onClick={() => {
-          setHidden(false);
-        }}
+        { ...onTouch({
+          onLongPress: () => {
+            setHidden(false);
+          }
+        }) }
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWP4////fwAJ+wP9CNHoHgAAAABJRU5ErkJggg=="
         alt=""
         style={{ height: '56vw' }}
