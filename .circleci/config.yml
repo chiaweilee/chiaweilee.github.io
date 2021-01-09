@@ -16,11 +16,11 @@ jobs:
           paths:
             - node_modules/
 
-  build:
+  umi-build:
     steps:
       - run: npm run build
 
-  deploy:
+  git-deploy:
     steps:
       - run: npm run test:e2e -- --env phantomjs
       - run: git config --global user.email "$EMAIL"
@@ -34,10 +34,10 @@ workflows:
   install-build-and-deploy:
     jobs:
       - install
-      - build:
+      - umi-build:
           requires:
             - install
-      - deploy:
+      - git-deploy:
           filters:
             branches:
               only:
