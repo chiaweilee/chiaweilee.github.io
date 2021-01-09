@@ -60,7 +60,7 @@ export default function(props: any) {
   }
   return (
     <Confidential
-      onDblClick={() => { setHidden(false); }}
+      onClick={() => { setHidden(false); }}
     >
       {props.children}
     </Confidential>
