@@ -1,6 +1,6 @@
 export const onTouch = (opt = {}) => {
   const { longTouchTimeout, onLongPress, onClick } = {
-    longTouchTimeout: 1000
+    longTouchTimeout: 1000,
     ...opt,
   };
   let originEvent;
