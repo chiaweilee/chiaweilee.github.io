@@ -3,7 +3,6 @@ orbs:
   node: circleci/node@3.0.0
 jobs:
   install:
-    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -18,12 +17,10 @@ jobs:
             - node_modules/
 
   build:
-    <<: *defaults
     steps:
       - run: npm run build
 
   deploy:
-    <<: *defaults
     steps:
       - run: npm run test:e2e -- --env phantomjs
       - run: git config --global user.email "$EMAIL"
