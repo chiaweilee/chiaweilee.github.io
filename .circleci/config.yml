@@ -35,6 +35,17 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
+      - run:
+        name: auto deploy
+        command: |
+          diffInfo=`git diff --stat`
+          if [ "$diffInfo" = "" ]; then
+            git config --global user.email "$EMAIL"
+            git config --global user.name "$NAME"
+            git add -f home
+            git commit -m "deply: 🤖 auto build"
+            git push
+          fi
   run_lint:
     <<: *defaults
     steps:
