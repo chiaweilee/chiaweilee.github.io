@@ -40,7 +40,7 @@ jobs:
             if [ "$diffInfo" != "" ]; then
               echo "$diffInfo";
               if [ -d /home/ ]; then
-                StrictHostKeyChecking=no root@140.82.113.4
+                mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
                 git config --global user.email "$EMAIL"
                 git config --global user.name "$NAME"
                 git add -f home
