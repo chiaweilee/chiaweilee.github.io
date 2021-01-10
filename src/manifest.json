@@ -2,10 +2,7 @@
   "name": "Lee6",
   "short_name": "Lee",
   "description": "",
-  "icons": {
-    "16": "/home/assets/icon16.png",
-    "48": "/home/assets/icon48.png"
-  },
+  "icons": [],
   "lang": "en-UK",
   "start_url": "/",
   "display": "standalone",
