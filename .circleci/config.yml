@@ -33,7 +33,7 @@ jobs:
       - run:
           name: auto deploy
           command: |
-            ssh -o StrictHostKeyChecking=no git@github.com
+            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
             diffInfo=`git diff --stat`
             if [ "$diffInfo" != "" ]; then
               echo "$diffInfo";
