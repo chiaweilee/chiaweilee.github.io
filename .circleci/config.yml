@@ -1,9 +1,12 @@
 version: 2.1
 
+orbs:
+  node: circleci/node@1.1.6
+
 defaults: &defaults
   working_directory: ~/project/app
-  docker:
-    - image: circleci/node:latest
+  executor:
+    name: node/default
 
 jobs:
   run_install:
