@@ -29,13 +29,24 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
-      - run: ls
-      - run: yarn build
+      - run: npm run build
   run_deploy:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/project
+  run_lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run: npm run lint
+  run_test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run: npm test
 
 workflows:
   build_deploy:
@@ -59,4 +70,9 @@ workflows:
                 - master
           requires:
             - run_build
-
+      - run_lint:
+          requires:
+            - run_install
+      - run_test:
+          requires:
+            - run_install
