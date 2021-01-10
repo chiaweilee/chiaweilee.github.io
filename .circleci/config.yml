@@ -33,6 +33,7 @@ jobs:
       - run:
           name: auto deploy
           command: |
+            ssh -o StrictHostKeyChecking=no git@github.com
             diffInfo=`git diff --stat`
             if [ "$diffInfo" != "" ]; then
               echo "$diffInfo";
