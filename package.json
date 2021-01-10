@@ -8,8 +8,8 @@
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:sty",
     "lint-fix": "npm run lint:es-fix && npm run lint:ts-fix && npm run lint:sty-fix",
     "lint:es": "eslint --ext .js --ext .jsx . --quiet",
-    "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
-    "lint:sty": "stylelint \"**/*.less\"",
+    "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --quiet",
+    "lint:sty": "stylelint \"**/*.less\" --quiet",
     "lint:es-fix": "eslint --ext .js --ext .jsx . --fix",
     "lint:ts-fix": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
     "lint:sty-fix": "stylelint \"**/*.less\" --fix"
