@@ -1,11 +1,12 @@
 version: 2.1
 
 defaults: &defaults
+  working_directory: ~/project/app
   docker:
     - image: circleci/node:12
 
 jobs:
-  run_build:
+  run_install:
     <<: *defaults
     steps:
       - checkout
@@ -19,12 +20,15 @@ jobs:
           key: v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
-      - run: yarn build
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - app
 
 workflows:
   build_deploy:
     jobs:
-      - run_build:
+      - run_install:
           filters:
             branches:
               only:
