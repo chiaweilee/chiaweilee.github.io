@@ -31,9 +31,6 @@ jobs:
           at: ~/project
       - run: npm run build
       - run:
-          name: Avoid hosts unknown for github
-          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run:
           name: auto deploy
           command: |
             diffInfo=`git diff --stat`
