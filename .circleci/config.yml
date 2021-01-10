@@ -3,7 +3,7 @@ version: 2.1
 defaults: &defaults
   working_directory: ~/project/app
   docker:
-    - image: circleci/node@1.1.6
+    - image: circleci/node:latest
 
 jobs:
   run_install:
