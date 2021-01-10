@@ -30,23 +30,18 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run: npm run build
-  run_deploy:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: auto deploy
-          command: |
-            git diff --stat
-            diffInfo=`git diff --stat`
-            if [ "$diffInfo" = "" ]; then
-              git config --global user.email "$EMAIL"
-              git config --global user.name "$NAME"
-              git add -f home
-              git commit -m "deply: 🤖 auto build"
-              git push
-            fi
+       - run:
+         name: auto deploy
+         command: |
+           git diff --stat
+           diffInfo=`git diff --stat`
+           if [ "$diffInfo" = "" ]; then
+             git config --global user.email "$EMAIL"
+             git config --global user.name "$NAME"
+             git add -f home
+             git commit -m "deply: 🤖 auto build"
+             git push
+           fi
   run_lint:
     <<: *defaults
     steps:
@@ -75,13 +70,6 @@ workflows:
                 - master
           requires:
             - run_install
-      - run_deploy:
-          filters:
-            branches:
-              only:
-                - master
-          requires:
-            - run_build
       - run_lint:
           requires:
             - run_install
