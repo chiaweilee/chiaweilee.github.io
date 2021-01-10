@@ -33,11 +33,10 @@ jobs:
       - run:
           name: auto deploy
           command: |
-            folder=`/home/`
             diffInfo=`git diff --stat`
             if [ "$diffInfo" != "" ]; then
               echo "$diffInfo";
-              if [ -d "$folder"]; then
+              if [ -d /home/ ]; then
                 git config --global user.email "$EMAIL"
                 git config --global user.name "$NAME"
                 git add -f home
