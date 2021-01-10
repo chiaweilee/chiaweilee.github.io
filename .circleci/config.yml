@@ -38,6 +38,7 @@ jobs:
       - run:
           name: auto deploy
           command: |
+            git diff --stat
             diffInfo=`git diff --stat`
             if [ "$diffInfo" = "" ]; then
               git config --global user.email "$EMAIL"
