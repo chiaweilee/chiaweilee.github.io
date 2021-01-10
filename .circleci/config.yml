@@ -30,6 +30,11 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run: yarn build
+  run_deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
 
 workflows:
   build_deploy:
@@ -46,3 +51,11 @@ workflows:
                 - master
           requires:
             - run_install
+      - run_deploy:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - run_build
+
