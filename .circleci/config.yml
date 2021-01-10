@@ -34,6 +34,11 @@ jobs:
 workflows:
   build_deploy:
     jobs:
+      - run_install:
+          filters:
+            branches:
+              only:
+                - master
       - run_build:
           filters:
             branches:
