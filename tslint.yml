@@ -7,3 +7,4 @@ extends:
 rules:
   no-implicit-dependencies: false
   member-access: false
+  jsx-no-lambda: false

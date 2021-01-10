@@ -8,6 +8,23 @@ interface State {
 }
 
 export default class extends React.PureComponent<any, State> {
+
+  private get refer(): string | void {
+    const {
+      location: { state },
+    } = this.props;
+    if (state && typeof state.refer === 'string') {
+      return state.refer;
+    }
+  }
+
+  private get githubPage(): string | void {
+    if (this.refer) {
+      const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
+      const ext = '.mdx';
+      return `${baseUrl}${this.refer}${ext}`;
+    }
+  }
   public render() {
     return (
       <>
@@ -34,22 +51,5 @@ export default class extends React.PureComponent<any, State> {
         <WingBlank>{this.props.children}</WingBlank>
       </>
     );
-  }
-
-  private get refer(): string | void {
-    const {
-      location: { state },
-    } = this.props;
-    if (state && typeof state.refer === 'string') {
-      return state.refer;
-    }
-  }
-
-  private get githubPage(): string | void {
-    if (this.refer) {
-      const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
-      const ext = '.mdx';
-      return `${baseUrl}${this.refer}${ext}`;
-    }
   }
 }

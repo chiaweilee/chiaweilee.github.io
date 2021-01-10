@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { WhiteSpace, InputItem, Button } from 'antd-mobile';
+import { WhiteSpace, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
-import { compress, decompress } from '@/utils/hash2unicode';
 
 const Cryptor = require('cryptorjs');
 
@@ -10,8 +9,8 @@ const { Text, Paragraph } = Typography;
 
 export const secretKey = 'secretKey';
 
-const automaticClick = obj => {
-  var ev = document.createEvent('MouseEvents');
+const automaticClick = (obj) => {
+  const ev = document.createEvent('MouseEvents');
   ev.initMouseEvent(
     'click',
     true,
@@ -42,10 +41,9 @@ const exportJson = (name, data) => {
   automaticClick(a);
 };
 
-export const decoder = (code: string, compressed = false as boolean) =>
-  new Cryptor(localStorage.getItem(secretKey)).decode(compressed ? decompress(code) : code);
+export const decoder = (code: string) => new Cryptor(localStorage.getItem(secretKey)).decode(code);
 
-export default function(props: any) {
+export default function (props: any) {
   const [hidden, setHidden] = useState(true);
   const [text, setText] = useState(undefined);
 

@@ -8,13 +8,13 @@ export const onTouch = (opt = {}) => {
   let timeOutEvent: any = 0;
   let isLongTouch;
   return {
-    onContextMenu: function(e) {
+    onContextMenu(e) {
       e.preventDefault();
     },
-    onTouchStart: function(e) {
+    onTouchStart(e) {
       isLongTouch = false;
       originEvent = e;
-      timeOutEvent = setTimeout(function() {
+      timeOutEvent = setTimeout(function () {
         isLongTouch = true;
         if (typeof onLongPress === 'function') {
           onLongPress(originEvent);
@@ -22,13 +22,13 @@ export const onTouch = (opt = {}) => {
       }, longTouchTimeout);
       e.preventDefault();
     },
-    onTouchMove: function(e) {
-      var touch = e.touches[0];
+    onTouchMove(e) {
+      const touch = e.touches[0];
       if (Math.abs(touch.clientY - originEvent.touches[0].touchY) < 10) {
         e.preventDefault();
       }
     },
-    onTouchEnd: function(e) {
+    onTouchEnd(e) {
       if (timeOutEvent && !isLongTouch) {
         clearTimeout(timeOutEvent);
         timeOutEvent = 0;

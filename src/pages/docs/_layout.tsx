@@ -12,6 +12,18 @@ interface State {
 }
 
 export default class extends React.PureComponent<any, State> {
+  private get constructDisable(): boolean {
+    return !localStorage.getItem(secretKey);
+  }
+
+  private get githubPage(): string {
+    const {
+      location: { pathname },
+    } = this.props;
+    const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
+    const ext = '.mdx';
+    return `${baseUrl}${pathname}${ext}`;
+  }
   public render() {
     return (
       <>
@@ -21,7 +33,7 @@ export default class extends React.PureComponent<any, State> {
           onLeftClick={utils.historyGoBack}
           rightContent={
             <Popover
-              onSelect={opt => {
+              onSelect={(opt) => {
                 switch (opt.props.value) {
                   case 'github':
                     window.open(this.githubPage);
@@ -30,7 +42,7 @@ export default class extends React.PureComponent<any, State> {
                     Modal.prompt(
                       'Password',
                       'Password Required',
-                      password => {
+                      (password) => {
                         localStorage.setItem(secretKey, password);
                       },
                       'secure-text',
@@ -42,7 +54,7 @@ export default class extends React.PureComponent<any, State> {
                         options: actions,
                         maskClosable: true,
                       },
-                      buttonIndex => {
+                      (buttonIndex) => {
                         if (typeof actions[buttonIndex] === 'string') {
                           this.props.history.push({
                             pathname: `/constructor/${actions[buttonIndex].toLowerCase()}`,
@@ -86,18 +98,5 @@ export default class extends React.PureComponent<any, State> {
         </Navigation>
       </>
     );
-  }
-
-  private get constructDisable(): boolean {
-    return !localStorage.getItem(secretKey);
-  }
-
-  private get githubPage(): string {
-    const {
-      location: { pathname },
-    } = this.props;
-    const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
-    const ext = '.mdx';
-    return `${baseUrl}${pathname}${ext}`;
   }
 }

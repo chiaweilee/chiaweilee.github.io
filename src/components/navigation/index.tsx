@@ -12,9 +12,9 @@ const computeRoutes = (routes: any): any[] => {
     (routes &&
       Array.isArray(routes) &&
       routes
-        .filter(r => !!r.path)
+        .filter((r) => !!r.path)
         .map((route: any) => route.path.split('/').slice(1))
-        .filter(r => r.length > 1 && !!r[0])) ||
+        .filter((r) => r.length > 1 && !!r[0])) ||
     []
   );
 };
@@ -25,17 +25,6 @@ export default class extends React.PureComponent<any, any> {
     this.state = {
       routes: computeRoutes(props.route && props.route.routes),
     };
-  }
-
-  public render() {
-    return (
-      <>
-        <WhiteSpace size="lg" />
-        <WingBlank size="md">{this.renderRoutes}</WingBlank>
-        {this.props.children}
-        <ul>{this.renderRelative}</ul>
-      </>
-    );
   }
 
   private get currentRoute() {
@@ -83,9 +72,20 @@ export default class extends React.PureComponent<any, any> {
 
   private get renderRelative() {
     return this.brotherRoutes.map((route: any) => (
-      <li>
+      <li key={route.join('/')}>
         <Link to={`/${route.join('/')}`}>{last(route)}</Link>
       </li>
     ));
+  }
+
+  public render() {
+    return (
+      <>
+        <WhiteSpace size="lg" />
+        <WingBlank size="md">{this.renderRoutes}</WingBlank>
+        {this.props.children}
+        <ul>{this.renderRelative}</ul>
+      </>
+    );
   }
 }
