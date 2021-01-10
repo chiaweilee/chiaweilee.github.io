@@ -32,7 +32,14 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
-      - run: npm run build
+      - run:
+          name: auto build
+          command: |
+            diffInfo=`git diff --stat`
+            if [ "$diffInfo" != "" ]; then
+              echo "$diffInfo";
+              npm run build
+            fi
       - run:
           name: auto deploy
           command: |
