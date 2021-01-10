@@ -33,7 +33,6 @@ jobs:
       - run:
           name: auto deploy
           command: |
-            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
             diffInfo=`git diff --stat`
             if [ "$diffInfo" != "" ]; then
               echo "$diffInfo";
@@ -41,7 +40,7 @@ jobs:
                 git config --global user.email "$EMAIL"
                 git config --global user.name "$NAME"
                 git add -f home
-                git commit -m "deply: 🤖 auto build"
+                git commit -m "deploy: 🤖 auto build"
                 git push
               fi
             fi
