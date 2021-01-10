@@ -24,11 +24,22 @@ jobs:
           root: ~/project
           paths:
             - app
+  run_build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run: yarn build
 
 workflows:
   build_deploy:
     jobs:
       - run_install:
+          filters:
+            branches:
+              only:
+                - master
+      - run_build:
           filters:
             branches:
               only:
