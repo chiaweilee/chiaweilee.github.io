@@ -7,7 +7,7 @@
     "test": "umi test",
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:sty",
     "lint-fix": "npm run lint:es-fix && npm run lint:ts-fix && npm run lint:sty-fix",
-    "lint:es": "eslint --ext .js --ext .jsx . --quite",
+    "lint:es": "eslint --ext .js --ext .jsx . --quiet",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint:sty": "stylelint \"**/*.less\"",
     "lint:es-fix": "eslint --ext .js --ext .jsx . --fix",
