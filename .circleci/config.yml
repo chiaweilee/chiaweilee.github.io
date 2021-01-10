@@ -30,7 +30,21 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run: npm run build
-      - run: sh deploy-circleci.sh
+      - run:
+          name: auto deploy
+          command: |
+            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            diffInfo=`git diff --stat`
+            if [ "$diffInfo" != "" ]; then
+              echo "$diffInfo";
+              if [ -d /home/ ]; then
+                git config --global user.email "$EMAIL"
+                git config --global user.name "$NAME"
+                git add -f home
+                git commit -m "deply: 🤖 auto build"
+                git push
+              fi
+            fi
   run_lint:
     <<: *defaults
     steps:
