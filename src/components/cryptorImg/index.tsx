@@ -42,7 +42,7 @@ export default function(props) {
         })}
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICRAEAOw=="
         alt=""
-        style={{ height: '56vw' }}
+        style={{ height: '33vw' }}
       />
     );
   }
