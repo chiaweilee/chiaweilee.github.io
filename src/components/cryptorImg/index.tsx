@@ -5,7 +5,7 @@ import { onTouch } from '@/utils/e';
 export default function(props) {
   const [hidden, setHidden] = useState(true);
   const [img, setImg] = useState(undefined);
-  const { src } = props;
+  const { src, strict } = props;
 
   // @ts-ignore
   useEffect(async () => {
@@ -35,7 +35,7 @@ export default function(props) {
     return (
       <img
         {...onTouch({
-          longTouchTimeout: 3000,
+          longTouchTimeout: strict ? 30000 : 3000,
           onLongPress: () => {
             setHidden(false);
           },
