@@ -328,28 +328,36 @@ self.__precacheManifest = [
     "url": "/home/assets/gt-2.jpg"
   },
   {
-    "revision": "faddd726fae6b85a013ac86bc7c1df99",
-    "url": "/home/assets/mob.jpg.json"
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/assets/latu.jpg"
   },
   {
     "revision": "3490762ff28016460056a7bda9311d93",
     "url": "/home/assets/moondance.jpg"
   },
   {
+    "revision": "faddd726fae6b85a013ac86bc7c1df99",
+    "url": "/home/assets/mob.jpg.json"
+  },
+  {
     "revision": "3381074177bc97d3daac86ea18b2c85c",
     "url": "/home/assets/sara.jpg"
   },
   {
-    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
-    "url": "/home/assets/latu.jpg"
+    "revision": "c4e3d3ac48d42799e74600204f451ceb",
+    "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
     "revision": "9f1130038a0e9d5eb282b5cdb8112afa",
     "url": "/home/assets/yinjiaoqin1.jpg"
   },
   {
-    "revision": "c4e3d3ac48d42799e74600204f451ceb",
-    "url": "/home/assets/yinjiaoqin2.jpg"
+    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
+    "url": "/home/assets/yu_jie12-2.jpg"
+  },
+  {
+    "revision": "c73cb751204b91b75cdd9091ed82d9a9",
+    "url": "/home/assets/yu_jie12.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
@@ -388,10 +396,6 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
-    "revision": "86def96f95ef7421062fcf10f36956b1",
-    "url": "/home/assets/mn-1.JPG"
-  },
-  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
   },
@@ -404,16 +408,20 @@ self.__precacheManifest = [
     "url": "/home/assets/klcc.jpg"
   },
   {
+    "revision": "86def96f95ef7421062fcf10f36956b1",
+    "url": "/home/assets/mn-1.JPG"
+  },
+  {
+    "revision": "1e0cbe8200536e8af81b5099d4418058",
+    "url": "/home/assets/t.jpg"
+  },
+  {
     "revision": "8341c6934442df17460159b03efdbc98",
     "url": "/home/assets/kohtao1.jpg.json"
   },
   {
     "revision": "ffc0041a200c906f93b91906be325df6",
     "url": "/home/assets/IMG_20170413_234141.jpg.json"
-  },
-  {
-    "revision": "1e0cbe8200536e8af81b5099d4418058",
-    "url": "/home/assets/t.jpg"
   },
   {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
