@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "884bd85b302477d93b7d",
-    "url": "/home/p__docs__t7__1-tour.mdx.7c09e062.async.js"
+    "revision": "668470c247418d7f8ac4",
+    "url": "/home/p__docs__t7__1-tour.mdx.3e946d64.async.js"
   },
   {
     "revision": "b16e45f1e2c5e72b535c",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "b46637d91efa77d56616",
+    "revision": "7133de744041134ad9e2",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "b46637d91efa77d56616",
-    "url": "/home/umi.205dd6e8.js"
+    "revision": "7133de744041134ad9e2",
+    "url": "/home/umi.773cea3e.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "b5b9f4d5c89734954d9441c59ec9932e",
+    "revision": "f8273ba0b4b463226c6bedf568ef0047",
     "url": "/home/index.html"
   },
   {
@@ -324,28 +324,40 @@ self.__precacheManifest = [
     "url": "/home/assets/baiyokesky-1.jpg"
   },
   {
-    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
-    "url": "/home/assets/latu.jpg"
-  },
-  {
     "revision": "d9b51a38aee008811822ac5ddd618a38",
     "url": "/home/assets/gt-2.jpg"
-  },
-  {
-    "revision": "3490762ff28016460056a7bda9311d93",
-    "url": "/home/assets/moondance.jpg"
   },
   {
     "revision": "faddd726fae6b85a013ac86bc7c1df99",
     "url": "/home/assets/mob.jpg.json"
   },
   {
+    "revision": "3490762ff28016460056a7bda9311d93",
+    "url": "/home/assets/moondance.jpg"
+  },
+  {
     "revision": "3381074177bc97d3daac86ea18b2c85c",
     "url": "/home/assets/sara.jpg"
   },
   {
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/assets/latu.jpg"
+  },
+  {
+    "revision": "9f1130038a0e9d5eb282b5cdb8112afa",
+    "url": "/home/assets/yinjiaoqin1.jpg"
+  },
+  {
+    "revision": "c4e3d3ac48d42799e74600204f451ceb",
+    "url": "/home/assets/yinjiaoqin2.jpg"
+  },
+  {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
     "url": "/home/assets/mabul-1.jpg"
+  },
+  {
+    "revision": "e84a16e467280769b747f8846de21ca2",
+    "url": "/home/assets/beach.png"
   },
   {
     "revision": "1275b7c5d17e872da0fa3469bbe21127",
@@ -360,10 +372,6 @@ self.__precacheManifest = [
     "url": "/home/assets/snake.jpg"
   },
   {
-    "revision": "e84a16e467280769b747f8846de21ca2",
-    "url": "/home/assets/beach.png"
-  },
-  {
     "revision": "b4166e6891677abd3118e8289b185d5d",
     "url": "/home/assets/fullmoon-1.jpg"
   },
@@ -374,6 +382,10 @@ self.__precacheManifest = [
   {
     "revision": "7ca817d26e9fb4348ca9b03d7ed7935e",
     "url": "/home/assets/vicky-fish.png"
+  },
+  {
+    "revision": "6992825162bf8b80d1f5397886d3ada0",
+    "url": "/home/assets/similan.jpg"
   },
   {
     "revision": "86def96f95ef7421062fcf10f36956b1",
@@ -394,10 +406,6 @@ self.__precacheManifest = [
   {
     "revision": "8341c6934442df17460159b03efdbc98",
     "url": "/home/assets/kohtao1.jpg.json"
-  },
-  {
-    "revision": "6992825162bf8b80d1f5397886d3ada0",
-    "url": "/home/assets/similan.jpg"
   },
   {
     "revision": "ffc0041a200c906f93b91906be325df6",
