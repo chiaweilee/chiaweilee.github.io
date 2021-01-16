@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "ec12884c474ec66c9a19",
-    "url": "/home/p__docs__t7__1-tour.mdx.38e39224.async.js"
+    "revision": "fccda2f0628fea3361e3",
+    "url": "/home/p__docs__t7__1-tour.mdx.587ea4aa.async.js"
   },
   {
     "revision": "b16e45f1e2c5e72b535c",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "b4ce37fc92423636ecc3",
+    "revision": "0d9bf9e9b495583acfec",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "b4ce37fc92423636ecc3",
-    "url": "/home/umi.b8e2d680.js"
+    "revision": "0d9bf9e9b495583acfec",
+    "url": "/home/umi.897f5ec9.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "da867728d7b1b0ebefec155c80565b00",
+    "revision": "1e6d27c5fdcfbe707af71f689408fe35",
     "url": "/home/index.html"
   },
   {
@@ -344,7 +344,7 @@ self.__precacheManifest = [
     "url": "/home/assets/sara.jpg"
   },
   {
-    "revision": "9f1130038a0e9d5eb282b5cdb8112afa",
+    "revision": "e2d1c1d91a756207b0f8cafd019b57d5",
     "url": "/home/assets/yinjiaoqin1.jpg"
   },
   {
@@ -384,12 +384,12 @@ self.__precacheManifest = [
     "url": "/home/assets/fullmoon-1.jpg"
   },
   {
-    "revision": "d2536da10dce8f5ae62993e34e2179ce",
-    "url": "/home/assets/gt-1.JPG"
-  },
-  {
     "revision": "7ca817d26e9fb4348ca9b03d7ed7935e",
     "url": "/home/assets/vicky-fish.png"
+  },
+  {
+    "revision": "d2536da10dce8f5ae62993e34e2179ce",
+    "url": "/home/assets/gt-1.JPG"
   },
   {
     "revision": "6992825162bf8b80d1f5397886d3ada0",
@@ -400,28 +400,28 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-1.JPG"
   },
   {
-    "revision": "c731b16741677f44b313178a3cc34886",
-    "url": "/home/assets/klcc.jpg"
+    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
+    "url": "/home/assets/treehouse-all.jpg"
   },
   {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
   },
   {
-    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
-    "url": "/home/assets/treehouse-all.jpg"
-  },
-  {
     "revision": "8341c6934442df17460159b03efdbc98",
     "url": "/home/assets/kohtao1.jpg.json"
   },
   {
-    "revision": "1e0cbe8200536e8af81b5099d4418058",
-    "url": "/home/assets/t.jpg"
+    "revision": "c731b16741677f44b313178a3cc34886",
+    "url": "/home/assets/klcc.jpg"
   },
   {
     "revision": "ffc0041a200c906f93b91906be325df6",
     "url": "/home/assets/IMG_20170413_234141.jpg.json"
+  },
+  {
+    "revision": "1e0cbe8200536e8af81b5099d4418058",
+    "url": "/home/assets/t.jpg"
   },
   {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
