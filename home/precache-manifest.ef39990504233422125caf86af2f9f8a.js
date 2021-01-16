@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "1ebc11557914c2ae456d",
-    "url": "/home/p__docs__t7__1-tour.mdx.d7016efa.async.js"
+    "revision": "d75aafcdb12c2a29c65a",
+    "url": "/home/p__docs__t7__1-tour.mdx.b73e54a7.async.js"
   },
   {
     "revision": "b16e45f1e2c5e72b535c",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "142205dc08a2b45fc112",
+    "revision": "6d3c37ca353159696f06",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "142205dc08a2b45fc112",
-    "url": "/home/umi.09667908.js"
+    "revision": "6d3c37ca353159696f06",
+    "url": "/home/umi.192637a5.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "2cf561e7e5e2f0c0fef2602377e8b036",
+    "revision": "8c6426574ee6d7d0be7202993ffbb2fa",
     "url": "/home/index.html"
   },
   {
@@ -404,20 +404,16 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-1.JPG"
   },
   {
-    "revision": "c731b16741677f44b313178a3cc34886",
-    "url": "/home/assets/klcc.jpg"
-  },
-  {
     "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
     "url": "/home/assets/treehouse-all.jpg"
   },
   {
-    "revision": "8341c6934442df17460159b03efdbc98",
-    "url": "/home/assets/kohtao1.jpg.json"
+    "revision": "c731b16741677f44b313178a3cc34886",
+    "url": "/home/assets/klcc.jpg"
   },
   {
-    "revision": "ffc0041a200c906f93b91906be325df6",
-    "url": "/home/assets/IMG_20170413_234141.jpg.json"
+    "revision": "8341c6934442df17460159b03efdbc98",
+    "url": "/home/assets/kohtao1.jpg.json"
   },
   {
     "revision": "1e0cbe8200536e8af81b5099d4418058",
@@ -426,6 +422,10 @@ self.__precacheManifest = [
   {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
     "url": "/home/assets/bkk.jpg"
+  },
+  {
+    "revision": "ffc0041a200c906f93b91906be325df6",
+    "url": "/home/assets/IMG_20170413_234141.jpg.json"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
