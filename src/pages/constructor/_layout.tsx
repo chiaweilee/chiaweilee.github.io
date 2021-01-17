@@ -8,7 +8,6 @@ interface State {
 }
 
 export default class extends React.PureComponent<any, State> {
-
   private get refer(): string | void {
     const {
       location: { state },

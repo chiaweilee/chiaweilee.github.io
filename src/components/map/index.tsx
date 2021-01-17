@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Map from './Map';
+import Icon from '@/components/icon';
+import { onTouch } from '@/utils/e';
 import styles from './index.less';
 
 const apiKey =
@@ -42,11 +44,18 @@ export default (props: any) => {
     <div style={{ position: 'relative' }}>
       {mask && (
         <div
-          style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 9999 }}
-          onClick={() => {
-            setMask(false);
-          }}
-        />
+          className={styles['map-mask']}
+          {...onTouch({
+            onLongPress: () => {
+              setMask(false);
+            },
+            onDblClick: () => {
+              alert('onDblClick');
+            },
+          })}
+        >
+          <Icon type={'iconunlock'} />
+        </div>
       )}
       <Map
         className={styles.map}

@@ -3,12 +3,12 @@ import { WhiteSpace, TextareaItem } from 'antd-mobile';
 import { Encoder } from '@/components/cryptor';
 
 function onChange(setter: (e: any) => void) {
-  return function(value) {
+  return function (value) {
     setter(value);
   };
 }
 
-export default function() {
+export default function () {
   const [text, setText] = useState('');
   return (
     <div>

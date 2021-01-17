@@ -1,12 +1,14 @@
 export const onTouch = (opt = {}) => {
   // @ts-ignore
-  const { longTouchTimeout, onLongPress, onClick } = {
+  const { longTouchTimeout, dblclickTimeout, onLongPress, onClick, onDblClick } = {
     longTouchTimeout: 1000,
+    dblclickTimeout: 200,
     ...opt,
   };
   let originEvent;
   let timeOutEvent: any = 0;
   let isLongTouch;
+  let clickCount = 0;
   return {
     onContextMenu(e) {
       e.preventDefault();
@@ -28,13 +30,22 @@ export const onTouch = (opt = {}) => {
         e.preventDefault();
       }
     },
-    onTouchEnd(e) {
+    onTouchEnd() {
       if (timeOutEvent && !isLongTouch) {
         clearTimeout(timeOutEvent);
         timeOutEvent = 0;
-        if (typeof onClick === 'function') {
-          onClick(originEvent);
-        }
+        clickCount += 1;
+        setTimeout(() => {
+          if (clickCount === 1) {
+            if (typeof onClick === 'function') {
+              onClick(originEvent);
+            }
+          } else if (clickCount === 2) {
+            if (typeof onDblClick === 'function') {
+              onDblClick(originEvent);
+            }
+          }
+        }, dblclickTimeout);
       }
       return false;
     },

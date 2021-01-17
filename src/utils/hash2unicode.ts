@@ -12,7 +12,7 @@ function hex2int(hex) {
     a[i] = code;
   }
 
-  return a.reduce(function(acc, c) {
+  return a.reduce(function (acc, c) {
     acc = 16 * acc + c;
     return acc;
   }, 0);
@@ -32,15 +32,15 @@ function group(string: string) {
   return string
     .replace(/(.{4})/g, '$1,')
     .split(',')
-    .filter(_ => _ !== '');
+    .filter((_) => _ !== '');
 }
 
 export const compress = (hash: string): string => {
   const strings = group(hash);
-  return strings.map(string => String.fromCharCode(hex2int(string))).join('');
+  return strings.map((string) => String.fromCharCode(hex2int(string))).join('');
 };
 
 export const decompress = (compressed: string): string => {
   const strings = compressed.split('');
-  return strings.map(string => int2hex(string.charCodeAt(0))).join('');
+  return strings.map((string) => int2hex(string.charCodeAt(0))).join('');
 };

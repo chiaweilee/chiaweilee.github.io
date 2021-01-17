@@ -8,11 +8,11 @@ function getBase64(file) {
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result);
-    reader.onerror = error => reject(error);
+    reader.onerror = (error) => reject(error);
   });
 }
 
-export default function() {
+export default function () {
   const [img, setImg] = useState(undefined);
   const [name, setName] = useState(undefined);
   const [loading, setLoading] = useState(false);
