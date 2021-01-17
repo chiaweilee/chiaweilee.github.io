@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "1ba132149be0a4c29309",
-    "url": "/home/p__docs__t7__1-tour.mdx.879a225c.async.js"
+    "revision": "ddcfc9c7ff056efa5590",
+    "url": "/home/p__docs__t7__1-tour.mdx.6621bba4.async.js"
   },
   {
     "revision": "b16e45f1e2c5e72b535c",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "46be701a0374517a27c3",
+    "revision": "9c47c0fd284b558d8e11",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "46be701a0374517a27c3",
-    "url": "/home/umi.bb7e9ab3.js"
+    "revision": "9c47c0fd284b558d8e11",
+    "url": "/home/umi.6e4fa028.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "db207e463b4a26b955eea8c3aae38771",
+    "revision": "2a4d3a359e6f8290bf0aece17f16a86a",
     "url": "/home/index.html"
   },
   {
@@ -332,16 +332,16 @@ self.__precacheManifest = [
     "url": "/home/assets/latu.jpg"
   },
   {
+    "revision": "a596341aefd4e072153b4aca93167199",
+    "url": "/home/assets/praness.jpg"
+  },
+  {
     "revision": "3490762ff28016460056a7bda9311d93",
     "url": "/home/assets/moondance.jpg"
   },
   {
     "revision": "faddd726fae6b85a013ac86bc7c1df99",
     "url": "/home/assets/mob.jpg.json"
-  },
-  {
-    "revision": "a596341aefd4e072153b4aca93167199",
-    "url": "/home/assets/praness.jpg"
   },
   {
     "revision": "3381074177bc97d3daac86ea18b2c85c",
@@ -352,12 +352,12 @@ self.__precacheManifest = [
     "url": "/home/assets/yinjiaoqin1.jpg"
   },
   {
-    "revision": "c4e3d3ac48d42799e74600204f451ceb",
-    "url": "/home/assets/yinjiaoqin2.jpg"
-  },
-  {
     "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
     "url": "/home/assets/yu_jie12-2.jpg"
+  },
+  {
+    "revision": "c4e3d3ac48d42799e74600204f451ceb",
+    "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
     "revision": "c73cb751204b91b75cdd9091ed82d9a9",
@@ -400,6 +400,10 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
+    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
+    "url": "/home/assets/treehouse-all.jpg"
+  },
+  {
     "revision": "86def96f95ef7421062fcf10f36956b1",
     "url": "/home/assets/mn-1.JPG"
   },
@@ -410,10 +414,6 @@ self.__precacheManifest = [
   {
     "revision": "8341c6934442df17460159b03efdbc98",
     "url": "/home/assets/kohtao1.jpg.json"
-  },
-  {
-    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
-    "url": "/home/assets/treehouse-all.jpg"
   },
   {
     "revision": "c731b16741677f44b313178a3cc34886",
