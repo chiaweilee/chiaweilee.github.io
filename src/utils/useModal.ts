@@ -3,7 +3,9 @@ import * as ReactDOM from 'react-dom';
 
 export default function useModal(children: any, el = document.body as any) {
   if (!children && !el) {
-    return () => {};
+    return () => {
+      // nothing
+    };
   }
 
   const div: any = document.createElement('div');
