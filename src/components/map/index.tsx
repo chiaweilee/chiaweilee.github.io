@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Map from './Map';
 import Icon from '@/components/icon';
+import Modal from '@/components/modal';
 import { onTouch } from '@/utils/e';
+import useModal from '@/utils/useModal';
 import styles from './index.less';
 
 const apiKey =
@@ -9,7 +11,7 @@ const apiKey =
     ? 'AmaJse0LMtAHWktKP2ew2c_NNcKEDFem3a1MWEu8xN0_fNn-alxc7q1BlLEgcQtD'
     : 'AvHBgtLyf4zbDhXESAuvFMSqIg1GgomX6DnDgw-CaXFeRmWVzvXPC55WveE4pJla';
 
-export default (props: any) => {
+const MapComponent = (props: any) => {
   const [mask, setMask] = useState(true);
   // @ts-ignore
   const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
@@ -40,9 +42,12 @@ export default (props: any) => {
       })
     : [];
 
+  const fullscreen = props.fullscreen;
+  const fullscreenCls = fullscreen ? styles['map-fullscreen'] : '';
+
   return (
-    <div style={{ position: 'relative' }}>
-      {mask && (
+    <div className={fullscreenCls} style={{ position: 'relative' }}>
+      {!fullscreen && mask && (
         <div
           className={styles['map-mask']}
           {...onTouch({
@@ -50,7 +55,11 @@ export default (props: any) => {
               setMask(false);
             },
             onDblClick: () => {
-              alert('onDblClick');
+              useModal(
+                <Modal>
+                  <MapComponent fullscreen {...props} />
+                </Modal>,
+              );
             },
           })}
         >
@@ -58,7 +67,7 @@ export default (props: any) => {
         </div>
       )}
       <Map
-        className={styles.map}
+        className={[styles.map, fullscreenCls].join(' ')}
         apiKey={apiKey}
         center={center}
         points={points}
@@ -70,3 +79,5 @@ export default (props: any) => {
     </div>
   );
 };
+
+export default MapComponent;

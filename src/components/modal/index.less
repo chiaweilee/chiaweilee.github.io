@@ -1,0 +1,32 @@
+.modal-root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.modal-wrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-close {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  z-index: 9999;
+  :global {
+    .anticon {
+      font-size: 32px;
+      margin: 8px;
+      color: #ccc;
+    }
+  }
+}

@@ -45,6 +45,7 @@ export const onTouch = (opt = {}) => {
               onDblClick(originEvent);
             }
           }
+          clickCount = 0;
         }, dblclickTimeout);
       }
       return false;
