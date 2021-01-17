@@ -57,7 +57,7 @@ const MapComponent = (props: any) => {
             onDblClick: () => {
               useModal(
                 <Modal>
-                  <MapComponent fullscreen {...props} />
+                  <MapComponent fullscreen={true} {...props} />
                 </Modal>,
               );
             },
