@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "ddcfc9c7ff056efa5590",
-    "url": "/home/p__docs__t7__1-tour.mdx.6621bba4.async.js"
+    "revision": "c935ede62cb09e07a0b6",
+    "url": "/home/p__docs__t7__1-tour.mdx.a5e3cac2.async.js"
   },
   {
     "revision": "b16e45f1e2c5e72b535c",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "9c47c0fd284b558d8e11",
+    "revision": "db8048ffe5893a284cd9",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "9c47c0fd284b558d8e11",
-    "url": "/home/umi.6e4fa028.js"
+    "revision": "db8048ffe5893a284cd9",
+    "url": "/home/umi.73291a02.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "90968fbc40dab88587d5f611800c3014",
+    "revision": "b32a5bb5fa4bb4caaeb34a9141e10171",
     "url": "/home/index.html"
   },
   {
@@ -332,16 +332,16 @@ self.__precacheManifest = [
     "url": "/home/assets/latu.jpg"
   },
   {
-    "revision": "3490762ff28016460056a7bda9311d93",
-    "url": "/home/assets/moondance.jpg"
+    "revision": "faddd726fae6b85a013ac86bc7c1df99",
+    "url": "/home/assets/mob.jpg.json"
   },
   {
     "revision": "a596341aefd4e072153b4aca93167199",
     "url": "/home/assets/praness.jpg"
   },
   {
-    "revision": "faddd726fae6b85a013ac86bc7c1df99",
-    "url": "/home/assets/mob.jpg.json"
+    "revision": "3490762ff28016460056a7bda9311d93",
+    "url": "/home/assets/moondance.jpg"
   },
   {
     "revision": "3381074177bc97d3daac86ea18b2c85c",
@@ -356,24 +356,24 @@ self.__precacheManifest = [
     "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
-    "revision": "c73cb751204b91b75cdd9091ed82d9a9",
-    "url": "/home/assets/yu_jie12.jpg"
-  },
-  {
     "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
     "url": "/home/assets/yu_jie12-2.jpg"
+  },
+  {
+    "revision": "c73cb751204b91b75cdd9091ed82d9a9",
+    "url": "/home/assets/yu_jie12.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
     "url": "/home/assets/mabul-1.jpg"
   },
   {
-    "revision": "1275b7c5d17e872da0fa3469bbe21127",
-    "url": "/home/assets/crystal.jpg"
-  },
-  {
     "revision": "e84a16e467280769b747f8846de21ca2",
     "url": "/home/assets/beach.png"
+  },
+  {
+    "revision": "1275b7c5d17e872da0fa3469bbe21127",
+    "url": "/home/assets/crystal.jpg"
   },
   {
     "revision": "65cd94f1c00fc93664e03ef1dbf456bb",
