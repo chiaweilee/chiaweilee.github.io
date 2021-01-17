@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Map from './Map';
 import Icon from '@/components/icon';
 import Modal from '@/components/modal';
@@ -12,6 +12,7 @@ const apiKey =
     : 'AvHBgtLyf4zbDhXESAuvFMSqIg1GgomX6DnDgw-CaXFeRmWVzvXPC55WveE4pJla';
 
 const MapComponent = (props: any) => {
+  const [modal, setModal] = useState(undefined);
   const [mask, setMask] = useState(true);
   // @ts-ignore
   const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
@@ -42,6 +43,14 @@ const MapComponent = (props: any) => {
       })
     : [];
 
+  useEffect(() => {
+    return () => {
+      if (typeof modal === 'function') {
+        modal();
+      }
+    };
+  }, []);
+
   const fullscreen = props.fullscreen;
   const fullscreenCls = fullscreen ? styles['map-fullscreen'] : '';
 
@@ -55,11 +64,11 @@ const MapComponent = (props: any) => {
               setMask(false);
             },
             onDblClick: () => {
-              useModal(
+              setModal(useModal(
                 <Modal>
                   <MapComponent fullscreen={true} {...props} />
                 </Modal>,
-              );
+              ));
             },
           })}
         >
