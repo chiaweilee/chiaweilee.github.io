@@ -11,8 +11,9 @@ const apiKey =
     ? 'AmaJse0LMtAHWktKP2ew2c_NNcKEDFem3a1MWEu8xN0_fNn-alxc7q1BlLEgcQtD'
     : 'AvHBgtLyf4zbDhXESAuvFMSqIg1GgomX6DnDgw-CaXFeRmWVzvXPC55WveE4pJla';
 
+let modalDestroier;
+
 const MapComponent = (props: any) => {
-  const [modal, setModal] = useState(undefined);
   const [mask, setMask] = useState(true);
   // @ts-ignore
   const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
@@ -45,8 +46,8 @@ const MapComponent = (props: any) => {
 
   useEffect(() => {
     return () => {
-      if (typeof modal === 'function') {
-        modal();
+      if (typeof modalDestroier === 'function') {
+        modalDestroier();
       }
     };
   }, []);
@@ -64,11 +65,11 @@ const MapComponent = (props: any) => {
               setMask(false);
             },
             onDblClick: () => {
-              setModal(useModal(
+              modalDestroier = useModal(
                 <Modal>
                   <MapComponent fullscreen={true} {...props} />
                 </Modal>,
-              ));
+              );
             },
           })}
         >
