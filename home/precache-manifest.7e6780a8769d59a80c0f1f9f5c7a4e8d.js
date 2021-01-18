@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "6534ff091298f432e76a",
-    "url": "/home/p__docs__t7__1-tour.mdx.d30841b2.async.js"
+    "revision": "9b40d9001ddcf7973f4c",
+    "url": "/home/p__docs__t7__1-tour.mdx.bdc4e83f.async.js"
   },
   {
     "revision": "b16e45f1e2c5e72b535c",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "bf88b5317edbac9c9a6d",
+    "revision": "0a523bf9ca30d6f7b9f7",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "bf88b5317edbac9c9a6d",
-    "url": "/home/umi.abae8fee.js"
+    "revision": "0a523bf9ca30d6f7b9f7",
+    "url": "/home/umi.899e4cbc.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "0b860f6210220197b6d4fe988eacb56e",
+    "revision": "99b1bed3e04dc44019e0098a3691b157",
     "url": "/home/index.html"
   },
   {
@@ -356,12 +356,12 @@ self.__precacheManifest = [
     "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
-    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
-    "url": "/home/assets/yu_jie12-2.jpg"
-  },
-  {
     "revision": "c73cb751204b91b75cdd9091ed82d9a9",
     "url": "/home/assets/yu_jie12.jpg"
+  },
+  {
+    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
+    "url": "/home/assets/yu_jie12-2.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
@@ -408,12 +408,12 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-2.JPG"
   },
   {
-    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
-    "url": "/home/assets/treehouse-all.jpg"
-  },
-  {
     "revision": "c731b16741677f44b313178a3cc34886",
     "url": "/home/assets/klcc.jpg"
+  },
+  {
+    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
+    "url": "/home/assets/treehouse-all.jpg"
   },
   {
     "revision": "8341c6934442df17460159b03efdbc98",
@@ -424,12 +424,12 @@ self.__precacheManifest = [
     "url": "/home/assets/t.jpg"
   },
   {
-    "revision": "ffc0041a200c906f93b91906be325df6",
-    "url": "/home/assets/IMG_20170413_234141.jpg.json"
-  },
-  {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
     "url": "/home/assets/bkk.jpg"
+  },
+  {
+    "revision": "ffc0041a200c906f93b91906be325df6",
+    "url": "/home/assets/IMG_20170413_234141.jpg.json"
   },
   {
     "revision": "2a6127e4d08271ca15420a15fce5b40a",
