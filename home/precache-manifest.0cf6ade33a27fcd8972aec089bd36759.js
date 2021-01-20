@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "98997ed85dd02bfab099",
-    "url": "/home/p__docs__t7__1-tour.mdx.15c19c6d.async.js"
+    "revision": "ac008caba04159b04881",
+    "url": "/home/p__docs__t7__1-tour.mdx.ac1839a2.async.js"
   },
   {
     "revision": "e1d17d282913d0e8e8fc",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "4d5b360a2c0883b8ef8b",
+    "revision": "5388537b6d42234a4796",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "4d5b360a2c0883b8ef8b",
-    "url": "/home/umi.6a90bb2e.js"
+    "revision": "5388537b6d42234a4796",
+    "url": "/home/umi.bc3b02ba.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "17da9776a15e02d253930b6979e4bc8e",
+    "revision": "b1797f7713bf01c0a12545c32400e578",
     "url": "/home/index.html"
   },
   {
@@ -332,12 +332,12 @@ self.__precacheManifest = [
     "url": "/home/assets/latu.jpg"
   },
   {
-    "revision": "a596341aefd4e072153b4aca93167199",
-    "url": "/home/assets/praness.jpg"
-  },
-  {
     "revision": "3490762ff28016460056a7bda9311d93",
     "url": "/home/assets/moondance.jpg"
+  },
+  {
+    "revision": "a596341aefd4e072153b4aca93167199",
+    "url": "/home/assets/praness.jpg"
   },
   {
     "revision": "faddd726fae6b85a013ac86bc7c1df99",
@@ -356,12 +356,12 @@ self.__precacheManifest = [
     "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
-    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
-    "url": "/home/assets/yu_jie12-2.jpg"
-  },
-  {
     "revision": "c73cb751204b91b75cdd9091ed82d9a9",
     "url": "/home/assets/yu_jie12.jpg"
+  },
+  {
+    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
+    "url": "/home/assets/yu_jie12-2.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
@@ -400,12 +400,12 @@ self.__precacheManifest = [
     "url": "/home/assets/similan.jpg"
   },
   {
-    "revision": "86def96f95ef7421062fcf10f36956b1",
-    "url": "/home/assets/mn-1.JPG"
-  },
-  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.JPG"
+  },
+  {
+    "revision": "86def96f95ef7421062fcf10f36956b1",
+    "url": "/home/assets/mn-1.JPG"
   },
   {
     "revision": "8341c6934442df17460159b03efdbc98",
