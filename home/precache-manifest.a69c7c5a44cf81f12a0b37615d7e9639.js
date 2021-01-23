@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__0-preface.mdx.5d919ce6.async.js"
   },
   {
-    "revision": "7ad425b8be696ad8f25b",
-    "url": "/home/p__docs__t7__1-tour.mdx.53418f96.async.js"
+    "revision": "0a9cf924b49ef20f0aa5",
+    "url": "/home/p__docs__t7__1-tour.mdx.98407b8f.async.js"
   },
   {
     "revision": "006e1e3a5324e9a07368",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "84136d8bac31df855602",
+    "revision": "0bab7c3f2dfb8eb321b4",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "84136d8bac31df855602",
-    "url": "/home/umi.a23b234c.js"
+    "revision": "0bab7c3f2dfb8eb321b4",
+    "url": "/home/umi.b416b87b.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "ad71ba00c84e23daa13d803f8f6925a8",
+    "revision": "04ca4f02b098e181cc25d386ed478906",
     "url": "/home/index.html"
   },
   {
@@ -404,14 +404,6 @@ self.__precacheManifest = [
     "url": "/home/assets/mn-1.JPG"
   },
   {
-    "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
-    "url": "/home/assets/mn-2.JPG"
-  },
-  {
-    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
-    "url": "/home/assets/treehouse-all.jpg"
-  },
-  {
     "revision": "c731b16741677f44b313178a3cc34886",
     "url": "/home/assets/klcc.jpg"
   },
@@ -420,12 +412,20 @@ self.__precacheManifest = [
     "url": "/home/assets/kohtao1.jpg.json"
   },
   {
+    "revision": "ffc0041a200c906f93b91906be325df6",
+    "url": "/home/assets/IMG_20170413_234141.jpg.json"
+  },
+  {
     "revision": "1e0cbe8200536e8af81b5099d4418058",
     "url": "/home/assets/t.jpg"
   },
   {
-    "revision": "ffc0041a200c906f93b91906be325df6",
-    "url": "/home/assets/IMG_20170413_234141.jpg.json"
+    "revision": "4cc1ce0d2814aec334fb3c575ff8e9d2",
+    "url": "/home/assets/treehouse-all.jpg"
+  },
+  {
+    "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
+    "url": "/home/assets/mn-2.JPG"
   },
   {
     "revision": "7d64d0308e2cad3c249a95ce90c6330a",
