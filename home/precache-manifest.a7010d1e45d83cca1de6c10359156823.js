@@ -188,8 +188,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__t7__1-tour.mdx.2514eb07.async.js"
   },
   {
-    "revision": "bae6a43e2e1822ecdecf",
-    "url": "/home/p__docs__t7__2-tour.mdx.d7118a3c.async.js"
+    "revision": "91c3632ca7f8c7d2d3a4",
+    "url": "/home/p__docs__t7__2-tour.mdx.87e72165.async.js"
   },
   {
     "revision": "e4b13ad0453a24311da6",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.85a43012.async.js"
   },
   {
-    "revision": "3c183e77f2e8c96718a1",
+    "revision": "32dc747b3756fa23a5aa",
     "url": "/home/umi.ab3af881.css"
   },
   {
-    "revision": "3c183e77f2e8c96718a1",
-    "url": "/home/umi.98d055b4.js"
+    "revision": "32dc747b3756fa23a5aa",
+    "url": "/home/umi.2605e65d.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -316,7 +316,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "b989dc05c3476014fd07157901ba7698",
+    "revision": "158ed110317a669a672652e52f118d38",
     "url": "/home/index.html"
   },
   {
@@ -328,16 +328,20 @@ self.__precacheManifest = [
     "url": "/home/assets/dd.jpg"
   },
   {
-    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
-    "url": "/home/assets/latu.jpg"
-  },
-  {
     "revision": "d9b51a38aee008811822ac5ddd618a38",
     "url": "/home/assets/gt-2.jpg"
   },
   {
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/assets/latu.jpg"
+  },
+  {
     "revision": "3490762ff28016460056a7bda9311d93",
     "url": "/home/assets/moondance.jpg"
+  },
+  {
+    "revision": "faddd726fae6b85a013ac86bc7c1df99",
+    "url": "/home/assets/mob.jpg.json"
   },
   {
     "revision": "a596341aefd4e072153b4aca93167199",
@@ -348,24 +352,20 @@ self.__precacheManifest = [
     "url": "/home/assets/sara.jpg"
   },
   {
-    "revision": "faddd726fae6b85a013ac86bc7c1df99",
-    "url": "/home/assets/mob.jpg.json"
-  },
-  {
     "revision": "e2d1c1d91a756207b0f8cafd019b57d5",
     "url": "/home/assets/yinjiaoqin1.jpg"
   },
   {
-    "revision": "c73cb751204b91b75cdd9091ed82d9a9",
-    "url": "/home/assets/yu_jie12.jpg"
+    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
+    "url": "/home/assets/yu_jie12-2.jpg"
   },
   {
     "revision": "c4e3d3ac48d42799e74600204f451ceb",
     "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
-    "revision": "676f4f741f39640fa2bbabcdd9e8fffe",
-    "url": "/home/assets/yu_jie12-2.jpg"
+    "revision": "c73cb751204b91b75cdd9091ed82d9a9",
+    "url": "/home/assets/yu_jie12.jpg"
   },
   {
     "revision": "d26c38453458dc87c16ee411bbf883ab",
