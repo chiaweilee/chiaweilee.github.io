@@ -11,7 +11,7 @@ const apiKey =
     ? 'AmaJse0LMtAHWktKP2ew2c_NNcKEDFem3a1MWEu8xN0_fNn-alxc7q1BlLEgcQtD'
     : 'AvHBgtLyf4zbDhXESAuvFMSqIg1GgomX6DnDgw-CaXFeRmWVzvXPC55WveE4pJla';
 
-let modalDestroier;
+let modalDestroyer;
 
 const MapComponent = (props: any) => {
   const [mask, setMask] = useState(true);
@@ -46,8 +46,8 @@ const MapComponent = (props: any) => {
 
   useEffect(() => {
     return () => {
-      if (typeof modalDestroier === 'function') {
-        modalDestroier();
+      if (typeof modalDestroyer === 'function') {
+        modalDestroyer();
       }
     };
   }, []);
@@ -65,7 +65,7 @@ const MapComponent = (props: any) => {
               setMask(false);
             },
             onDblClick: () => {
-              modalDestroier = useModal(
+              modalDestroyer = useModal(
                 <Modal>
                   <MapComponent fullscreen={true} {...props} />
                 </Modal>,
