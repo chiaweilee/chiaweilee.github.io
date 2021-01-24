@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../Img';
+import Img from '../img';
 import { Grid } from 'antd-mobile';
 
 export default function ({ items, col = 3 }) {
