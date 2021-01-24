@@ -12,9 +12,9 @@ const floatStyle: any = {
   margin: 'auto',
 };
 
-export default function ({ src, alt }) {
+export default function ({ src, alt, origin = false }) {
   const props = {
-    src: process.env.NODE_ENV === 'development' ? `../assets/${src}` : `/home/assets/${src}`,
+    src: origin ? src : (process.env.NODE_ENV === 'development' ? `../assets/${src}` : `/home/assets/${src}`),
     alt,
   };
   useEffect(() => {
