@@ -49,5 +49,5 @@ export default function (props) {
     );
   }
 
-  return <Img src={img} alt={alt} />;
+  return <Img origin src={img} alt={alt} />;
 }
