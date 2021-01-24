@@ -11,30 +11,6 @@ export default {
   treeShaking: true,
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
-  chainWebpack(config /* , { webpack } */) {
-    if (process.env.NODE_ENV === 'production') {
-      config.merge({
-        optimization: {
-          minimize: process.env.NODE_ENV === 'production',
-          splitChunks: {
-            chunks: 'all',
-            minSize: 0,
-            minChunks: 1,
-            automaticNameDelimiter: '.',
-            cacheGroups: {
-              vendor: {
-                name: 'vendors',
-                test({ resource }) {
-                  return /[\\/]node_modules[\\/]/.test(resource);
-                },
-                priority: 99,
-              },
-            },
-          },
-        },
-      });
-    }
-  },
   plugins: [
     'umi-plugin-mdx',
     // ref: https://umijs.org/plugin/umi-plugin-react.html
@@ -42,17 +18,6 @@ export default {
       'umi-plugin-react',
       {
         chunks: ['vendors', 'umi'], // #1086
-        pwa: {
-          manifestOptions: {
-            srcPath: 'src/manifest.json',
-          },
-          workboxPluginMode: 'InjectManifest',
-          workboxOptions: {
-            importWorkboxFrom: 'local',
-            swSrc: 'src/sw.js',
-            swDest: 'sw.js',
-          },
-        },
         antd: true,
         dva: true,
         dynamicImport: { webpackChunkName: true },
@@ -69,7 +34,6 @@ export default {
         },
       },
     ],
-    ['umi-plugin-pwa', {}],
   ],
   copy: [
     {
