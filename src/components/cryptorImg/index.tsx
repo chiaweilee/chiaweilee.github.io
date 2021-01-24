@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Img from '../img/';
 import { decoder, secretKey } from '@/components/cryptor';
 import { onTouch } from '@/utils/e';
 
 export default function (props) {
   const [hidden, setHidden] = useState(true);
   const [img, setImg] = useState(undefined);
-  const { src, strict } = props;
+  const { src, strict, alt } = props;
 
   useEffect(() => {
     (async () => {
@@ -42,11 +43,11 @@ export default function (props) {
           },
         })}
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICRAEAOw=="
-        alt=""
+        alt={alt}
         style={{ height: '33vw' }}
       />
     );
   }
 
-  return <img src={img} alt="" />;
+  return <Img src={img} alt={alt} />;
 }
