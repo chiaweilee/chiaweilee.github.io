@@ -17,7 +17,6 @@ export default {
     [
       'umi-plugin-react',
       {
-        chunks: ['vendors', 'umi'], // #1086
         antd: true,
         dva: true,
         dynamicImport: { webpackChunkName: true },

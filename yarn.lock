@@ -16533,11 +16533,6 @@ umi-plugin-polyfills@1.4.2:
     umi-utils "1.4.2"
     url-polyfill "1.1.3"
 
-umi-plugin-pwa@0.0.0-beta.0:
-  version "0.0.0-beta.0"
-  resolved "https://registry.npmjs.org/umi-plugin-pwa/-/umi-plugin-pwa-0.0.0-beta.0.tgz#4b3b34cd86f4257dd2b4c563940844f90c70aade"
-  integrity sha512-JpSdzn/3mp+o6SHaXNmuIzjRuGYtobKKdy2JXTunIB3Y2M/77es4qrubSD30Q/pmr2XqGmcQAf2B2177qq1LIw==
-
 umi-plugin-react@^1.15.8:
   version "1.15.8"
   resolved "https://registry.npmjs.org/umi-plugin-react/-/umi-plugin-react-1.15.8.tgz#a9fb572ab57133a14750b08fb41dcb22cfa5656d"
