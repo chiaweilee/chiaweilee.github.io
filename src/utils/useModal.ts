@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 export default function useModal(children: any, el = document.body as any) {
-  if (!children && !el) {
+  if (!children || !el) {
     return () => {
       // nothing
     };
@@ -18,12 +18,16 @@ export default function useModal(children: any, el = document.body as any) {
     }
   }
 
-  ReactDOM.render(
-    React.cloneElement(children, {
-      __unmount__: unmount,
-    }),
-    div,
-  );
+  if (typeof children.type === 'function') {
+    ReactDOM.render(
+      React.cloneElement(children, {
+        __unmount__: unmount,
+      }),
+      div,
+    );
+  } else {
+    ReactDOM.render(children, div);
+  }
 
   return unmount;
 }
