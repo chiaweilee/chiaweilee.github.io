@@ -1,6 +1,6 @@
 export const onTouch = (opt = {}) => {
   // @ts-ignore
-  const { longTouchTimeout, dblclickTimeout, onLongPress, onClick, onDblClick } = {
+  const { longTouchTimeout, dblclickTimeout, onLongPress, onClick, onDblClick, style = {} } = {
     longTouchTimeout: 1000,
     dblclickTimeout: 200,
     ...opt,
@@ -10,6 +10,10 @@ export const onTouch = (opt = {}) => {
   let isLongTouch;
   let clickCount = 0;
   return {
+    style: {
+      ...style,
+      touchAction: 'pan-y',
+    },
     onContextMenu(e) {
       e.preventDefault();
     },
