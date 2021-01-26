@@ -62,7 +62,7 @@ export default function (props: any) {
         setHidden(false);
       }}
     >
-      {props.children}
+      {typeof props.children === 'string' && props.children.substr(0, 100)}
     </Confidential>
   );
 }
