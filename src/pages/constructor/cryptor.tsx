@@ -12,7 +12,7 @@ export default function () {
   const [text, setText] = useState('');
   return (
     <div>
-      <TextareaItem rows={4} count={1000} onChange={onChange(setText)} />
+      <TextareaItem rows={4} count={9999} onChange={onChange(setText)} />
       <WhiteSpace />
       <Encoder text={text} />
     </div>
