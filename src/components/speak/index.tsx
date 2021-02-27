@@ -31,32 +31,49 @@ export default (props: any) => {
       if (cache) {
         return Promise.resolve(JSON.parse(cache));
       } else {
-        return request(props.children, props.lang).then((response) => {
-          localStorage.setItem(keygen, JSON.stringify(response));
-          return response;
-        });
+        return request(props.children, props.lang)
+          .then((response) => {
+            // https://github.com/meetDeveloper/googleDictionaryAPI/issues/82
+            if (Array.isArray(response) && response.length) {
+              const matchedResult = response.filter((res) => res.word === word);
+              if (matchedResult.length) {
+                return Promise.resolve(matchedResult);
+              }
+            }
+            return Promise.reject();
+          })
+          .then((response) => {
+            localStorage.setItem(keygen, JSON.stringify(response));
+            return response;
+          });
       }
     }
     return function () {
       setLoading(true);
-      getCache().then((dict) => {
-        if (dict && dict[0]) {
-          const { phonetics } = dict[0];
-          if (phonetics && phonetics[0]) {
-            const { audio, text } = phonetics[0];
-            if (typeof text === 'string' && text) {
-              setText(text);
-            }
-            if (audio) {
-              play(audio, function () {
+      getCache()
+        .then((dict) => {
+          if (Array.isArray(dict) && dict.length) {
+            const { phonetics } = dict[0];
+            if (Array.isArray(phonetics) && phonetics.length) {
+              const { audio, text } = phonetics[0];
+              if (typeof text === 'string' && text) {
+                setText(text);
+              }
+              if (audio) {
+                play(audio, function () {
+                  setLoading(false);
+                });
+              } else {
                 setLoading(false);
-              });
-            } else {
-              setLoading(false);
+              }
+              return Promise.resolve();
             }
           }
-        }
-      });
+          return Promise.reject();
+        })
+        .catch(() => {
+          setLoading(false);
+        });
     };
   }
 
