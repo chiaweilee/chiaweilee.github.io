@@ -2,5 +2,5 @@ import React from 'react';
 import { Icon } from 'antd';
 
 export default Icon.createFromIconfontCN({
-  scriptUrl: '//at.alicdn.com/t/font_1280925_kefrv97j18o.js',
+  scriptUrl: '//at.alicdn.com/t/font_1280925_kzicrv7yexi.js',
 });

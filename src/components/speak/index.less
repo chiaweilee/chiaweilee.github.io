@@ -1,18 +1,20 @@
-.clear {
-  > button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    position: relative;
-    &:before {
-      position: relative;
-      content: '♫';
-      padding-right: 8px;
-      color: #ccc;
-    }
-    &:disabled {
+.clear.clear.clear {
+  :global {
+    .am-button {
+      height: inherit;
+      line-height: inherit;
+      padding: 0 3px;
+      font-size: inherit;
+      vertical-align: bottom;
       &:before {
-        color: #111;
+        display: none;
+      }
+      i {
+        margin: 0 3px;
+      }
+      b {
+        font-weight: normal;
+        margin: 0 6px;
       }
     }
   }
