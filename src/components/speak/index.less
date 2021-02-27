@@ -3,7 +3,7 @@
     .am-button {
       height: inherit;
       line-height: inherit;
-      padding: 0 3px;
+      padding: 0;
       font-size: inherit;
       vertical-align: bottom;
       &:before {
@@ -12,9 +12,9 @@
       i {
         margin: 0 3px;
       }
-      b {
+      b:not(:empty) {
         font-weight: normal;
-        margin: 0 6px;
+        margin-left: 8px;
       }
     }
   }
