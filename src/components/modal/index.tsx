@@ -6,8 +6,9 @@ export default function (props: any) {
   const { children, __unmount__ } = props;
 
   return (
-    <div className={styles['modal-root']}>
-      <div className={styles['modal-wrapper']}>
+    <div>
+      <div className={styles['modal-mask']} />
+      <div className={styles['modal-wrap']}>
         <div className={styles['modal-close']}>
           <Icon type={'iconclose'} onClick={__unmount__} />
         </div>

@@ -5,16 +5,13 @@ import Modal from '@/components/modal';
 
 let modalDestroyer;
 
-const floatStyle: any = {
-  position: 'absolute',
-  top: '0',
-  bottom: '0',
-  margin: 'auto',
-};
-
 export default function ({ src, alt, origin = false }) {
   const props = {
-    src: origin ? src : (process.env.NODE_ENV === 'development' ? `../assets/${src}` : `/home/assets/${src}`),
+    src: origin
+      ? src
+      : process.env.NODE_ENV === 'development'
+      ? `../assets/${src}`
+      : `/home/assets/${src}`,
     alt,
   };
   useEffect(() => {
@@ -32,7 +29,7 @@ export default function ({ src, alt, origin = false }) {
         onDblClick: () => {
           modalDestroyer = useModal(
             <Modal>
-              <img {...props} width="100%" style={floatStyle} />
+              <img {...props} width="100%" />
             </Modal>,
           );
         },
