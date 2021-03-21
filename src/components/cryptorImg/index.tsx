@@ -42,7 +42,7 @@ export default function (props) {
             setHidden(false);
           },
         })}
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICRAEAOw=="
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
         alt={alt}
         style={{ height: '33vw' }}
       />
