@@ -52,7 +52,7 @@ const MapComponent = (props: any) => {
   }, []);
 
   const fullscreen = props.fullscreen;
-  const fullscreenCls = fullscreen ? styles['map-fullscreen'] : '';
+  const fullscreenCls = fullscreen ? styles['map-fullscreen'] : styles['map-wrapper'];
 
   return (
     <div className={fullscreenCls} style={{ position: 'relative' }}>
