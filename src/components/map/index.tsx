@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Map from './Map';
-import Icon from '@/components/icon';
 import Modal from '@/components/modal';
 import { onTouch } from '@/utils/e';
 import useModal from '@/utils/useModal';
@@ -72,9 +71,7 @@ const MapComponent = (props: any) => {
               );
             },
           })}
-        >
-          <Icon type={'iconunlock'} />
-        </div>
+        />
       )}
       <Map
         className={[styles.map, fullscreenCls].join(' ')}

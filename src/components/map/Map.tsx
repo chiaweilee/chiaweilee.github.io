@@ -9,7 +9,8 @@ export interface LatLng {
 
 interface IMapProps {
   apiKey: string;
-  className: string;
+  className?: string;
+  style?: object;
   aerial?: boolean;
   zoom?: number;
   center?: LatLng;
@@ -28,7 +29,7 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
   private map: any;
 
   public render() {
-    return <div ref={this.mapRef} className={this.props.className} />;
+    return <div ref={this.mapRef} className={this.props.className} style={this.props.style} />;
   }
 
   public componentDidMount() {
