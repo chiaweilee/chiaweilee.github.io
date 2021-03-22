@@ -23,8 +23,7 @@ export default function (props) {
         }
       }
     })();
-  }, [src]);
-
+  }, [src, hidden]);
 
   if (!localStorage.getItem(secretKey)) {
     return null;
