@@ -7,10 +7,11 @@ export default function (props) {
   const [hidden, setHidden] = useState(true);
   const [img, setImg] = useState(undefined);
   const { src, strict, alt } = props;
+  const secretKey = localStorage.getItem(secretKey);
 
   useEffect(() => {
     (async () => {
-      if (localStorage.getItem(secretKey)) {
+      if (secretKey && !hidden) {
         const res = await (
           await fetch(
             process.env.NODE_ENV === 'development'
@@ -29,7 +30,7 @@ export default function (props) {
     return null;
   }
 
-  if (!localStorage.getItem(secretKey)) {
+  if (!secretKey) {
     return null;
   }
 
