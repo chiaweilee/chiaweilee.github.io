@@ -1,0 +1,60 @@
+import React from 'react';
+import map from 'lodash/map';
+import groupBy from 'lodash/groupBy';
+import { Menu } from 'antd-mobile';
+
+const computeRoutes = (routes: any): any[] => {
+  return (
+    (routes &&
+      Array.isArray(routes) &&
+      routes
+        .filter((r) => !!r.path)
+        .map((route: any) => route.path.split('/').slice(1))
+        .filter((r) => r.length > 1 && !!r[0])) ||
+    []
+  );
+};
+
+function renderRoutes(routes, deepIndex = 1) {
+  return map(groupBy(routes, deepIndex), (children, name) => {
+    if (deepIndex === 1) {
+      return {
+        value: name,
+        label: name,
+        children: renderRoutes(children, deepIndex + 1),
+      };
+    }
+    return {
+      value: name,
+      label: name,
+    };
+  });
+}
+
+export default class NavigationMenu extends React.PureComponent<any, any> {
+  public constructor(props: any) {
+    super(props);
+    this.state = {
+      navShow: false,
+      routes: computeRoutes(props.route && props.route.routes),
+    };
+  }
+
+  public render() {
+    return this.state.navShow && <Menu data={this.data} onChange={this.onChange} />;
+  }
+
+  private get data() {
+    return renderRoutes(this.state.routes);
+  }
+
+  private switchClick = () => {
+    this.setState((state) => ({ navShow: !state.navShow }));
+  };
+
+  private onChange = (item) => {
+    this.props.history.push({
+      pathname: `${this.props.route.path}/${item.join('/')}`,
+    });
+  };
+}

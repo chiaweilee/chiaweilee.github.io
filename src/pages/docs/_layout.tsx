@@ -2,16 +2,15 @@ import React from 'react';
 import { ActionSheet, NavBar, Popover, Modal } from 'antd-mobile';
 import Icon from '@/components/icon';
 import Navigation from '@/components/navigation';
+import NavigationMenu from '@/components/navigationMenu';
 import { secretKey } from '@/components/cryptor';
 import utils from '@/utils';
 
 const actions = ['Cryptor', 'Base64'];
 
-interface State {
-  drawer: boolean;
-}
+export default class extends React.PureComponent<any, any> {
+  private menuRef = {} as any;
 
-export default class extends React.PureComponent<any, State> {
   private get constructDisable(): boolean {
     return !localStorage.getItem(secretKey);
   }
@@ -31,7 +30,14 @@ export default class extends React.PureComponent<any, State> {
           mode="light"
           icon={<Icon type="iconback" />}
           onLeftClick={utils.historyGoBack}
-          rightContent={
+          rightContent={[
+            <Icon
+              type={'iconlist'}
+              onClick={() => {
+                this.menuRef.switchClick();
+              }}
+              style={{ marginRight: '16px' }}
+            />,
             <Popover
               onSelect={(opt) => {
                 switch (opt.props.value) {
@@ -89,9 +95,15 @@ export default class extends React.PureComponent<any, State> {
                 </Popover.Item>,
               ]}
             >
-              <Icon type="ellipsis" />
-            </Popover>
-          }
+              <Icon type="iconmore" />
+            </Popover>,
+          ]}
+        />
+        <NavigationMenu
+          {...this.props}
+          ref={(ref) => {
+            this.menuRef = ref;
+          }}
         />
         <Navigation {...this.props}>
           <section className={'markdown-body'}>{this.props.children}</section>

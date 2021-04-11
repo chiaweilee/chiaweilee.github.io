@@ -3,7 +3,6 @@ import { WingBlank, WhiteSpace, Tag } from 'antd-mobile';
 import Link from 'umi/link';
 import groupBy from 'lodash/groupBy';
 import isEqual from 'lodash/isEqual';
-import last from 'lodash/last';
 import isPlainObject from 'lodash/isPlainObject';
 import map from 'lodash/map';
 
@@ -46,16 +45,6 @@ export default class extends React.PureComponent<any, any> {
     return groupBy(matchedRoutes, this.currentRoute.length);
   }
 
-  private get brotherRoutes() {
-    const { routes } = this.state;
-    return routes.filter((route: any[]) => {
-      return isEqual(
-        this.currentDir.slice(0, this.currentDir.length - 1),
-        route.slice(0, this.currentDir.length - 1),
-      );
-    });
-  }
-
   private get renderRoutes() {
     return (
       isPlainObject(this.routesIndex) &&
@@ -70,21 +59,12 @@ export default class extends React.PureComponent<any, any> {
     );
   }
 
-  private get renderRelative() {
-    return this.brotherRoutes.map((route: any) => (
-      <li key={route.join('/')}>
-        <Link to={`/${route.join('/')}`}>{last(route)}</Link>
-      </li>
-    ));
-  }
-
   public render() {
     return (
       <>
         <WhiteSpace size="lg" />
         <WingBlank size="md">{this.renderRoutes}</WingBlank>
         {this.props.children}
-        <ul>{this.renderRelative}</ul>
       </>
     );
   }
