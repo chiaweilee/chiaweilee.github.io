@@ -36,12 +36,17 @@ export default class NavigationMenu extends React.PureComponent<any, any> {
     super(props);
     this.state = {
       navShow: false,
+      value: undefined,
       routes: computeRoutes(props.route && props.route.routes),
     };
   }
 
   public render() {
-    return this.state.navShow && <Menu data={this.data} onChange={this.onChange} />;
+    return (
+      this.state.navShow && (
+        <Menu data={this.data} onChange={this.onChange} value={this.state.value} />
+      )
+    );
   }
 
   private get data() {
@@ -53,6 +58,7 @@ export default class NavigationMenu extends React.PureComponent<any, any> {
   };
 
   private onChange = (item) => {
+    this.setState({ value: item, navShow: false });
     this.props.history.push({
       pathname: `${this.props.route.path}/${item.join('/')}`,
     });
