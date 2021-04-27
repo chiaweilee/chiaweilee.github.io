@@ -31,8 +31,20 @@ export default {
             /components\//,
           ],
         },
+        pwa: {
+          manifestOptions: {
+            srcPath: 'src/manifest.json',
+          },
+          workboxPluginMode: 'InjectManifest',
+          workboxOptions: {
+            importWorkboxFrom: 'local',
+            swSrc: 'src/sw.js',
+            swDest: 'sw.js',
+          },
+        },
       },
     ],
+    ['umi-plugin-pwa', {}],
   ],
   copy: [
     {
