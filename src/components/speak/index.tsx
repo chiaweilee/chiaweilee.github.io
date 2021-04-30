@@ -55,9 +55,9 @@ export default (props: any) => {
           if (Array.isArray(dict) && dict.length) {
             const { phonetics } = dict[0];
             if (Array.isArray(phonetics) && phonetics.length) {
-              const { audio, text } = phonetics[0];
-              if (typeof text === 'string' && text) {
-                setText(text);
+              const { audio, text: t } = phonetics[0];
+              if (typeof t === 'string' && t) {
+                setText(t);
               }
               if (audio) {
                 play(audio, function () {
