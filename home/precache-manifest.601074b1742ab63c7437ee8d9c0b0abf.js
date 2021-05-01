@@ -456,12 +456,12 @@ self.__precacheManifest = [
     "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
-    "revision": "c5ca693ca95830a9874146fad1686fc8",
-    "url": "/home/assets/s4.jpg"
-  },
-  {
     "revision": "6d31d74fb227910b8fd07c5b08288952",
     "url": "/home/assets/s2.jpg"
+  },
+  {
+    "revision": "c5ca693ca95830a9874146fad1686fc8",
+    "url": "/home/assets/s4.jpg"
   },
   {
     "revision": "29c5adbbb87d9cc772f2267f2e5dda88",
@@ -524,12 +524,12 @@ self.__precacheManifest = [
     "url": "/home/assets/fullmoon-2.jpg"
   },
   {
-    "revision": "86def96f95ef7421062fcf10f36956b1",
-    "url": "/home/assets/mn-1.jpg"
-  },
-  {
     "revision": "b710c4aa2934043c5f56fcf4b1e53c09",
     "url": "/home/assets/mn-2.jpg"
+  },
+  {
+    "revision": "86def96f95ef7421062fcf10f36956b1",
+    "url": "/home/assets/mn-1.jpg"
   },
   {
     "revision": "87d4847d186f7bf14499238646a488b8",
