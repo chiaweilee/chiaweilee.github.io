@@ -2,7 +2,6 @@
   "extends": ["ali/react", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "jsx-boolean-value": "off"
+    "prettier/prettier": "error"
   }
 }
