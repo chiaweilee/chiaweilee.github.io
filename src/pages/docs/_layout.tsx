@@ -32,6 +32,7 @@ export default class extends React.PureComponent<any, any> {
           onLeftClick={utils.historyGoBack}
           rightContent={[
             <Icon
+              key="iconlist"
               type={'iconlist'}
               onClick={() => {
                 this.menuRef.switchClick();
@@ -39,6 +40,7 @@ export default class extends React.PureComponent<any, any> {
               style={{ marginRight: '16px' }}
             />,
             <Popover
+              key="popover"
               onSelect={(opt) => {
                 switch (opt.props.value) {
                   case 'github':
