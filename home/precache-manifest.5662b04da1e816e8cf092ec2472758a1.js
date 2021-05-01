@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/home/p__docs__Mac OS__sudo.mdx.2b8ff163.async.js"
   },
   {
-    "revision": "cc4c57a8bbda489da082",
+    "revision": "2066f18ba3741adbbb2b",
     "url": "/home/p__docs___layout.bdb89ca1.chunk.css"
   },
   {
-    "revision": "cc4c57a8bbda489da082",
-    "url": "/home/p__docs___layout.1585c940.async.js"
+    "revision": "2066f18ba3741adbbb2b",
+    "url": "/home/p__docs___layout.1f7f9403.async.js"
   },
   {
     "revision": "3fa89529f666ca15b94a",
@@ -380,12 +380,12 @@ self.__precacheManifest = [
     "url": "/home/p__index.b82a0c10.async.js"
   },
   {
-    "revision": "03a77a75630382728da8",
+    "revision": "4e4757f78eed7faeb14c",
     "url": "/home/umi.fc4ea2ce.css"
   },
   {
-    "revision": "03a77a75630382728da8",
-    "url": "/home/umi.21d51175.js"
+    "revision": "4e4757f78eed7faeb14c",
+    "url": "/home/umi.2f3dd9c1.js"
   },
   {
     "revision": "e7dffb518ae638476d8879b45b9a97a2",
@@ -400,7 +400,7 @@ self.__precacheManifest = [
     "url": "/home/static/tree-house-girl.a403d602.jpg"
   },
   {
-    "revision": "afe1e7b20dc086f3511ba6c3284bf9d7",
+    "revision": "f02f5b019c0d33d5f0f70f57c53eff87",
     "url": "/home/index.html"
   },
   {
@@ -456,12 +456,12 @@ self.__precacheManifest = [
     "url": "/home/assets/yinjiaoqin2.jpg"
   },
   {
-    "revision": "6d31d74fb227910b8fd07c5b08288952",
-    "url": "/home/assets/s2.jpg"
-  },
-  {
     "revision": "c5ca693ca95830a9874146fad1686fc8",
     "url": "/home/assets/s4.jpg"
+  },
+  {
+    "revision": "6d31d74fb227910b8fd07c5b08288952",
+    "url": "/home/assets/s2.jpg"
   },
   {
     "revision": "29c5adbbb87d9cc772f2267f2e5dda88",
@@ -536,12 +536,12 @@ self.__precacheManifest = [
     "url": "/home/assets/fullmoon-1.jpg"
   },
   {
-    "revision": "8341c6934442df17460159b03efdbc98",
-    "url": "/home/assets/kohtao1.jpg.json"
-  },
-  {
     "revision": "c731b16741677f44b313178a3cc34886",
     "url": "/home/assets/klcc.jpg"
+  },
+  {
+    "revision": "8341c6934442df17460159b03efdbc98",
+    "url": "/home/assets/kohtao1.jpg.json"
   },
   {
     "revision": "ffc0041a200c906f93b91906be325df6",
